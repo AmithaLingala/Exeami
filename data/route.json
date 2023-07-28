@@ -1,0 +1,28 @@
+[
+    {
+        "url": "/",
+        "title": "Home"
+    },
+    {
+        "url": "/about",
+        "title": "About"},
+    {
+        "url": "/blogs",
+        "title": "Blogs",
+        "children": "blogs.json"
+    },
+    {
+        "url": "/projects",
+        "title": "Projects",
+        "children": "projects.json"
+    },
+    {
+        "url":
+        "/comics",
+        "title": "Comics"
+    },
+    {
+        "url": "/contact",
+        "title": "Contact Me!"
+    },
+]
