@@ -65,8 +65,6 @@ def generate_main_pages():
         insert_file_contents(page_file, "###Navbar###", "build/nav.html")
         insert_file_contents(page_file, "###Footer###", "build/footer.html")
 
-        
-
 def main():
     if os.path.isdir("build"):
         rmtree("build")
