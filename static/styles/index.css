@@ -1,6 +1,133 @@
+:root {
+  --bg: rgb(31, 32, 40);
+  --alt-bg: rgb(42, 42, 52);
+  --header-bg: rgb(37, 38, 54);
+  --color: rgb(235, 235, 235);
+  --link: #36a3ff;
+  --link-hov: #56c3ff;
+  --max-width: 1000px;
+  --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
+  --card-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  --card-item-shadow: var(--header-bg) 0px 0px 2px 2px,
+    var(--header-bg) 0px 0px 2px 2px;
+  --item-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: 'BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif';
   height: 100%;
+  background-color: var(--bg);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  color: var(--color);
+}
+
+main {
+  margin-top: 2em;
+  padding: 10px 10%;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--bg);
+  padding-top: 1em;
+}
+
+.separator {
+  flex-grow: 1;
+}
+
+.navbar-start {
+  max-width: var(--max-width);
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.navbar-item {
+  padding: 1em;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7em;
+  font-size: larger;
+}
+
+.navbar-start a {
+  font-weight: bold;
+}
+
+.navbar-item:hover {
+  color: var(--color);
+  background-color: var(--alt-bg);
+  border-radius: 10px;
+}
+
+.footer {
+  padding: 4em;
+  text-align: center;
+  background-color: var(--bg);
+  box-shadow: var(--card-shadow);
+}
+
+.card {
+  background-color: var(--alt-bg);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2em;
+}
+
+.card-header {
+  padding: 3em;
+  border-radius: 10px 10px 0 0;
+  background-color: var(--header-bg);
+}
+
+.card-body {
+  padding: 2em;
+}
+
+.card-item {
+  padding: 1em;
+  box-shadow: var(--card-item-shadow);
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hov);
+  text-decoration-thickness: max(3px, 0.1875rem, 0.12em);
+  text-decoration-skip-ink: none;
+}
+
+p {
+  line-height: 24px;
+  font-size: 16px;
 }

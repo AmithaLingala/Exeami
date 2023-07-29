@@ -40,6 +40,8 @@ def generate_navbar_items():
     generated_nav_items = ""
 
     for route in get_json_data("routes"):
+        if(route["url"] == '/'):
+            continue
         generated_nav_items += navbar_string.format(route["url"],
                                                     route["title"])
 
@@ -77,6 +79,7 @@ def generate_page(page, category):
     copyfile(page_template_file, page_file)
 
     replace_text(page_file, "###Title###", page["title"])
+    replace_text(page_file, "###Subtitle###", page["description"])
 
     generate_header(page, header_file)
     insert_file_contents(page_file, "###Header###", header_file)
