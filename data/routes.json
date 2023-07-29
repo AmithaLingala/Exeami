@@ -2,38 +2,39 @@
     {
         "url": "/",
         "title": "Home",
-        "description": "",
+        "subtitle": "",
         "keywords": []
     },
     {
         "url": "/about",
         "title": "About",
-        "description": "",
+        "subtitle": "",
         "keywords": []
     },
     {
         "url": "/blogs",
         "title": "Blogs",
-        "description": "",
+        "subtitle": "",
         "keywords": [],
-        "sub_page_path": "blogs"
+        "sub_page_path": "blogs",
+        "template": "blogs"
     },
     {
         "url": "/projects",
         "title": "Projects",
-        "description": "",
+        "subtitle": "",
         "keywords": []
     },
     {
         "url": "/comics",
         "title": "Comics",
-        "description": "",
+        "subtitle": "",
         "keywords": []
     },
     {
         "url": "/contact",
         "title": "Contact Me!",
-        "description": "",
+        "subtitle": "",
         "keywords": []
     }
 ]

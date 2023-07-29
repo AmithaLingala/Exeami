@@ -23,6 +23,9 @@ def get_json_data(file_name):
     with open(join("data", "{0}.json".format(file_name)), "r") as data_file:
         return json.loads(data_file.read())
 
+def read_file(file_name):
+     with open(file_name, "r") as data_file:
+        return data_file.read()
 
 def replace_text(file_name, search_text, replace_text):
     with FileInput(file_name, inplace=True) as file:
@@ -35,32 +38,34 @@ def insert_file_contents(template_file, search_text, input_file_name):
         replace_text(template_file, search_text, input_file.read())
 
 
-def generate_navbar_items():
+def generate_navbar_data():
+    navbar_template = read_file(join("templates", "nav.html"))
     navbar_string = '<a href="{0}" class="navbar-item">{1}</a>\n'
-    generated_nav_items = ""
+    navbar_data = ""
 
     for route in get_json_data("routes"):
         if(route["url"] == '/'):
             continue
-        generated_nav_items += navbar_string.format(route["url"],
+        navbar_data += navbar_string.format(route["url"],
                                                     route["title"])
-
-    output_file = get_output_path("nav.html")
-    copyfile(join("templates", "nav.html"), output_file)
-    replace_text(output_file, "###navbar_items###", generated_nav_items)
+    return navbar_template.replace("###navbar_items###", navbar_data)
 
 
-def generate_header(page, page_path):
-    header_template = join("templates", "header.html")
+def generate_header(page):
+    header_data = read_file(join("templates", "header.html"))
 
-    copyfile(header_template, page_path)
-    replace_text(page_path, "###Title###", page["title"])
-    replace_text(page_path, "###Keywords###", ",".join(page["keywords"]))
-    replace_text(page_path, "###Description###", page["description"])
+    for key in page:
+        header_data = header_data.replace("###{0}###".format(key), str(page[key]))
+
+    return header_data
+
+def render_template(template, data):
+    for key in data.keys():
+        replace_text(template, "###{0}###".format(key), str(data[key]))
 
 
-def generate_page(page, category):
-    page_template_file = join("templates", "page.html")
+def generate_page(page, category, template):
+    page_template_file = join("templates", "{0}.html".format(template))
     page_name = get_filename_from_page(page)
 
     if category == "main":
@@ -78,20 +83,14 @@ def generate_page(page, category):
 
     copyfile(page_template_file, page_file)
 
-    replace_text(page_file, "###Title###", page["title"])
-    replace_text(page_file, "###Subtitle###", page["description"])
+    page["header"] = generate_header(page)
+    
+    if "content" not in page:
+        content_file = join("content", "{0}.html".format(page_path))
+        page["content"] = read_file(content_file)
 
-    generate_header(page, header_file)
-    insert_file_contents(page_file, "###Header###", header_file)
-    os.remove(header_file)
+    render_template(page_file, page)
 
-    insert_file_contents(page_file, "###Navbar###",
-                         get_output_path("nav.html"))
-    insert_file_contents(page_file, "###Footer###",
-                         get_output_path("footer.html"))
-
-    content_file = join("content", "{0}.html".format(page_path))
-    insert_file_contents(page_file, "###Page###", content_file)
 
 
 def generate_sub_pages(category):
@@ -99,34 +98,41 @@ def generate_sub_pages(category):
     category_name = get_filename_from_page(category)
 
     for sub_page in sub_pages:
-        generate_page(sub_page, category_name)
+        sub_page["navbar"] = category["navbar"]
+        sub_page["footer"] = category["footer"]
+        generate_page(sub_page, category_name, "page")
 
 
 def generate_website():
-    generate_navbar_items()
-    generate_blog_page()
-    copyfile(join("templates", "footer.html"), get_output_path("footer.html"))
+    navbar = generate_navbar_data()
+    footer = read_file(join("templates", "footer.html"))
 
     for route in get_json_data("routes"):
-        generate_page(route, "main")
+        route["navbar"] = navbar
+        route["footer"] = footer
+
         if "sub_page_path" in route:
+            route["content"] = generate_content(route)
+            generate_page(route, "main","blogs")
             generate_sub_pages(route)
+        else:
+            generate_page(route, "main","page")
 
 
-    os.remove(get_output_path("nav.html"))
-    os.remove(get_output_path("footer.html"))
+def generate_content(page):
+    if(get_filename_from_page(page) == "blogs"):
+        return generate_blog_page()
 
 def generate_blog_page():
-    blog_item_string = '<div><a href="/blogs/{0}" class="blog-item">{1}</a></div>\n'
-    generated_blog_items = ""
+    blog_item_string_template = read_file(join("templates","blog-item.html"))
+    generate_blog_content = ""
 
     for blog in get_json_data("blogs"):
-        generated_blog_items += blog_item_string.format(blog["url"],
-                                                    blog["title"])
-
-    output_file = "content/blogs.html"
-    copyfile("templates/blogs.html", output_file)
-    replace_text(output_file, "###BlogItems###", generated_blog_items)
+        blog_item_string = blog_item_string_template
+        for key in blog:
+            blog_item_string = blog_item_string.replace("###{0}###".format(key), str(blog[key]))
+        generate_blog_content += blog_item_string
+    return generate_blog_content
 
 def main():
     if os.path.isdir(output_dir):

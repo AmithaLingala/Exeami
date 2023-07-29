@@ -9,10 +9,14 @@
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
   --card-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
     rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  --card-item-shadow: var(--header-bg) 0px 0px 2px 2px,
-    var(--header-bg) 0px 0px 2px 2px;
+  --card-item-shadow: var(--header-bg) 0px 0px 4px 2px,
+    var(--color) 0px 0px 2px 2px;
   --item-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html,
@@ -64,7 +68,7 @@ main {
 }
 
 .navbar-item {
-  padding: 1em;
+  padding: 2em;
   height: 40px;
   text-decoration: none;
   text-align: center;
@@ -72,7 +76,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7em;
   font-size: larger;
 }
 
@@ -108,8 +111,40 @@ main {
   background-color: var(--header-bg);
 }
 
+.grid {
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.grid-image {
+  flex-grow: 1;
+}
+img,
+.image {
+  height: 100%;
+  width: 100%;
+}
+
 .card-body {
   padding: 2em;
+}
+
+.grid-item {
+  padding: 1em;
+  width: 32%;
+  color: var(--color);
+  text-decoration: none;
+  box-shadow: var(--card-item-shadow);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.grid-item:hover {
+  color: var(--color);
+  text-decoration: none;
+  box-shadow: var(--header-bg) 0 0 4px 2px, var(--color) 0 0 4px 2px;
 }
 
 .card-item {
@@ -130,4 +165,15 @@ a:hover {
 p {
   line-height: 24px;
   font-size: 16px;
+}
+
+.title {
+  color: var(--color);
+  font-weight: normal;
+  font-size: large;
+}
+.subtitle {
+  color: var(--color);
+  font-weight: normal;
+  font-size: medium;
 }

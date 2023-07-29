@@ -1,27 +1,26 @@
 [
-
   {
-    "url": "/data-privacy",
+    "url": "data-privacy",
     "title": "Why should I care about data privacy?",
-    "description": "Six reasons why.",
+    "subtitle": "Six reasons why.",
     "keywords": [],
-    "image": "dp.jpg",
+    "image": "/data-privacy/dp.jpg",
     "last_modified": ""
   },
-    {
-      "url": "/homomorphic-encryption/",
-      "title": "Homomorphic Encryption ",
-      "description": "Trying figure out what it is.",
-      "keywords": [],
-      "image": "HE_1.png",
-      "last_modified": ""
-    },
-    {
-      "url": "/why-should-i-switch-to-signal/",
-      "title": "Why should I switch to Signal?",
-      "description": "A privacy respecting secure messenger.",
-      "keywords": [],
-      "image": "signal.jpg",
-      "last_modified": ""
-    }
-  ]
+  {
+    "url": "homomorphic-encryption",
+    "title": "Homomorphic Encryption ",
+    "subtitle": "Trying figure out what it is.",
+    "keywords": [],
+    "image": "/homomorphic-encryption/HE_1.png",
+    "last_modified": ""
+  },
+  {
+    "url": "why-should-i-switch-to-signal",
+    "title": "Why should I switch to Signal?",
+    "subtitle": "A privacy respecting secure messenger.",
+    "keywords": [],
+    "image": "/why-should-i-switch-to-signal/signal.jpg",
+    "last_modified": ""
+  }
+]
