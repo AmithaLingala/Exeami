@@ -16,21 +16,19 @@
         "title": "Blogs",
         "description": "",
         "keywords": [],
-        "children": "blogs.json"
+        "sub_page_path": "blogs"
     },
     {
         "url": "/projects",
         "title": "Projects",
         "description": "",
-        "keywords": [],
-        "children": "projects.json"
+        "keywords": []
     },
     {
         "url": "/comics",
         "title": "Comics",
         "description": "",
-        "keywords": [],
-        "children": "comics.json"
+        "keywords": []
     },
     {
         "url": "/contact",
