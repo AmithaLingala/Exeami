@@ -1,4 +1,5 @@
 [
+
   {
     "url": "/data-privacy",
     "title": "Why should I care about data privacy?",
@@ -6,5 +7,21 @@
     "keywords": [],
     "image": "dp.jpg",
     "last_modified": ""
-  }
-]
+  },
+    {
+      "url": "/homomorphic-encryption/",
+      "title": "Homomorphic Encryption ",
+      "description": "Trying figure out what it is.",
+      "keywords": [],
+      "image": "HE_1.png",
+      "last_modified": ""
+    },
+    {
+      "url": "/why-should-i-switch-to-signal/",
+      "title": "Why should I switch to Signal?",
+      "description": "A privacy respecting secure messenger.",
+      "keywords": [],
+      "image": "signal.jpg",
+      "last_modified": ""
+    }
+  ]
