@@ -3,6 +3,7 @@
 import json
 from shutil import copyfile, rmtree
 import os
+from os.path import join
 
 from fileinput import FileInput
 
@@ -10,7 +11,7 @@ output_dir = "html"
 
 
 def get_output_path(path):
-    return "{0}/{1}".format(output_dir, path)
+    return os.path.join(output_dir, path)
 
 
 def get_filename_from_page(page):
@@ -19,7 +20,7 @@ def get_filename_from_page(page):
 
 
 def get_json_data(file_name):
-    with open("data/{0}.json".format(file_name), "r") as data_file:
+    with open(join("data", "{0}.json".format(file_name)), "r") as data_file:
         return json.loads(data_file.read())
 
 
@@ -43,12 +44,12 @@ def generate_navbar_items():
                                                     route["title"])
 
     output_file = get_output_path("nav.html")
-    copyfile("templates/nav.html", output_file)
+    copyfile(join("templates", "nav.html"), output_file)
     replace_text(output_file, "###navbar_items###", generated_nav_items)
 
 
 def generate_header(page, page_path):
-    header_template = "templates/header.html"
+    header_template = join("templates", "header.html")
 
     copyfile(header_template, page_path)
     replace_text(page_path, "###Title###", page["title"])
@@ -57,22 +58,21 @@ def generate_header(page, page_path):
 
 
 def generate_page(page, category):
-    page_template_file = "templates/page.html"
+    page_template_file = join("templates", "page.html")
     page_name = get_filename_from_page(page)
 
     if category == "main":
         page_path = "{0}".format(page_name)
     else:
-        page_path = "{0}/{1}".format(category, page_name)
+        page_path = join(category, page_name)
 
     if page_name == "index":
         page_file = get_output_path("index.html")
         header_file = get_output_path("header.html")
     else:
         os.makedirs(get_output_path(page_path))
-        page_file = get_output_path("{0}/index.html".format(page_path))
-        header_file = get_output_path("{0}/{1}-header.html".format(
-            page_path, page_name))
+        page_file = get_output_path(join(page_path ,"index.html"))
+        header_file = get_output_path(join(page_path,"{0}-header.html".format(page_name)))
 
     copyfile(page_template_file, page_file)
 
@@ -87,7 +87,7 @@ def generate_page(page, category):
     insert_file_contents(page_file, "###Footer###",
                          get_output_path("footer.html"))
 
-    content_file = "content/{0}.html".format(page_path)
+    content_file = join("content", "{0}.html".format(page_path))
     insert_file_contents(page_file, "###Page###", content_file)
 
 
@@ -102,7 +102,7 @@ def generate_sub_pages(category):
 def generate_website():
     generate_navbar_items()
     generate_blog_page()
-    copyfile("templates/footer.html", get_output_path("footer.html"))
+    copyfile(join("templates", "footer.html"), get_output_path("footer.html"))
 
     for route in get_json_data("routes"):
         generate_page(route, "main")
