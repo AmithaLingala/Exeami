@@ -1,0 +1,42 @@
+[
+    {
+        "url": "/",
+        "title": "Home",
+        "description": "",
+        "keywords": []
+    },
+    {
+        "url": "/about",
+        "title": "About",
+        "description": "",
+        "keywords": []
+    },
+    {
+        "url": "/blogs",
+        "title": "Blogs",
+        "description": "",
+        "keywords": [],
+        "children": "blogs.json"
+    },
+    {
+        "url": "/projects",
+        "title": "Projects",
+        "description": "",
+        "keywords": [],
+        "children": "projects.json"
+    },
+    {
+        "url": "/comics",
+        "title": "Comics",
+        "description": "",
+        "keywords": [],
+        "children": "comics.json"
+    },
+    {
+        "url": "/contact",
+        "title": "Contact Me!",
+        "description": "",
+        "keywords": []
+    }
+]
+
