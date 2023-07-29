@@ -1,7 +1,7 @@
 #!/bin/env python
 
 import json
-from shutil import copyfile, rmtree
+from shutil import copyfile, rmtree, copytree
 import os
 from os.path import join
 
@@ -109,6 +109,7 @@ def generate_website():
         if "sub_page_path" in route:
             generate_sub_pages(route)
 
+
     os.remove(get_output_path("nav.html"))
     os.remove(get_output_path("footer.html"))
 
@@ -127,7 +128,7 @@ def generate_blog_page():
 def main():
     if os.path.isdir(output_dir):
         rmtree(output_dir)
-    os.mkdir(output_dir)
+    copytree('static', output_dir)
 
     generate_website()
     full_output_path = os.path.join(os.getcwd(), output_dir)
