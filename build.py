@@ -65,13 +65,16 @@ def generate_main_pages():
         insert_file_contents(page_file, "###Navbar###", "build/nav.html")
         insert_file_contents(page_file, "###Footer###", "build/footer.html")
 
+        content_file = "content/{}.html".format(route_name)
+        insert_file_contents(page_file, "###Page###", content_file)
+
 def main():
     if os.path.isdir("build"):
         rmtree("build")
     os.mkdir("build")
     generate_navbar_items()
     generate_header()
-    generate_main_pages();
+    generate_main_pages()
 
 if __name__ == "__main__":
     main()
