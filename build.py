@@ -101,6 +101,7 @@ def generate_sub_pages(category):
 
 def generate_website():
     generate_navbar_items()
+    generate_blog_page()
     copyfile("templates/footer.html", get_output_path("footer.html"))
 
     for route in get_json_data("routes"):
@@ -111,6 +112,17 @@ def generate_website():
     os.remove(get_output_path("nav.html"))
     os.remove(get_output_path("footer.html"))
 
+def generate_blog_page():
+    blog_item_string = '<div><a href="/blogs/{0}" class="blog-item">{1}</a></div>\n'
+    generated_blog_items = ""
+
+    for blog in get_json_data("blogs"):
+        generated_blog_items += blog_item_string.format(blog["url"],
+                                                    blog["title"])
+
+    output_file = "content/blogs.html"
+    copyfile("templates/blogs.html", output_file)
+    replace_text(output_file, "###BlogItems###", generated_blog_items)
 
 def main():
     if os.path.isdir(output_dir):
