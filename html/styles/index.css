@@ -1,8 +1,10 @@
 :root {
-  --bg: rgb(31, 32, 40);
-  --alt-bg: rgb(42, 42, 52);
-  --header-bg: rgb(37, 38, 54);
-  --color: rgb(235, 235, 235);
+  --primary-bg: rgb(68, 60, 104);
+  --header-bg: rgb(24, 18, 43);
+  --box-bg: rgb(99, 89, 133);
+  --content-bg: rgb(68, 60, 104);
+  --font-color: rgb(235, 235, 235);
+
   --link: #36a3ff;
   --link-hov: #56c3ff;
   --max-width: 1000px;
@@ -19,25 +21,52 @@
   box-sizing: border-box;
 }
 
+.purple-theme {
+  --primary-bg: rgb(68, 60, 104);
+  --header-bg: rgb(24, 18, 43);
+  --box-bg: rgb(99, 89, 133);
+  --content-bg: rgb(68, 60, 104);
+  --font-color: rgb(235, 235, 235);
+}
+
+.black-theme {
+  --primary-bg: rgb(31, 32, 40);
+  --content-bg: rgb(31, 32, 40);
+  --header-bg: rgb(1, 22, 39);
+  --box-bg: rgb(46, 48, 57);
+  --font-color: white;
+}
+
+.white-theme {
+  --primary-bg: rgb(252, 252, 252);
+  --box-bg: rgb(242, 242, 242);
+  --content-bg: rgb(252, 252, 252);
+  --header-bg: rgb(232, 232, 232);
+  --font-color: black;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: 'BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif';
   height: 100%;
-  background-color: var(--bg);
+  background-color: var(--primary-bg);
+  /* background-image: var(--primary-grd); */
 }
 
 body {
   display: flex;
   flex-direction: column;
-  color: var(--color);
+  color: var(--font-color);
 }
 
 main {
   margin-top: 2em;
-  padding: 10px 10%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .logo {
@@ -49,7 +78,8 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: var(--bg);
+  background-color: var(--primary-bg);
+  /* background-image: var(--header-grd); */
   padding-top: 1em;
 }
 
@@ -72,7 +102,7 @@ main {
   height: 40px;
   text-decoration: none;
   text-align: center;
-  color: var(--color);
+  color: var(--font-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,30 +115,33 @@ main {
 
 .navbar-item:hover {
   color: var(--color);
-  background-color: var(--alt-bg);
+  background-color: var(--box-bg);
   border-radius: 10px;
 }
 
 .footer {
   padding: 4em;
   text-align: center;
-  background-color: var(--bg);
+  background-color: var(--primary-bg);
   box-shadow: var(--card-shadow);
 }
 
 .card {
-  background-color: var(--alt-bg);
+  background-color: var(--box-bg);
+  /* background-image: var(--primary-grd); */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   box-shadow: var(--card-shadow);
   margin-bottom: 2em;
+  max-width: 1000px;
 }
 
 .card-header {
   padding: 3em;
   border-radius: 10px 10px 0 0;
   background-color: var(--header-bg);
+  /* background-image: var(--primary-grd); */
 }
 
 .grid {
@@ -133,23 +166,26 @@ img,
 .grid-item {
   padding: 1em;
   width: 32%;
-  color: var(--color);
+  color: var(--font-color);
   text-decoration: none;
   box-shadow: var(--card-item-shadow);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background-color: var(--primary-bg);
 }
 
 .grid-item:hover {
-  color: var(--color);
+  color: var(--font-color);
   text-decoration: none;
-  box-shadow: var(--header-bg) 0 0 4px 2px, var(--color) 0 0 4px 2px;
+  box-shadow: var(--header-bg) 0 0 4px 2px, var(--font-color) 0 0 4px 2px;
 }
 
 .card-item {
   padding: 1em;
   box-shadow: var(--card-item-shadow);
+  background-color: var(--content-bg);
+  /* background-image: var(--header-grd); */
 }
 
 a {
@@ -163,17 +199,35 @@ a:hover {
 }
 
 p {
-  line-height: 24px;
+  line-height: 30px;
   font-size: 16px;
 }
 
 .title {
-  color: var(--color);
+  color: var(--font-color);
   font-weight: normal;
   font-size: large;
 }
 .subtitle {
-  color: var(--color);
+  color: var(--font-color);
   font-weight: normal;
   font-size: medium;
+}
+.theme-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: larger;
+  display: block;
+  cursor: pointer;
+  margin: 2em;
+}
+.white-theme-button {
+  background-color: rgb(200, 200, 200);
+}
+.black-theme-button {
+  background-color: black;
+}
+.purple-theme-button {
+  background-color: rgb(24, 18, 43);
 }

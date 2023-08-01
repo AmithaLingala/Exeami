@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy"
-    content="base-uri 'none'; form-action 'none'; img-src 'self'; script-src 'self'; object-src 'none';">
+    content="base-uri 'none'; form-action 'none'; img-src 'self'; object-src 'none';">
   <meta name="referrer" content="no-referrer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="pragma" content="no-cache">
@@ -19,6 +19,7 @@
 
   <link rel="preload" href="/styles/index.css" as="style">
   <link rel="stylesheet" href="/styles/index.css">
+  <script src="/scripts/util.js" type="module"></script>
 </head>
 
 <body>
@@ -40,8 +41,6 @@
     </div>
   </div>
 </nav>
-
-
   <main>
     <article class="card">
       <header class="card-header">
@@ -193,6 +192,11 @@
         </div>
       </div>
     </article>
+    <div class="theme-box">
+      <button class="white-theme-button theme-button" data-theme="white-theme">🤍</button>
+      <button class="black-theme-button theme-button" data-theme="black-theme">🖤</button>
+      <button class="purple-theme-button theme-button" data-theme="purple-theme">💜</button>
+    </div>
   </main>
   <footer class="footer">
   <p>

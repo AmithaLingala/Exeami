@@ -1,9 +1,9 @@
 :root {
-  --primary-bg: rgb(252, 252, 252);
-  --box-bg: rgb(242, 242, 242);
-  --content-bg: rgb(252, 252, 252);
-  --header-bg: rgb(232, 232, 232);
-  --font-color: black;
+  --primary-bg: rgb(68, 60, 104);
+  --header-bg: rgb(24, 18, 43);
+  --box-bg: rgb(99, 89, 133);
+  --content-bg: rgb(68, 60, 104);
+  --font-color: rgb(235, 235, 235);
 
   --link: #36a3ff;
   --link-hov: #56c3ff;
@@ -29,7 +29,7 @@
   --font-color: rgb(235, 235, 235);
 }
 
-.dark-theme {
+.black-theme {
   --primary-bg: rgb(31, 32, 40);
   --content-bg: rgb(31, 32, 40);
   --header-bg: rgb(1, 22, 39);
@@ -37,7 +37,7 @@
   --font-color: white;
 }
 
-.light-theme {
+.white-theme {
   --primary-bg: rgb(252, 252, 252);
   --box-bg: rgb(242, 242, 242);
   --content-bg: rgb(252, 252, 252);
@@ -65,6 +65,7 @@ main {
   margin-top: 2em;
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -171,6 +172,7 @@ img,
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background-color: var(--primary-bg);
 }
 
 .grid-item:hover {
@@ -210,4 +212,22 @@ p {
   color: var(--font-color);
   font-weight: normal;
   font-size: medium;
+}
+.theme-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: larger;
+  display: block;
+  cursor: pointer;
+  margin: 2em;
+}
+.white-theme-button {
+  background-color: rgb(200, 200, 200);
+}
+.black-theme-button {
+  background-color: black;
+}
+.purple-theme-button {
+  background-color: rgb(24, 18, 43);
 }
