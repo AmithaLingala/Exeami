@@ -243,7 +243,8 @@ p {
     width: auto;
   }
   main {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    margin-top: 0;
   }
   article.card {
     margin-left: 0px;
@@ -258,6 +259,10 @@ p {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 2em;
+  }
+  .navbar {
+    justify-content: space-between;
+    padding-top: 0;
   }
 
   .navbar-menu {
@@ -290,7 +295,7 @@ p {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: #fff;
+    background-color: var(--font-color);
     position: absolute;
     height: 4px;
     width: 30px;
@@ -335,6 +340,7 @@ p {
 
   .menu-button-container {
     display: flex;
+    padding: 3em;
   }
   #menu-toggle ~ .navbar-menu .navbar-item {
     height: 0;
@@ -362,5 +368,10 @@ p {
     color: var(--color);
     background-color: var(--box-bg);
     border-radius: 0;
+  }
+  .navbar-brand .navbar-item {
+    border-radius: 30px;
+    padding: 2em;
+    margin-top: 0.5em;
   }
 }
