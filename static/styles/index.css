@@ -83,10 +83,6 @@ main {
   padding-top: 1em;
 }
 
-.separator {
-  flex-grow: 1;
-}
-
 .navbar-start {
   max-width: var(--max-width);
   list-style: none;
@@ -126,6 +122,10 @@ main {
   box-shadow: var(--card-shadow);
 }
 
+article.card {
+  margin-left: calc(100px + 2em);
+}
+
 .card {
   background-color: var(--box-bg);
   /* background-image: var(--primary-grd); */
@@ -135,6 +135,7 @@ main {
   box-shadow: var(--card-shadow);
   margin-bottom: 2em;
   max-width: 1000px;
+  width: 1000px;
 }
 
 .card-header {
@@ -230,4 +231,23 @@ p {
 }
 .purple-theme-button {
   background-color: rgb(24, 18, 43);
+}
+
+@media only screen and (max-width: 760px),
+  (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: auto;
+  }
+  .navbar-start {
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column-reverse;
+  }
+  article.card {
+    margin-left: 0px;
+  }
+  .card-body {
+    padding: 1em;
+  }
 }

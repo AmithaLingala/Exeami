@@ -1,7 +1,16 @@
-// function to set a given theme/color-scheme
 function selectTheme(themeName) {
   localStorage.setItem('theme', themeName)
   document.documentElement.className = themeName
+  switchLogo(themeName)
+}
+
+function switchLogo(themeName) {
+  let logo = document.getElementById('logo')
+  if (themeName === 'white-theme') {
+    logo.setAttribute('src', '/images/logos/exeami.png')
+  } else {
+    logo.setAttribute('src', '/images/logos/exeami-light.png')
+  }
 }
 
 window.onload = function () {
