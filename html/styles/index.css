@@ -154,10 +154,35 @@ article.card {
 .grid-image {
   flex-grow: 1;
 }
+
+.msg-wrapper {
+  width: 200px;
+  position: sticky;
+  transform: rotate(10deg);
+  margin-top: 83px;
+  left: 110px;
+}
+
+.msg {
+  box-shadow:
+    0 4px 5px 0 var(--header-bg),
+    0 6px 10px 0 var(--primary-bg);
+  border: 1px solid var(--header-bg);
+  padding: 1em;
+}
+
+.profile-picture {
+  position: sticky;
+  width: auto;
+  height: auto;
+  top: 285px;
+  left: calc(100% - 170px);
+}
+
 img,
 .image {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
 
 .card-body {
@@ -179,7 +204,9 @@ img,
 .grid-item:hover {
   color: var(--font-color);
   text-decoration: none;
-  box-shadow: var(--header-bg) 0 0 4px 2px, var(--font-color) 0 0 4px 2px;
+  box-shadow:
+    var(--header-bg) 0 0 4px 2px,
+    var(--font-color) 0 0 4px 2px;
 }
 
 .card-item {
@@ -243,6 +270,14 @@ p {
 .hide-in-mobile {
   display: unset;
 }
+
+.banner {
+  width: 348px;
+  min-width: 348px;
+  height: 400px;
+  display: flex;
+}
+
 @media only screen and (max-width: 760px),
   (min-width: 768px) and (max-width: 1024px) {
   .card {
