@@ -1,9 +1,9 @@
 :root {
-  --primary-bg: rgb(68, 60, 104);
-  --header-bg: rgb(24, 18, 43);
-  --box-bg: rgb(99, 89, 133);
-  --content-bg: rgb(68, 60, 104);
-  --font-color: rgb(235, 235, 235);
+  --primary-bg: rgb(31, 32, 40);
+  --content-bg: rgb(31, 32, 40);
+  --header-bg: rgb(1, 22, 39);
+  --box-bg: rgb(46, 48, 57);
+  --font-color: white;
 
   --link: #36a3ff;
   --link-hov: #56c3ff;
