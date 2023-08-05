@@ -4,9 +4,9 @@
   --header-bg: rgb(1, 22, 39);
   --box-bg: rgb(46, 48, 57);
   --font-color: white;
-
   --link: #36a3ff;
   --link-hov: #56c3ff;
+
   --max-width: 1000px;
   --box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
   --card-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
@@ -27,6 +27,8 @@
   --box-bg: rgb(99, 89, 133);
   --content-bg: rgb(68, 60, 104);
   --font-color: rgb(235, 235, 235);
+  --link: #36a3ff;
+  --link-hov: #56c3ff;
 }
 
 .black-theme {
@@ -35,6 +37,8 @@
   --header-bg: rgb(1, 22, 39);
   --box-bg: rgb(46, 48, 57);
   --font-color: white;
+  --link: #36a3ff;
+  --link-hov: #56c3ff;
 }
 
 .white-theme {
@@ -43,6 +47,8 @@
   --content-bg: rgb(252, 252, 252);
   --header-bg: rgb(232, 232, 232);
   --font-color: black;
+  --link: rgb(50, 115, 220);
+  --link-hov: #56c3ff;
 }
 
 html,
@@ -164,9 +170,7 @@ article.card {
 }
 
 .msg {
-  box-shadow:
-    0 4px 5px 0 var(--header-bg),
-    0 6px 10px 0 var(--primary-bg);
+  box-shadow: 0 4px 5px 0 var(--header-bg), 0 6px 10px 0 var(--primary-bg);
   border: 1px solid var(--header-bg);
   padding: 1em;
 }
@@ -204,9 +208,7 @@ img,
 .grid-item:hover {
   color: var(--font-color);
   text-decoration: none;
-  box-shadow:
-    var(--header-bg) 0 0 4px 2px,
-    var(--font-color) 0 0 4px 2px;
+  box-shadow: var(--header-bg) 0 0 4px 2px, var(--font-color) 0 0 4px 2px;
 }
 
 .card-item {
@@ -276,6 +278,39 @@ p {
   min-width: 348px;
   height: 400px;
   display: flex;
+}
+
+img,
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.media {
+  align-items: flex-start;
+  display: flex;
+  text-align: inherit;
+}
+
+.box {
+  background-color: var(--primary-bg);
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  color: var(--font-color);
+  padding: 1.25rem;
+  margin: 1em;
+}
+
+.media-left {
+  margin-right: 1rem;
+}
+
+.media-content {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: inherit;
+  padding-left: 1em;
 }
 
 @media only screen and (max-width: 760px),
