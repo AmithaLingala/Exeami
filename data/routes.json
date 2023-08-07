@@ -16,16 +16,14 @@
         "title": "Blogs",
         "subtitle": "",
         "keywords": [],
-        "sub_page_path": "blogs",
-        "template": "blogs"
+        "sub_page_path": "blogs"
     },
     {
         "url": "/projects",
         "title": "Projects",
         "subtitle": "",
         "keywords": [],
-        "sub_page_path": "projects",
-        "template": "projects"
+        "sub_page_path": "projects"
     },
     {
         "url": "/comics",
