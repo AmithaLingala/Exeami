@@ -277,8 +277,14 @@ article.card {
   padding: 1.25rem;
   margin: 1em;
   flex-grow: 1;
+  text-decoration: none;
 }
 
+a.media-box:hover {
+  color: var(--font-color);
+  text-decoration: none;
+  box-shadow: var(--header-bg) 0 0 4px 2px, var(--font-color) 0 0 4px 2px;
+}
 .media-figure {
   margin-right: 1rem;
   display: contents;

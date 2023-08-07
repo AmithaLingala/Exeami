@@ -277,8 +277,14 @@ article.card {
   padding: 1.25rem;
   margin: 1em;
   flex-grow: 1;
+  text-decoration: none;
 }
 
+a.media-box:hover {
+  color: var(--font-color);
+  text-decoration: none;
+  box-shadow: var(--header-bg) 0 0 4px 2px, var(--font-color) 0 0 4px 2px;
+}
 .media-figure {
   margin-right: 1rem;
   display: contents;
@@ -295,10 +301,6 @@ article.card {
   main {
     flex-direction: column-reverse;
     margin-top: 0;
-  }
-
-  .card {
-    width: auto;
   }
 
   .hide-in-mobile {
@@ -320,6 +322,10 @@ article.card {
 
   .theme-button {
     margin: 0px;
+  }
+
+  .card {
+    width: auto;
   }
 
   article.card {
