@@ -111,17 +111,21 @@ def generate_website():
         route["navbar"] = navbar
         route["footer"] = footer
 
+        template = route["template"] if "template" in route else "page"
+       
         if "sub_page_path" in route:
             route["content"] = generate_content(route)
-            generate_page(route, "main","blogs")
+            generate_page(route, "main", template)
             generate_sub_pages(route)
         else:
-            generate_page(route, "main","page")
+            generate_page(route, "main", template)
 
 
 def generate_content(page):
     if(get_filename_from_page(page) == "blogs"):
         return generate_blog_page()
+    if(get_filename_from_page(page) == "projects"):
+        return generate_project_page()
 
 def generate_blog_page():
     blog_item_string_template = read_file(join("templates","blog-item.html"))
@@ -133,6 +137,17 @@ def generate_blog_page():
             blog_item_string = blog_item_string.replace("###{0}###".format(key), str(blog[key]))
         generate_blog_content += blog_item_string
     return generate_blog_content
+
+def generate_project_page():
+    project_item_string_template = read_file(join("templates","project-item.html"))
+    generate_project_content = ""
+
+    for project in get_json_data("projects"):
+        project_item_string = project_item_string_template
+        for key in project:
+            project_item_string = project_item_string.replace("###{0}###".format(key), str(project[key]))
+        generate_project_content += project_item_string
+    return generate_project_content
 
 def main():
     if os.path.isdir(output_dir):
