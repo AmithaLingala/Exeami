@@ -28,14 +28,13 @@
     {
         "url": "/comics",
         "title": "Comics",
-        "subtitle": "",
+        "subtitle": "These are the comics which I saw in the internet and want to share, not created by me.",
         "keywords": []
     },
     {
         "url": "/contact",
-        "title": "Contact Me!",
-        "subtitle": "",
+        "title": "Contact",
+        "subtitle": "Let me know what you think!",
         "keywords": []
     }
 ]
-

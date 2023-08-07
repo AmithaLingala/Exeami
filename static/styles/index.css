@@ -245,6 +245,14 @@ article.card {
   width: 50%;
 }
 
+.comic {
+  width: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
 .title {
   color: var(--font-color);
   font-weight: normal;
