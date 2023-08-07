@@ -106,10 +106,12 @@ def generate_sub_pages(category):
 def generate_website():
     navbar = generate_navbar_data()
     footer = read_file(join("templates", "footer.html"))
+    theme_switcher = read_file(join("templates", "theme-switcher.html"))
 
     for route in get_json_data("routes"):
         route["navbar"] = navbar
         route["footer"] = footer
+        route["theme-switcher"] = theme_switcher
 
         template = route["template"] if "template" in route else "page"
        
