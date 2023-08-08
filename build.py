@@ -83,6 +83,7 @@ def generate_page(page, template, category="main"):
     copyfile(page_template_file, page_file)
 
     page["header"] = generate_header(page)
+    page["content"] = generate_content(page, category)
 
     render_template(page_file, page)
 
@@ -95,7 +96,7 @@ def generate_sub_pages(category):
         sub_page["footer"] = category["footer"]
         generate_page(sub_page, "page", category_name)
 
-def generate_content(page):
+def generate_content(page, category):
     if(get_filename_from_page(page) == "blogs"):
         return generate_blog_page()
     if(get_filename_from_page(page) == "projects"):
@@ -103,7 +104,7 @@ def generate_content(page):
     if(get_filename_from_page(page) == "comics"):
         return generate_comic_page()
 
-    page_path = get_page_path(get_filename_from_page(page))
+    page_path = get_page_path(get_filename_from_page(page), category)
     content_file = join("content", "{0}.html".format(page_path))
     return read_file(content_file)
 
@@ -151,8 +152,6 @@ def generate_website():
         route["theme-switcher"] = theme_switcher
 
         template = route["template"] if "template" in route else "page"
-       
-        route["content"] = generate_content(route)
         generate_page(route, template)
 
         if "sub_page_path" in route:

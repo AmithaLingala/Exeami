@@ -15,10 +15,13 @@ function swapThemeButtons() {
 
 function switchLogo(themeName) {
   let logo = document.getElementById('logo')
+  let profilePhoto = document.getElementById('profile-photo')
   if (themeName === 'white-theme') {
     logo.setAttribute('src', '/images/logos/exeami.png')
+    profilePhoto.setAttribute('src', '/images/logos/exeami.png')
   } else {
     logo.setAttribute('src', '/images/logos/exeami-light.png')
+    profilePhoto.setAttribute('src', '/images/logos/exeami-light.png')
   }
 }
 
