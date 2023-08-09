@@ -94,6 +94,7 @@ def generate_sub_pages(category):
     for sub_page in sub_pages:
         sub_page["navbar"] = category["navbar"]
         sub_page["footer"] = category["footer"]
+        sub_page["theme-switcher"] = category["theme-switcher"]
         generate_page(sub_page, "page", category_name)
 
 def generate_content(page, category):
