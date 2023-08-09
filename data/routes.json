@@ -2,26 +2,26 @@
     {
         "url": "/",
         "title": "Home",
-        "subtitle": "",
+        "subtitle": "Welcome to exeami!",
         "keywords": []
     },
     {
         "url": "/about",
         "title": "About",
-        "subtitle": " Welcome to exeami!",
+        "subtitle": "Who am I? (ami😛)",
         "keywords": []
     },
     {
         "url": "/blogs",
         "title": "Blogs",
-        "subtitle": "",
+        "subtitle": "Find my latest writings here!",
         "keywords": [],
         "sub_page_path": "blogs"
     },
     {
         "url": "/projects",
         "title": "Projects",
-        "subtitle": "",
+        "subtitle": "Some of my projects that may interest you.",
         "keywords": [],
         "sub_page_path": "projects"
     },
