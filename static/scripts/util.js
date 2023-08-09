@@ -27,6 +27,26 @@ function switchLogo(themeName) {
   }
 }
 
+function switchIcons(themeName) {
+  let envolopeIcon = document.getElementById('envelope-icon')
+  let gitHubIcon = document.getElementById('github-icon')
+  let linkedinIcon = document.getElementById('linkedin-icon')
+  if (
+    themeName === 'white-theme' &&
+    envolopeIcon !== null &&
+    gitHubIcon !== null &&
+    linkedinIcon !== null
+  ) {
+    envolopeIcon.setAttribute('src', '/images/contact/envelope.svg')
+    gitHubIcon.setAttribute('src', '/images/contact/github.svg')
+    linkedinIcon.setAttribute('src', '/images/contact/linkedin.svg')
+  } else {
+    envolopeIcon.setAttribute('src', '/images/contact/envelope-white.svg')
+    gitHubIcon.setAttribute('src', '/images/contact/github-white.svg')
+    linkedinIcon.setAttribute('src', '/images/contact/linkedin-white.svg')
+  }
+}
+
 function selectTheme(themeName) {
   const themeButton = document.querySelector(`.theme-box .${themeName}-button`)
   const themeSwitcher = document.querySelector('.theme-switcher-button')
@@ -36,6 +56,7 @@ function selectTheme(themeName) {
 
   document.documentElement.className = themeName
   switchLogo(themeName)
+  switchIcons(themeName)
   localStorage.setItem('theme', themeName)
 }
 
