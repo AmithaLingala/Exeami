@@ -31,19 +31,16 @@ function switchIcons(themeName) {
   let envolopeIcon = document.getElementById('envelope-icon')
   let gitHubIcon = document.getElementById('github-icon')
   let linkedinIcon = document.getElementById('linkedin-icon')
-  if (
-    themeName === 'white-theme' &&
-    envolopeIcon !== null &&
-    gitHubIcon !== null &&
-    linkedinIcon !== null
-  ) {
-    envolopeIcon.setAttribute('src', '/images/contact/envelope.svg')
-    gitHubIcon.setAttribute('src', '/images/contact/github.svg')
-    linkedinIcon.setAttribute('src', '/images/contact/linkedin.svg')
-  } else {
-    envolopeIcon.setAttribute('src', '/images/contact/envelope-white.svg')
-    gitHubIcon.setAttribute('src', '/images/contact/github-white.svg')
-    linkedinIcon.setAttribute('src', '/images/contact/linkedin-white.svg')
+  if (envolopeIcon !== null && gitHubIcon !== null && linkedinIcon !== null) {
+    if (themeName === 'white-theme') {
+      envolopeIcon.setAttribute('src', '/images/contact/envelope.svg')
+      gitHubIcon.setAttribute('src', '/images/contact/github.svg')
+      linkedinIcon.setAttribute('src', '/images/contact/linkedin.svg')
+    } else {
+      envolopeIcon.setAttribute('src', '/images/contact/envelope-white.svg')
+      gitHubIcon.setAttribute('src', '/images/contact/github-white.svg')
+      linkedinIcon.setAttribute('src', '/images/contact/linkedin-white.svg')
+    }
   }
 }
 

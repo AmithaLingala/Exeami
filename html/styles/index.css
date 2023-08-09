@@ -285,16 +285,13 @@ article.card {
 }
 
 .media-box {
-  align-items: flex-start;
   display: flex;
-  text-align: inherit;
   background-color: var(--primary-bg);
   border-radius: 6px;
   box-shadow: var(--box-shadow);
   color: var(--font-color);
-  padding: 1.25rem;
+  padding: 1em 0;
   margin: 1em;
-  flex-grow: 1;
   text-decoration: none;
 }
 
@@ -302,9 +299,6 @@ a.media-box:hover {
   color: var(--font-color);
   text-decoration: none;
   box-shadow: var(--header-bg) 0 0 4px 2px, var(--font-color) 0 0 4px 2px;
-}
-.media-figure {
-  margin-right: 1rem;
 }
 
 .media-content {
