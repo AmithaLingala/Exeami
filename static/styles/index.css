@@ -246,9 +246,13 @@ article.card {
   left: 0.5em;
 }
 
+.is-1-by-2 {
+  width: 50%;
+}
+
 .image {
   height: auto;
-  width: 50%;
+  width: 100%;
 }
 
 .comic {
@@ -351,12 +355,15 @@ a.media-box:hover {
 
   .media-box {
     flex-direction: column;
-    padding: 1em 0;
     margin: 1em 0;
   }
 
   .media-figure {
     margin: 0 auto;
+  }
+
+  .is-1-by-2 {
+    width: 100%;
   }
 
   .image {
