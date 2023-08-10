@@ -176,6 +176,9 @@ p {
   padding: 1.25rem;
   margin: 1em;
 }
+.content-box {
+  padding: 1rem;
+}
 
 .card {
   background-color: var(--box-bg);
