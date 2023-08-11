@@ -74,7 +74,8 @@
 }
 
 #menu-toggle,
-.theme-switcher-button {
+.theme-switcher-button,
+.menu-button-container {
   display: none;
 }
 
@@ -312,7 +313,10 @@ a.media-box:hover {
   text-align: inherit;
   padding-left: 1em;
 }
-
+.hidden-label {
+  position: absolute;
+  top: -99999px;
+}
 @media only screen and (max-width: 760px),
   (min-width: 768px) and (max-width: 1024px) {
   main {
