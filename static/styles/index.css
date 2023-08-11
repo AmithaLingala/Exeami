@@ -255,11 +255,16 @@ article.card {
 
 .is-1-by-2 {
   width: 50%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  height: auto;
-  width: 100%;
+  /* width: 100%; */
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .comic {
@@ -300,6 +305,7 @@ article.card {
   padding: 1em 0;
   margin: 1em;
   text-decoration: none;
+  height: 300px;
 }
 
 a.media-box:hover {
@@ -360,6 +366,7 @@ a.media-box:hover {
   .media-box {
     flex-direction: column;
     margin: 1em 0;
+    height: unset;
   }
 
   .media-figure {
@@ -373,6 +380,7 @@ a.media-box:hover {
   .image {
     width: 100%;
   }
+
   .banner {
     width: 100%;
   }
