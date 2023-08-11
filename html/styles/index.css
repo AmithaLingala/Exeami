@@ -252,6 +252,9 @@ article.card {
 .is-1-by-2 {
   width: 50%;
 }
+.is-500 {
+  width: 500px;
+}
 
 .image {
   height: auto;
