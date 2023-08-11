@@ -23,7 +23,7 @@
   --box-bg: rgb(99, 89, 133);
   --content-bg: rgb(68, 60, 104);
   --font-color: rgb(235, 235, 235);
-  --link: #36a3ff;
+  --link: #56c3ff;
   --link-hov: #56c3ff;
 }
 
@@ -32,7 +32,7 @@
   --content-bg: rgb(31, 32, 40);
   --header-bg: rgb(1, 22, 39);
   --box-bg: rgb(46, 48, 57);
-  --font-color: white;
+  --font-color: rgb(200, 200, 200);
   --link: #36a3ff;
   --link-hov: #56c3ff;
 }
@@ -42,9 +42,9 @@
   --box-bg: rgb(242, 242, 242);
   --content-bg: rgb(252, 252, 252);
   --header-bg: rgb(232, 232, 232);
-  --font-color: black;
-  --link: rgb(50, 115, 220);
-  --link-hov: #56c3ff;
+  --font-color: rgb(33, 33, 33);
+  --link: rgb(4, 41, 102);
+  --link-hov: rgb(2, 20, 50);
 }
 
 .theme-button,
@@ -60,14 +60,17 @@
 
 .white-theme-button {
   background-color: rgb(200, 200, 200);
+  color: black;
 }
 
 .black-theme-button {
   background-color: black;
+  color: white;
 }
 
 .purple-theme-button {
   background-color: rgb(24, 18, 43);
+  color: white;
 }
 
 #menu-toggle,
