@@ -117,7 +117,8 @@ a:hover {
   text-decoration-skip-ink: none;
 }
 
-p {
+p,
+dd {
   line-height: 30px;
   font-size: 16px;
 }
