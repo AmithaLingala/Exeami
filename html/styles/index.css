@@ -277,7 +277,7 @@ article.card {
 
 .title {
   color: var(--font-color);
-  font-weight: normal;
+  font-weight: bold;
   font-size: large;
 }
 

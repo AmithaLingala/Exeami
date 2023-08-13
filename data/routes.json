@@ -3,19 +3,22 @@
         "url": "/",
         "title": "Home",
         "subtitle": "Welcome to exeami!",
-        "keywords": []
+        "keywords": "",
+        "description": ""
     },
     {
         "url": "/about",
         "title": "About",
         "subtitle": "Who is Exeami?",
-        "keywords": []
+        "keywords": "",
+        "description": ""
     },
     {
         "url": "/blogs",
         "title": "Blogs",
         "subtitle": "Find my latest writings here!",
-        "keywords": [],
+        "keywords": "",
+        "description": "",
         "sub_page_path": "blogs",
         "sub_page_template": "blog-page"
     },
@@ -23,19 +26,22 @@
         "url": "/projects",
         "title": "Projects",
         "subtitle": "Some of my projects that may interest you.",
-        "keywords": [],
+        "keywords": "",
+        "description": "",
         "sub_page_path": "projects"
     },
     {
         "url": "/comics",
         "title": "Comics",
         "subtitle": "These are the comics which I saw in the internet and want to share, not created by me.",
-        "keywords": []
+        "keywords": "",
+        "description": ""
     },
     {
         "url": "/contact",
         "title": "Contact",
         "subtitle": "Feel free to get in touch!",
-        "keywords": []
+        "keywords": "",
+        "description": ""
     }
 ]
