@@ -8,6 +8,7 @@ from os.path import join
 from fileinput import FileInput
 
 output_dir = "html"
+default_template = "page"
 
 
 def get_output_path(path):
@@ -61,9 +62,19 @@ def generate_header(page):
 
     return header_data
 
+def get_list_items(list_data, list_name):
+    generated_content = "<div class='{0}'>".format(list_name)
+    list_item_name = list_name[:-1]
+    for list_item in list_data:
+        item_string = "<span class='{0}'>{1}</span>".format(list_item_name, list_item)
+        generated_content += item_string
+    generated_content += "</div>"
+    return generated_content
+
 def render_template(template, data):
     for key in data.keys():
-        replace_text(template, "###{0}###".format(key), str(data[key]))
+        value = get_list_items(data[key], key) if type(data[key]) is list  else data[key]       
+        replace_text(template, "###{0}###".format(key), str(value))
 
 
 def generate_page(page, template, category="main"):
@@ -95,7 +106,8 @@ def generate_sub_pages(category):
         sub_page["navbar"] = category["navbar"]
         sub_page["footer"] = category["footer"]
         sub_page["theme-switcher"] = category["theme-switcher"]
-        generate_page(sub_page, "page", category_name)
+        template = category["sub_page_template"] if "sub_page_template" in category else default_template
+        generate_page(sub_page, template, category_name)
 
 def generate_content(page, category):
     if(get_filename_from_page(page) == "blogs"):
@@ -116,7 +128,8 @@ def generate_blog_page():
     for blog in get_json_data("blogs"):
         blog_item_string = blog_item_string_template
         for key in blog:
-            blog_item_string = blog_item_string.replace("###{0}###".format(key), str(blog[key]))
+            value = get_list_items(blog[key], key) if type(blog[key]) is list  else blog[key]       
+            blog_item_string = blog_item_string.replace("###{0}###".format(key), str(value))
         generate_blog_content += blog_item_string
     return generate_blog_content
 
@@ -152,7 +165,7 @@ def generate_website():
         route["footer"] = footer
         route["theme-switcher"] = theme_switcher
 
-        template = route["template"] if "template" in route else "page"
+        template = route["template"] if "template" in route else default_template
         generate_page(route, template)
 
         if "sub_page_path" in route:

@@ -323,6 +323,28 @@ a.media-box:hover {
   position: absolute;
   top: -99999px;
 }
+
+.tag {
+  align-items: center;
+  background-color: var(--font-color);
+  border-radius: 4px;
+  color: var(--header-bg);
+  display: inline-flex;
+  font-size: 0.75rem;
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  white-space: nowrap;
+  margin-left: 0.75em;
+  margin-right: 0.75em;
+}
+
+/* ************************************************************************************************************* */
+/* ************************************** Styles for smaller screens ******************************************* */
+/* ************************************************************************************************************* */
+
 @media only screen and (max-width: 760px),
   (min-width: 768px) and (max-width: 1024px) {
   main {

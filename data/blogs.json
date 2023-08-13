@@ -3,7 +3,7 @@
     "url": "data-privacy",
     "title": "Why should I care about data privacy?",
     "subtitle": "Six reasons why.",
-    "keywords": [
+    "tags": [
       "privacy"
     ],
     "image": "/data-privacy/data-privacy.jpg",
@@ -13,8 +13,9 @@
     "url": "homomorphic-encryption",
     "title": "Homomorphic Encryption ",
     "subtitle": "Trying figure out what it is.",
-    "keywords": [
-      "privacy"
+    "tags": [
+      "privacy",
+      "security"
     ],
     "image": "/homomorphic-encryption/encryption.jpg",
     "last_modified": "20th April 2020"
@@ -23,7 +24,7 @@
     "url": "why-should-i-switch-to-signal",
     "title": "Why should I switch to Signal?",
     "subtitle": "A privacy respecting secure messenger.",
-    "keywords": [
+    "tags": [
       "privacy"
     ],
     "image": "/why-should-i-switch-to-signal/signal.jpg",

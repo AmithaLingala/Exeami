@@ -16,7 +16,8 @@
         "title": "Blogs",
         "subtitle": "Find my latest writings here!",
         "keywords": [],
-        "sub_page_path": "blogs"
+        "sub_page_path": "blogs",
+        "sub_page_template": "blog-page"
     },
     {
         "url": "/projects",
