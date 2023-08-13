@@ -28,7 +28,8 @@
         "subtitle": "Some of my projects that may interest you.",
         "keywords": "",
         "description": "",
-        "sub_page_path": "projects"
+        "sub_page_path": "projects",
+        "sub_page_template": "project-page"
     },
     {
         "url": "/comics",
