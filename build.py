@@ -140,7 +140,8 @@ def generate_project_page():
     for project in get_json_data("projects"):
         project_item_string = project_item_string_template
         for key in project:
-            project_item_string = project_item_string.replace("###{0}###".format(key), str(project[key]))
+            value = get_list_items(project[key], key) if type(project[key]) is list  else project[key]       
+            project_item_string = project_item_string.replace("###{0}###".format(key), str(value))
         generate_project_content += project_item_string
     return generate_project_content
 
