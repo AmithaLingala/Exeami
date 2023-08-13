@@ -305,7 +305,6 @@ article.card {
   padding: 1em 0;
   margin: 1em;
   text-decoration: none;
-  height: 300px;
 }
 
 a.media-box:hover {
@@ -337,7 +336,6 @@ a.media-box:hover {
   padding-left: 0.75em;
   padding-right: 0.75em;
   white-space: nowrap;
-  margin-left: 0.75em;
   margin-right: 0.75em;
 }
 
