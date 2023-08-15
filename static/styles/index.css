@@ -203,7 +203,7 @@ article.card {
 }
 
 .card-header {
-  padding: 3em;
+  padding: 2em;
   border-radius: 10px 10px 0 0;
   background-color: var(--header-bg);
   /* background-image: var(--primary-grd); */
