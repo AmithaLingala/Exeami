@@ -5,7 +5,7 @@
         "subtitle": "Welcome to exeami!",
         "keywords": "",
         "description": "",
-        "template": "page-with-suggestions"
+        "template": "index"
     },
     {
         "url": "/about",
