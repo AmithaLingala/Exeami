@@ -3,23 +3,23 @@
         "url": "/",
         "title": "Home",
         "subtitle": "Welcome to exeami!",
-        "keywords": "",
-        "description": "",
+        "keywords": "exeami, privacy blog, html, css, javascript, java, web development",
+        "description": "Personal website of Amitha Lingala and blogs about data privacy",
         "template": "index"
     },
     {
         "url": "/about",
         "title": "About",
         "subtitle": "Who is Exeami?",
-        "keywords": "",
-        "description": ""
+        "keywords": "Amitha, exeami",
+        "description": "Personal website of Amitha Lingala and blogs about data privacy"
     },
     {
         "url": "/blogs",
         "title": "Blogs",
         "subtitle": "Find my latest writings here!",
-        "keywords": "",
-        "description": "",
+        "keywords": "data privacy, data security",
+        "description": "Personal website of Amitha Lingala and blogs about data privacy",
         "sub_page_path": "blogs",
         "sub_page_template": "blog-page"
     },
@@ -27,8 +27,8 @@
         "url": "/projects",
         "title": "Projects",
         "subtitle": "Some of my projects that may interest you.",
-        "keywords": "",
-        "description": "",
+        "keywords": "projects, java, css, html, javascript, python",
+        "description": "Personal website of Amitha Lingala and blogs about data privacy",
         "sub_page_path": "projects",
         "sub_page_template": "project-page"
     },
@@ -36,14 +36,14 @@
         "url": "/comics",
         "title": "Comics",
         "subtitle": "These are the comics which I saw in the internet and want to share, not created by me.",
-        "keywords": "",
-        "description": ""
+        "keywords": "tech comics, data privacy, stress, money",
+        "description": "Collection of comics"
     },
     {
         "url": "/contact",
         "title": "Contact",
         "subtitle": "Feel free to get in touch!",
-        "keywords": "",
-        "description": ""
+        "keywords": "exeami, amitha lingala, github/amithalingala",
+        "description": "Personal website of Amitha Lingala and blogs about data privacy"
     }
 ]
