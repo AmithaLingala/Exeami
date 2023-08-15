@@ -8,7 +8,7 @@ from os.path import join
 
 from fileinput import FileInput
 
-output_dir = "html"
+output_dir = "docs"
 default_template = "page"
 
 
