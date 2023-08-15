@@ -424,6 +424,7 @@ a.media-box:hover {
     flex-direction: column;
     margin: 0;
     padding: 0;
+    z-index: 9999;
   }
 
   .navbar-menu > .navbar-item {
