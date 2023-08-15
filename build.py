@@ -110,52 +110,26 @@ def generate_sub_pages(category):
         generate_page(sub_page, template, category_name)
 
 def generate_content(page, category):
-    if(get_filename_from_page(page) == "blogs"):
-        return generate_blog_page()
-    if(get_filename_from_page(page) == "projects"):
-        return generate_project_page()
-    if(get_filename_from_page(page) == "comics"):
-        return generate_comic_page()
-
+    page_type = get_filename_from_page(page)
+    if(page_type == "blogs" or page_type == "projects" or page_type == "comics"):
+        return generate_content_page_from_template(page_type)
+    
     page_path = get_page_path(get_filename_from_page(page), category)
     content_file = join("content", "{0}.html".format(page_path))
     return read_file(content_file)
 
-def generate_blog_page():
-    blog_item_string_template = read_file(join("templates","blog-item.html"))
-    generate_blog_content = ""
+def generate_content_page_from_template(category):
+    item_string_template = read_file(join("templates","{0}-item.html".format(category[:-1])))
+    generated_content = ""
 
-    for blog in get_json_data("blogs"):
-        blog_item_string = blog_item_string_template
-        for key in blog:
-            value = get_list_items(blog[key], key) if type(blog[key]) is list  else blog[key]       
-            blog_item_string = blog_item_string.replace("###{0}###".format(key), str(value))
-        generate_blog_content += blog_item_string
-    return generate_blog_content
+    for item in get_json_data(category):
+        item_string = item_string_template
+        for key in item:
+            value = get_list_items(item[key], key) if type(item[key]) is list  else item[key]       
+            item_string = item_string.replace("###{0}###".format(key), str(value))
+        generated_content += item_string
+    return generated_content
 
-def generate_project_page():
-    project_item_string_template = read_file(join("templates","project-item.html"))
-    generate_project_content = ""
-
-    for project in get_json_data("projects"):
-        project_item_string = project_item_string_template
-        for key in project:
-            value = get_list_items(project[key], key) if type(project[key]) is list  else project[key]       
-            project_item_string = project_item_string.replace("###{0}###".format(key), str(value))
-        generate_project_content += project_item_string
-    return generate_project_content
-
-def generate_comic_page():
-    comic_item_string_template = read_file(join("templates","comic-item.html"))
-    generate_comic_content = ""
-
-    for comic in get_json_data("comics"):
-        comic_item_string = comic_item_string_template
-        for key in comic:
-            comic_item_string = comic_item_string.replace("###{0}###".format(key), str(comic[key]))
-        generate_comic_content += comic_item_string
-    return generate_comic_content
-    
 def generate_website():
     navbar = generate_navbar_data()
     footer = read_file(join("templates", "footer.html"))
