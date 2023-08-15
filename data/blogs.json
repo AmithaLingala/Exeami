@@ -3,8 +3,8 @@
     "url": "data-privacy",
     "title": "Why should I care about data privacy?",
     "subtitle": "Six reasons why.",
-    "keywords": "",
-    "description": "",
+    "keywords": "data privacy, filter bubble, Identity theft, personal assistants",
+    "description": "Few reasons why we should care about data privacy",
     "tags": [
       "privacy"
     ],
@@ -13,10 +13,10 @@
   },
   {
     "url": "homomorphic-encryption",
-    "title": "Homomorphic Encryption ",
+    "title": "Homomorphic Encryption",
     "subtitle": "Trying figure out what it is.",
-    "keywords": "",
-    "description": "",
+    "keywords": "Homomorphic Encryption, encryption, HELib, Microsoft SEAL, PALISADE, security",
+    "description": "Blog about Homomorphic Encryption ",
     "tags": [
       "privacy"
     ],
@@ -27,8 +27,8 @@
     "url": "why-should-i-switch-to-signal",
     "title": "Why should I switch to Signal?",
     "subtitle": "A privacy respecting secure messenger.",
-    "keywords": "",
-    "description": "",
+    "keywords": "signal, whatsapp, messenger, security, signal prtocol, privacy",
+    "description": "Blog about Signl messaging app and it's features",
     "tags": [
       "privacy"
     ],
