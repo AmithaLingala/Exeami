@@ -1,6 +1,7 @@
 #!/bin/env python
 
 import json
+import itertools
 from shutil import copyfile, rmtree, copytree
 import os
 from os.path import join
@@ -110,13 +111,28 @@ def generate_sub_pages(category):
         generate_page(sub_page, template, category_name)
 
 def generate_content(page, category):
-    page_type = get_filename_from_page(page)
-    if(page_type == "blogs" or page_type == "projects" or page_type == "comics"):
-        return generate_content_page_from_template(page_type)
+    page_name = get_filename_from_page(page)
+    if(category == "blogs" or page_name == "index"):
+        generate_blog_suggestions(page)
+    if(page_name == "blogs" or page_name == "projects" or page_name == "comics"):
+        return generate_content_page_from_template(page_name)
     
     page_path = get_page_path(get_filename_from_page(page), category)
     content_file = join("content", "{0}.html".format(page_path))
     return read_file(content_file)
+
+def generate_blog_suggestions(page):
+    page_name = get_filename_from_page(page)
+    item_string_template = read_file(join("templates","blog-item.html"))
+    generated_content = ""
+    for item in itertools.islice(get_json_data("blogs"), 3):
+        if(item["url"] != page_name):
+            item_string = item_string_template
+            for key in item:
+                value = get_list_items(item[key], key) if type(item[key]) is list  else item[key]       
+                item_string = item_string.replace("###{0}###".format(key), str(value))
+            generated_content += item_string
+    page["suggestions"] = generated_content
 
 def generate_content_page_from_template(category):
     item_string_template = read_file(join("templates","{0}-item.html".format(category[:-1])))
