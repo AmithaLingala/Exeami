@@ -5,7 +5,7 @@
         "subtitle": "Welcome to exeami!",
         "keywords": "exeami, privacy blog, html, css, javascript, java, web development",
         "description": "Personal website of Amitha Lingala and blogs about data privacy",
-        "template": "index"
+        "is_hidden": true
     },
     {
         "url": "/about",
@@ -20,8 +20,7 @@
         "subtitle": "Find my latest writings here!",
         "keywords": "data privacy, data security",
         "description": "Personal website of Amitha Lingala and blogs about data privacy",
-        "sub_page_path": "blogs",
-        "sub_page_template": "blog-page"
+        "sub_page_path": "blogs"
     },
     {
         "url": "/projects",
@@ -29,15 +28,15 @@
         "subtitle": "Some of my projects that may interest you.",
         "keywords": "projects, java, css, html, javascript, python",
         "description": "Personal website of Amitha Lingala and blogs about data privacy",
-        "sub_page_path": "projects",
-        "sub_page_template": "project-page"
+        "sub_page_path": "projects"
     },
     {
         "url": "/channel",
         "title": "Channel",
         "subtitle": "These are the things which I saw in the internet and want to share.",
         "keywords": "tech, data privacy, stress, money",
-        "description": "Collection of thoughts, news, comics, anything I find interesting on internet"
+        "description": "Collection of thoughts, news, comics, anything I find interesting on internet",
+        "sub_page_path": "channel"
     },
     {
         "url": "/contact",

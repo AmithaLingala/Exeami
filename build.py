@@ -77,7 +77,6 @@ def render_template(template, data):
         value = get_list_items(data[key], key) if type(data[key]) is list  else data[key]       
         replace_text(template, "###{0}###".format(key), str(value))
 
-
 def generate_page(page, template, category="main"):
     page_template_file = join("templates", "{0}.html".format(template))
     page_name = get_filename_from_page(page)

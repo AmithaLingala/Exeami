@@ -1,22 +1,46 @@
 <!doctype html>
 <html lang="en">
-###header###
+{{> header page=page}}
 
 <body>
-  ###navbar###
+  {{> nav routes=page.routes}}
   <main>
     <article class="card">
       <header class="card-header">
-        <h1>###title###</h1>
-        <h2 class="subtitle">###subtitle###</h2>
+        <h1>{{page.title}}</h1>
+        <h2 class="subtitle">{{page.subtitle}}</h2>
+
+        {{#if page.last_modified}}
+          <h3 class="subtitle">Created on {{page.last_modified}} by Amitha Lingala</h3>
+        {{/if}}
+
+        {{#if page.source_link}}
+          <h3 class="subtitle">Source Code: <a href="{{page.source_link}}" target="_blank">{{page.source_link}}</a></h3>
+        {{/if}}
+
+        {{#if page.tags}}
+          {{> tags tags=page.tags}}
+        {{/if}}
       </header>
       <div class="card-body">
-        ###content###
+        {{#if page.content}}
+          {{> (lookup page 'content')}}
+        {{/if}}
+
+        {{#if page.content-item}}
+          {{> (lookup page 'content-item') data=page.content-data}}
+        {{/if}}
       </div>
+      {{#if page.suggestions}}
+        <div>
+          <h1 style="text-align: center;">Recent Blogs</h1>
+          {{> blog-item data=page.suggestions}}
+        </div>
+      {{/if}}
     </article>
-    ###theme-switcher###
+    {{> theme-switcher}}
   </main>
-  ###footer###
+   {{> footer}}
 </body>
 
 </html>
