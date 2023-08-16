@@ -1,18 +1,8 @@
-{{#each data}}
+{{#each (lookup page 'content-data')}}
 <div class="media-box column">
-  {{> tags tags=this.tags}}
-
-  {{#if this.image}}
-    <figure class="media-figure">
-      <img class="channel-item" src="/images/channel/{{this.image}}" alt="{{this.image}}">
-    </figure>
-  {{/if}}
-  {{#if this.content}}  
-    {{this.content}}
-  {{/if}}
-  <div class="media-content">
-    <p>Thank you <strong>{{this.author}}</strong></p>
-    <a href="{{this.source_link}}" target="_blank">Source</a>
+  {{> (get_content_page this) page=this}}
+  <div class="share-box">
+    <button class="share-button" onclick="copyPath(this, '/channel/{{this.url}}')">Copy share link</button>
   </div>
 </div>
 {{/each}}

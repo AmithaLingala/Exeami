@@ -340,7 +340,44 @@ a.media-box:hover {
   white-space: nowrap;
   margin-right: 0.75em;
 }
+.share-box {
+  padding: 1em;
+  align-self: end;
+}
 
+.share-button {
+  background-color: var(--header-bg);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: var(--font-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 150px;
+}
+
+/* .share-button:hover,
+.share-button:focus {
+  background-color: var(--box-bg);
+} */
 /* ************************************************************************************************************* */
 /* ************************************** Styles for smaller screens ******************************************* */
 /* ************************************************************************************************************* */

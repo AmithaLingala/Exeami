@@ -1,37 +1,42 @@
 [
   {
-    "url": "7c684365-924d-4cb7-a749-24c2c2714659",
-    "author": "Coding Otaku",
-    "source_link": "https://codingotaku.com/blogs/migrating-to-floss",
-    "tags": ["article"],
-    "content": "migrating-to-floss"
-  },
-  {
-    "url": "98ad96a5-b0b7-4a34-8aae-ee8ef891f9df",
+    "url": "low-carb-diet",
+    "title": "",
+    "subtitle": "",
+    "keywords": "",
+    "description": "",
     "author": "Idan Schneider",
-    "source_link": "https://www.csectioncomics.com/comics/low-carb-diet",
-    "image": "low-carb-diet.jpg",
-    "tags": ["comic"]
+    "link": "https://www.csectioncomics.com/comics/low-carb-diet",
+    "image": "low-carb-diet.jpg"
   },
   {
-    "url": "88462133-eaa4-4b3a-91f1-d7ed49042bf0",
+    "url": "printer",
+    "title": "",
+    "subtitle": "",
+    "keywords": "",
+    "description": "",
     "author": "Andrew",
-    "source_link": "https://www.webtoons.com/en/canvas/system32comics/printers/viewer?title_no=235074&episode_no=42",
-    "image": "printer.jpg",
-    "tags": ["comic"]
+    "link": "https://www.webtoons.com/en/canvas/system32comics/printers/viewer?title_no=235074&episode_no=42",
+    "image": "printer.jpg"
   },
   {
-    "url": "c6228937-1bbf-4944-8e57-4b77da67e569",
+    "url": "money",
+    "title": "",
+    "subtitle": "",
+    "keywords": "",
+    "description": "",
     "author": "Jeff Lofvers",
-    "source_link": "https://donthitsave.com/comic/2015/11/06/software-innovation",
-    "image": "money.jpeg",
-    "tags": ["comic"]
+    "link": "https://donthitsave.com/comic/2015/11/06/software-innovation",
+    "image": "money.jpeg"
   },
   {
-    "url": "ae233905-c2ab-4b5d-832a-a0fbb2ab8d37",
+    "url": "spying-device",
+    "title": "",
+    "subtitle": "",
+    "keywords": "",
+    "description": "",
     "author": "Zach Weinersmith",
-    "source_link": "https://www.smbc-comics.com/comic/listening",
-    "image": "spyingdevice.jpeg",
-    "tags": ["comic"]
+    "link": "https://www.smbc-comics.com/comic/listening",
+    "image": "spyingdevice.jpeg"
   }
 ]

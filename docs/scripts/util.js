@@ -65,6 +65,17 @@ function isDisplayed(element) {
   return window.getComputedStyle(element).display !== 'none'
 }
 
+function copyPath(target, path) {
+  const value = target.textContent
+  target.textContent = 'Copied link!'
+
+  setTimeout(() => {
+    target.textContent = value
+  }, 1000)
+  url = `${window.location.host}${path}`
+  navigator.clipboard.writeText(url)
+}
+
 function getAllThemes() {
   const themes = []
   const themeBox = document.querySelector('.theme-box')

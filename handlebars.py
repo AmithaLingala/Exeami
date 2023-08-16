@@ -16,6 +16,12 @@ compiler = Compiler()
 output_dir = "docs"
 default_template = "page"
 
+def get_content_page(this, option):
+    return "channel/{0}".format(option["url"])
+
+helpers={
+    'get_content_page': get_content_page
+}
 
 def render_template(template, data, partial):
     template = compiler.compile(utils.read_file(template))
@@ -25,7 +31,7 @@ def render_template(template, data, partial):
     else:
         template_partials = partials
 
-    return template({"page": data}, partials=template_partials)
+    return template({"page": data}, helpers=helpers, partials=template_partials)
 
 
 def generate_blog_suggestions(route):
@@ -49,7 +55,7 @@ def create_output_path(route, category, page_file_name):
     if page_file_name == "index":
         output_path = utils.get_output_path("index.html")
     else:
-        os.makedirs(utils.get_output_path(page_file_path))
+        os.makedirs(utils.get_output_path(page_file_path), exist_ok=True)
         output_path = utils.get_output_path(join(page_file_path, "index.html"))
 
     copyfile(page_template_file, output_path)
@@ -71,7 +77,6 @@ def generate_page(route, category="main"):
 def generate_website():
     for route in utils.get_json_data("routes"):
         route['routes'] = utils.get_json_data("routes")
-
         generate_page(route)
         if "sub_page_path" in route:
             generate_sub_pages(route)
