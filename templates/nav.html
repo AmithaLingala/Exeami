@@ -11,6 +11,10 @@
     <span class='menu-button'></span>
   </label>
   <div class="navbar-menu" id="navbar">
-    ###navbar_items###
+    {{#each routes}}
+      {{#unless this.is_hidden}}
+        <a href="{{this.url}}" class="navbar-item">{{this.title}}</a>
+      {{/unless}}
+    {{/each}}
   </div>
 </nav>
