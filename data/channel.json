@@ -1,22 +1,32 @@
 [
   {
+    "author": "Coding Otaku",
+    "source-link": "https://codingotaku.com/blogs/migrating-to-floss",
+    "category": "article",
+    "content": "migrating-to-floss"
+  },
+  {
     "author": "Idan Schneider",
     "source-link": "https://www.csectioncomics.com/comics/low-carb-diet",
-    "image": "low-carb-diet.jpg"
+    "image": "low-carb-diet.jpg",
+    "category": "comic"
   },
   {
     "author": "Andrew",
     "source-link": "https://www.webtoons.com/en/canvas/system32comics/printers/viewer?title_no=235074&episode_no=42",
-    "image": "printer.jpg"
+    "image": "printer.jpg",
+    "category": "comic"
   },
   {
     "author": "Jeff Lofvers",
     "source-link": "https://donthitsave.com/comic/2015/11/06/software-innovation",
-    "image": "money.jpeg"
+    "image": "money.jpeg",
+    "category": "comic"
   },
   {
     "author": "Zach Weinersmith",
     "source-link": "https://www.smbc-comics.com/comic/listening",
-    "image": "spyingdevice.jpeg"
+    "image": "spyingdevice.jpeg",
+    "category": "comic"
   }
 ]

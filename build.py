@@ -114,7 +114,7 @@ def generate_content(page, category):
     page_name = get_filename_from_page(page)
     if(category == "blogs" or page_name == "index"):
         generate_blog_suggestions(page)
-    if(page_name == "blogs" or page_name == "projects" or page_name == "comics"):
+    if(page_name == "blogs" or page_name == "projects" or page_name == "channel"):
         return generate_content_page_from_template(page_name)
     
     page_path = get_page_path(get_filename_from_page(page), category)

@@ -33,11 +33,11 @@
         "sub_page_template": "project-page"
     },
     {
-        "url": "/comics",
-        "title": "Comics",
-        "subtitle": "These are the comics which I saw in the internet and want to share, not created by me.",
-        "keywords": "tech comics, data privacy, stress, money",
-        "description": "Collection of comics"
+        "url": "/channel",
+        "title": "Channel",
+        "subtitle": "These are the things which I saw in the internet and want to share.",
+        "keywords": "tech, data privacy, stress, money",
+        "description": "Collection of thoughts, news, comics, anything I find interesting on internet"
     },
     {
         "url": "/contact",
