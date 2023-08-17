@@ -8,7 +8,7 @@
     "tags": [
       "privacy"
     ],
-    "image": "/data-privacy/data-privacy.jpg",
+    "image": "/data-privacy/data-privacy.webp",
     "last_modified": "21st July 2020"
   },
   {
@@ -20,7 +20,7 @@
     "tags": [
       "privacy"
     ],
-    "image": "/homomorphic-encryption/encryption.jpg",
+    "image": "/homomorphic-encryption/encryption.webp",
     "last_modified": "20th April 2020"
   },
   {
@@ -32,7 +32,7 @@
     "tags": [
       "privacy"
     ],
-    "image": "/why-should-i-switch-to-signal/signal.jpg",
+    "image": "/why-should-i-switch-to-signal/signal.webp",
     "last_modified": "28th Feb 2020"
   }
 ]

@@ -17,13 +17,13 @@ function switchLogo(themeName) {
   let logo = document.getElementById('logo')
   let profilePhoto = document.getElementById('profile-photo')
   if (themeName === 'white-theme') {
-    logo.setAttribute('src', '/images/logos/exeami.png')
+    logo.setAttribute('src', '/images/logos/exeami.webp')
     if (profilePhoto !== null)
-      profilePhoto.setAttribute('src', '/images/logos/exeami.png')
+      profilePhoto.setAttribute('src', '/images/logos/exeami.webp')
   } else {
-    logo.setAttribute('src', '/images/logos/exeami-light.png')
+    logo.setAttribute('src', '/images/logos/exeami-light.webp')
     if (profilePhoto !== null)
-      profilePhoto.setAttribute('src', '/images/logos/exeami-light.png')
+      profilePhoto.setAttribute('src', '/images/logos/exeami-light.webp')
   }
 }
 
