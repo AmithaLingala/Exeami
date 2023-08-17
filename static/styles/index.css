@@ -373,11 +373,12 @@ a.media-box:hover {
   touch-action: manipulation;
   width: 150px;
 }
-
-/* .share-button:hover,
-.share-button:focus {
+.share-button:active {
   background-color: var(--box-bg);
-} */
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 /* ************************************************************************************************************* */
 /* ************************************** Styles for smaller screens ******************************************* */
 /* ************************************************************************************************************* */
