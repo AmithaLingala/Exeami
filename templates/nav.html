@@ -1,7 +1,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <img class="logo" src="/images/logos/exeami-light.png" id="logo" alt="exeami-logo">
+      <img class="logo" src="/images/logos/exeami-light.webp" id="logo" alt="exeami-logo">
     </a>
   </div>
   <button class="theme-switcher-button"></button>
@@ -12,9 +12,9 @@
   </label>
   <div class="navbar-menu" id="navbar">
     {{#each routes}}
-      {{#unless this.is_hidden}}
-        <a href="{{this.url}}" class="navbar-item">{{this.title}}</a>
-      {{/unless}}
+    {{#unless this.is_hidden}}
+    <a href="{{this.url}}" class="navbar-item">{{this.title}}</a>
+    {{/unless}}
     {{/each}}
   </div>
 </nav>
