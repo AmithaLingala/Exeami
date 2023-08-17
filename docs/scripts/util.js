@@ -67,10 +67,10 @@ function isDisplayed(element) {
 
 function copyPath(target, path) {
   const value = target.textContent
-  target.textContent = 'Copied link!'
+  target.textContent = target.getAttribute('data-copy-value')
 
   setTimeout(() => {
-    target.textContent = value
+    target.textContent = target.getAttribute('data-original-value')
   }, 1000)
   url = `${window.location.host}${path}`
   navigator.clipboard.writeText(url)
