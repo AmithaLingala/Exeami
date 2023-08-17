@@ -7,7 +7,8 @@
     "description": "",
     "author": "Idan Schneider",
     "link": "https://www.csectioncomics.com/comics/low-carb-diet",
-    "image": "low-carb-diet.webp"
+    "image": "low-carb-diet.webp",
+    "created_on": "10 Aug 2023"
   },
   {
     "url": "printer",
@@ -17,7 +18,8 @@
     "description": "",
     "author": "Andrew",
     "link": "https://www.webtoons.com/en/canvas/system32comics/printers/viewer?title_no=235074&episode_no=42",
-    "image": "printer.webp"
+    "image": "printer.webp",
+    "created_on": "10 Aug 2023"
   },
   {
     "url": "money",
@@ -27,7 +29,8 @@
     "description": "",
     "author": "Jeff Lofvers",
     "link": "https://donthitsave.com/comic/2015/11/06/software-innovation",
-    "image": "money.webp"
+    "image": "money.webp",
+    "created_on": "22 July 2020"
   },
   {
     "url": "spying-device",
@@ -37,6 +40,7 @@
     "description": "",
     "author": "Zach Weinersmith",
     "link": "https://www.smbc-comics.com/comic/listening",
-    "image": "spyingdevice.webp"
+    "image": "spyingdevice.webp",
+    "created_on": "22 July 2020"
   }
 ]

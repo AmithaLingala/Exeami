@@ -1,10 +1,14 @@
 {{#each (lookup page 'content-data')}}
 <div class="media-box column">
   {{> (get_content_page this) page=this}}
+
   <div class="share-box">
+    {{this.created_on}}
     <button class="share-button" data-original-value="Copy share link" data-copy-value="Copied!"
       onclick="copyPath(this, '/channel/{{this.url}}')">Copy
       share link</button>
   </div>
+</div>
+
 </div>
 {{/each}}
