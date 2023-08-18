@@ -33,9 +33,9 @@
     {
         "url": "/channel",
         "title": "Channel",
-        "subtitle": "These are the things which I saw in the internet and want to share.",
+        "subtitle": "Collection of things which I want to share and, anything I find interesting on internet.",
         "keywords": "tech, data privacy, stress, money",
-        "description": "Collection of thoughts, news, comics, anything I find interesting on internet",
+        "description": "Collection of thoughts, news, comics, anything I find interesting on internet.",
         "sub_page_path": "channel"
     },
     {
