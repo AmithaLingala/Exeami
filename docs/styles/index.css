@@ -268,11 +268,11 @@ article.card {
   min-width: 100%;
   min-height: 100%;
 }
-.is-200x200 {
-  width: 200px;
-  height: 200px;
-  min-width: 200px;
-  min-height: 200px;
+.is-180x180 {
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  min-height: 180px;
 }
 
 .channel-item {
@@ -325,7 +325,8 @@ a.media-box:hover {
 .media-content {
   flex-basis: auto;
   text-align: inherit;
-  padding-left: 1em;
+  padding: 1em;
+  background-color: var(--content-bg);
 }
 .hidden-label {
   position: absolute;
