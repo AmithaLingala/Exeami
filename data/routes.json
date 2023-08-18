@@ -31,12 +31,12 @@
         "sub_page_path": "projects"
     },
     {
-        "url": "/channel",
-        "title": "Channel",
+        "url": "/posts",
+        "title": "Posts",
         "subtitle": "Collection of things which I want to share and, anything I find interesting on internet.",
         "keywords": "tech, data privacy, stress, money",
         "description": "Collection of thoughts, news, comics, anything I find interesting on internet.",
-        "sub_page_path": "channel"
+        "sub_page_path": "posts"
     },
     {
         "url": "/contact",

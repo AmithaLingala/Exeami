@@ -22,12 +22,12 @@ partials = {
     'blog-item': blog_item
 }
 
-for item in utils.get_json_data('channel'):
-    partialName = "channel/{0}".format(item["url"])
-    template =utils.read_file(join("content","channel","{0}.html".format(item["url"])))
+for item in utils.get_json_data('posts'):
+    partialName = "posts/{0}".format(item["url"])
+    template =utils.read_file(join("content","posts","{0}.html".format(item["url"])))
     partials[partialName] = compiler.compile(template)
 
-special_pages = ["blogs", "projects", "channel"]
+special_pages = ["blogs", "projects", "posts"]
 
 
 def get_partial_for_special_page(page_name, route):
