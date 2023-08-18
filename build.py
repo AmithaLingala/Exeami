@@ -17,7 +17,7 @@ output_dir = "docs"
 default_template = "page"
 
 def get_content_page(this, option):
-    return "channel/{0}".format(option["url"])
+    return "posts/{0}".format(option["url"])
 
 helpers={
     'get_content_page': get_content_page
