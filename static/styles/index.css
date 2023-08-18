@@ -39,9 +39,9 @@
 
 .white-theme {
   --primary-bg: rgb(255, 255, 245);
-  --header-bg: rgb(222, 222, 208);
+  --header-bg: rgb(238, 238, 229);
   --content-bg: rgb(255, 255, 245);
-  --box-bg: rgb(238, 238, 229);
+  --box-bg: rgb(238, 238, 229, 0.5);
   --font-color: rgb(33, 33, 33);
   --link: rgb(4, 41, 102);
   --link-hov: rgb(2, 20, 50);
@@ -90,7 +90,6 @@ body {
   font-family: 'BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif';
   height: 100%;
   background-color: var(--primary-bg);
-  /* background-image: var(--primary-grd); */
 }
 
 body {
@@ -134,7 +133,6 @@ li {
   flex-direction: row;
   justify-content: center;
   background-color: var(--primary-bg);
-  /* background-image: var(--header-grd); */
   padding-top: 1em;
 }
 
@@ -188,7 +186,6 @@ li {
 
 .card {
   background-color: var(--box-bg);
-  /* background-image: var(--primary-grd); */
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -206,7 +203,6 @@ article.card {
   padding: 2em;
   border-radius: 10px 10px 0 0;
   background-color: var(--header-bg);
-  /* background-image: var(--primary-grd); */
 }
 
 .card-body {
@@ -217,7 +213,7 @@ article.card {
   padding: 1em;
   box-shadow: var(--card-item-shadow);
   background-color: var(--content-bg);
-  /* background-image: var(--header-grd); */
+  border-radius: 8px;
 }
 
 .banner {
