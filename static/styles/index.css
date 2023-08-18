@@ -38,10 +38,10 @@
 }
 
 .white-theme {
-  --primary-bg: rgb(252, 252, 252);
-  --box-bg: rgb(242, 242, 242);
-  --content-bg: rgb(252, 252, 252);
-  --header-bg: rgb(232, 232, 232);
+  --primary-bg: rgb(255, 255, 245);
+  --header-bg: rgb(222, 222, 208);
+  --content-bg: rgb(255, 255, 245);
+  --box-bg: rgb(238, 238, 229);
   --font-color: rgb(33, 33, 33);
   --link: rgb(4, 41, 102);
   --link-hov: rgb(2, 20, 50);
@@ -268,9 +268,16 @@ article.card {
   min-width: 100%;
   min-height: 100%;
 }
+.is-200x200 {
+  width: 200px;
+  height: 200px;
+  min-width: 200px;
+  min-height: 200px;
+}
 
 .channel-item {
   width: 100%;
+  height: auto;
 }
 
 .column {
@@ -379,6 +386,10 @@ a.media-box:hover {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+.is-row {
+  display: flex;
+  flex-direction: row;
+}
 
 /* ************************************************************************************************************* */
 /* ************************************** Styles for smaller screens ******************************************* */
@@ -436,6 +447,10 @@ a.media-box:hover {
 
   .is-1-by-2 {
     width: 100%;
+  }
+
+  .is-row {
+    flex-direction: column;
   }
 
   .image {
