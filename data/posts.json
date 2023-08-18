@@ -1,57 +1,62 @@
 [
   {
     "url": "exeami-logo",
-    "title": "",
+    "title": "Story behind my logo",
     "subtitle": "",
     "keywords": "",
     "description": "",
     "author": "Amitha Lingala",
     "link": "",
     "image": "exeami.webp",
-    "created_on": "18 Aug 2023"
+    "last_modified": "2023-08-18",
+    "category": "📄 Note"
   },
   {
     "url": "low-carb-diet",
-    "title": "",
+    "title": "Comic by Idan Schneider",
     "subtitle": "",
     "keywords": "",
     "description": "",
     "author": "Idan Schneider",
     "link": "https://www.csectioncomics.com/comics/low-carb-diet",
     "image": "low-carb-diet.webp",
-    "created_on": "10 Aug 2023"
+    "last_modified": "2023-08-10",
+    "category": "🔁 Re-Post"
   },
   {
     "url": "printer",
-    "title": "",
+    "title": "Comic by Andrew",
     "subtitle": "",
     "keywords": "",
     "description": "",
     "author": "Andrew",
     "link": "https://www.webtoons.com/en/canvas/system32comics/printers/viewer?title_no=235074&episode_no=42",
     "image": "printer.webp",
-    "created_on": "10 Aug 2023"
+    "last_modified": "2023-08-10",
+    "category": "🔁 Re-Post"
   },
   {
     "url": "money",
-    "title": "",
+    "title": "Comic by Jeff Lofvers",
     "subtitle": "",
     "keywords": "",
     "description": "",
     "author": "Jeff Lofvers",
     "link": "https://donthitsave.com/comic/2015/11/06/software-innovation",
     "image": "money.webp",
-    "created_on": "22 July 2020"
+    "last_modified": "2020-07-22",
+    "category": "🔁 Re-Post"
   },
   {
     "url": "spying-device",
-    "title": "",
+    "title": "Comic by Zach Weinersmith",
     "subtitle": "",
     "keywords": "",
     "description": "",
     "author": "Zach Weinersmith",
     "link": "https://www.smbc-comics.com/comic/listening",
     "image": "spyingdevice.webp",
-    "created_on": "22 July 2020"
+    "last_modified": "2020-07-22",
+    "category": "🔁 Re-Post"
   }
 ]

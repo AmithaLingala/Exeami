@@ -11,13 +11,19 @@
         <h2 class="subtitle">{{page.subtitle}}</h2>
 
         {{#if page.last_modified}}
-        <h3 class="subtitle">Created on {{page.last_modified}} by Amitha Lingala</h3>
+        <p>
+          <time class="subtitle dt-published" datetime="{{page.last_modified}}">Created on {{page.last_modified}}</time>
+        </p>
         {{/if}}
 
         {{#if page.source_link}}
         <h3 class="subtitle">Source: <a href="{{page.source_link}}" target="_blank">{{page.source_link}}</a></h3>
         {{/if}}
-
+        {{#if page.category}}
+        <span class="p-category is-padding-left-1 title">
+          {{page.category}}
+        </span>
+        {{/if}}
         {{#if page.tags}}
         {{> tags tags=page.tags}}
         {{/if}}

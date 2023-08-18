@@ -1,11 +1,13 @@
-{{#each (lookup page 'content-data')}}
+{{#each page.content-data}}
 <div class="media-box column">
+  <span class="is-padding-left-1 title">
+    {{this.category}}
+  </span>
   {{> (get_content_page this) page=this}}
   <div class="share-box">
-    {{this.created_on}}
-    <button class="share-button" data-original-value="Copy share link" data-copy-value="Copied!"
-      onclick="copyPath(this, '/posts/{{this.url}}')">Copy
-      share link</button>
+    {{this.last_modified}}
+    <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
+      onclick="copyPath(this, '/posts/{{this.url}}')">Copy post link</button>
   </div>
 </div>
 {{/each}}
