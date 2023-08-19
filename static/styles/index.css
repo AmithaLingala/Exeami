@@ -1,10 +1,10 @@
 :root {
-  --primary-bg: rgb(68, 60, 104);
-  --header-bg: rgb(24, 18, 43);
-  --box-bg: rgb(99, 89, 133);
-  --content-bg: rgb(68, 60, 104);
-  --font-color: rgb(235, 235, 235);
-  --link: #56c3ff;
+  --primary-bg: rgb(31, 32, 40);
+  --content-bg: rgb(31, 32, 40);
+  --header-bg: rgb(1, 22, 39);
+  --box-bg: rgb(46, 48, 57);
+  --font-color: rgb(200, 200, 200);
+  --link: #36a3ff;
   --link-hov: #56c3ff;
 
   --max-width: 1000px;
@@ -58,8 +58,13 @@
   margin: 2em;
 }
 
+.is-30x30 {
+  width: 30px;
+  height: 30px;
+}
+
 .white-theme-button {
-  background-color: rgb(200, 200, 200);
+  background-color: white;
   color: black;
 }
 
@@ -69,7 +74,7 @@
 }
 
 .purple-theme-button {
-  background-color: rgb(24, 18, 43);
+  background-color: rgb(130, 107, 203);
   color: white;
 }
 
@@ -241,6 +246,8 @@ article.card {
 .profile-picture {
   position: sticky;
   top: 285px;
+  width: auto;
+  height: auto;
 }
 
 .profile-photo {
@@ -263,6 +270,8 @@ article.card {
   /* width: 100%; */
   min-width: 100%;
   min-height: 100%;
+  width: auto;
+  height: auto;
 }
 .is-180x180 {
   width: 180px;
@@ -412,7 +421,8 @@ a.media-box:hover {
     padding-bottom: 2em;
   }
 
-  .theme-switcher-button {
+  .theme-switcher-button,
+  .theme-button {
     display: block;
     margin: 1.5em;
     width: 40px;
@@ -443,6 +453,8 @@ a.media-box:hover {
 
   .media-figure {
     margin: 0 auto;
+    height: auto;
+    width: auto;
   }
 
   .is-1-by-2 {

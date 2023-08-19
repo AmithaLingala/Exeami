@@ -18,7 +18,8 @@
 
   <link rel="preload" href="/styles/index.css" as="style">
   <link rel="stylesheet" href="/styles/index.css">
-
+  <script>document.documentElement.className =
+      localStorage.getItem('theme') || 'black-theme'</script>
   <link rel="preload" href="/scripts/util.js" as="script">
   <script src="/scripts/util.js"></script>
 </head>
@@ -27,10 +28,13 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <img class="logo" src="/images/logos/exeami-light.webp" id="logo" alt="exeami-logo">
+      <img class="logo" src="/images/logos/exeami-light.webp" width="196" height="196" id="logo"
+        alt="exeami logo, infinity in curley brackets">
     </a>
   </div>
-  <button class="theme-switcher-button"></button>
+  <button class="theme-switcher-button black-theme-button" data-theme="black-theme">
+    <img width=30 height=30 class=".is-30x30" src="/images/logos/theme.svg" alt="black theme switch">
+  </button>
   <input id="menu-toggle" type="checkbox" />
   <label class='menu-button-container' for="menu-toggle">
     <span class="hidden-label">Menu</span>
@@ -75,7 +79,8 @@
       one. I wanted my logo to be noticeable, even in favicon, and represent me.
     </p>
     <figure class="is-180x180">
-      <img class="posts-item" id="logo-old" src="/images/logos/logo-old.svg" width="612" height="612" />
+      <img class="posts-item" id="logo-old" src="/images/logos/logo-old.svg" width="612" height="612"
+        alt="Loin with letters exeami" />
     </figure>
   </div>
   <p>
@@ -84,7 +89,8 @@
   </p>
   <div class="is-row">
     <figure class="is-180x180">
-      <img class="posts-item" id="logo-new" src="/images/logos/exeami.webp" width="612" height="612" />
+      <img class="posts-item" id="logo-new" src="/images/logos/exeami.webp" width="612" height="612"
+        alt="infinity symbol in curley brackets" />
     </figure>
     <p>
       As you might already know, my name is Amitha which means boundless, limitless or infinite (which
@@ -99,12 +105,13 @@
       </div>
     </article>
     <div class="theme-box hide-in-mobile">
-  <button class="black-theme-button theme-button" data-theme="black-theme">🖤</button>
-  <button class="purple-theme-button theme-button" data-theme="purple-theme">💜</button>
-  <button class="white-theme-button theme-button" data-theme="white-theme">🤍</button>
+  <button class="black-theme-button theme-button" data-theme="black-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme.svg" alt="black theme switch"></button>
+  <button class="purple-theme-button theme-button" data-theme="purple-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme.svg" alt="purple theme switch"></button>
+  <button class="white-theme-button theme-button" data-theme="white-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme-light.svg" alt="white theme switch"></button>
 </div>
-
-
   </main>
   <footer class="footer">
   <p>
