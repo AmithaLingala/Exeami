@@ -57,11 +57,15 @@ function switchIcons(themeName) {
 }
 
 function selectTheme(themeName) {
-  const themeButton = document.querySelector(`.theme-box .${themeName}-button`)
   const themeSwitcher = document.querySelector('.theme-switcher-button')
+  const newThemeIcon = document.querySelector(`.theme-box .${themeName}-button`)
+    .children[0]
 
   themeSwitcher.classList.replace(`${getTheme()}-button`, `${themeName}-button`)
-  themeSwitcher.textContent = themeButton.textContent
+
+  const themeSwitcherIcon = themeSwitcher.children[0]
+  themeSwitcherIcon.src = newThemeIcon.src
+  themeSwitcherIcon.setAttribute('alt', newThemeIcon.getAttribute('alt'))
 
   document.documentElement.className = themeName
   switchLogo(themeName)

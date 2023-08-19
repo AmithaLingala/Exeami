@@ -58,8 +58,13 @@
   margin: 2em;
 }
 
+.is-30x30 {
+  width: 30px;
+  height: 30px;
+}
+
 .white-theme-button {
-  background-color: rgb(200, 200, 200);
+  background-color: white;
   color: black;
 }
 
@@ -69,7 +74,7 @@
 }
 
 .purple-theme-button {
-  background-color: rgb(24, 18, 43);
+  background-color: rgb(130, 107, 203);
   color: white;
 }
 
@@ -412,7 +417,8 @@ a.media-box:hover {
     padding-bottom: 2em;
   }
 
-  .theme-switcher-button {
+  .theme-switcher-button,
+  .theme-button {
     display: block;
     margin: 1.5em;
     width: 40px;
