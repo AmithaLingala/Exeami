@@ -35,7 +35,13 @@ def render_template(template, data, partial):
 
 
 def generate_blog_suggestions(route):
-    route["suggestions"] = utils.get_json_data("blogs")
+    page_file_name = utils.get_filename_from_page(route)
+   
+    blog_suggestions = []
+    for item in itertools.islice(utils.get_json_data("blogs"), 3):
+        if(item["url"] != page_file_name):
+            blog_suggestions.append(item)
+    route["suggestions"] = blog_suggestions
 
 
 def generate_sub_pages(route):
