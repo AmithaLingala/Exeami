@@ -2,7 +2,6 @@ let themes = []
 
 function swapThemeButtons() {
   const currentTheme = getTheme()
-  const themeSwitcher = document.querySelector('.theme-switcher-button')
   themes.forEach((theme) => {
     const themeButton = document.querySelector(`.theme-box .${theme}-button`)
     if (theme === currentTheme) {
@@ -61,7 +60,11 @@ function selectTheme(themeName) {
   const newThemeIcon = document.querySelector(`.theme-box .${themeName}-button`)
     .children[0]
 
-  themeSwitcher.classList.replace(`${getTheme()}-button`, `${themeName}-button`)
+  const currentTheme = themeSwitcher.classList
+  themeSwitcher.className = themeSwitcher.className.replace(
+    /[a-z]+-theme-button/,
+    `${themeName}-button`
+  )
 
   const themeSwitcherIcon = themeSwitcher.children[0]
   themeSwitcherIcon.src = newThemeIcon.src
@@ -106,8 +109,6 @@ window.onload = function () {
 
   const themeSwitcher = document.querySelector('.theme-switcher-button')
   const themeName = localStorage.getItem('theme') || themes[0]
-
-  themeSwitcher.classList.add(`${themeName}-button`)
   selectTheme(themeName)
 
   const themeButtons = document.querySelectorAll('.theme-button')
