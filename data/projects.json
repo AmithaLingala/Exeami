@@ -1,8 +1,36 @@
 [
   {
+    "url": "/exeami",
+    "title": "This website",
+    "subtitle": "My personal website containing my blogs, projects and things I do.",
+    "keywords": "html, css, python, personal portfolio, multi-theme, exeami",
+    "description": "Exeami personal website containing my blogs, projects and things I do.",
+    "source_link": "https://github.com/AmithaLingala/Exeami",
+    "tags": [
+      "html",
+      "css",
+      "python",
+      "javaScript",
+      "Handlebars"
+    ]
+  },
+  {
+    "url": "/cops-n-robber",
+    "title": "Cops and Robber",
+    "subtitle": "Turn-based 2d platform chasing game.",
+    "keywords": "java, game, libGDX, andriod games",
+    "description": "Turn-based 2d platform chasing game in java.",
+    "source_link": "https://github.com/AmithaLingala/cops-n-robbers",
+    "tags": [
+      "java",
+      "Game",
+      "LibGDX"
+    ]
+  },
+  {
     "url": "/exeami-desktop",
     "title": "Desktop",
-    "subtitle": "Website which gives a feel of Desktop",
+    "subtitle": "Website which gives a feel of Desktop.",
     "keywords": "html, css, javascript, desktop, exeami",
     "description": "Website which gives a feel of Desktop",
     "source_link": "https://github.com/AmithaLingala/amithalingala.github.io",
@@ -13,34 +41,9 @@
     ]
   },
   {
-    "url": "/cops-n-robber",
-    "title": "Cops and Robber",
-    "subtitle": "Turn-based 2d platform chasing game.",
-    "keywords": "java, game, libGDX, andriod games",
-    "description": "Turn-based 2d platform chasing game in java",
-    "source_link": "https://github.com/AmithaLingala/cops-n-robbers",
-    "tags": [
-      "java"
-    ]
-  },
-  {
-    "url": "/exeami",
-    "title": "This website",
-    "subtitle": "My personal website containing my blogs, projects and things I do",
-    "keywords": "html, css, python, personal portfolio, multi-theme, exeami",
-    "description": "Exeami personal website containing my blogs, projects and things I do",
-    "source_link": "https://github.com/AmithaLingala/Exeami",
-    "tags": [
-      "html",
-      "css",
-      "python",
-      "javaScript"
-    ]
-  },
-  {
     "url": "/golden-shoe",
     "title": "Golden Shoe",
-    "subtitle": "e-commerce website for imaginary shoe company",
+    "subtitle": "e-commerce website for imaginary shoe company.",
     "keywords": "html, css, python flask, javascript, e-commerce website",
     "description": "e-commerce website for imaginary shoe company",
     "source_link": "https://github.com/AmithaLingala/Golden-Shoe",

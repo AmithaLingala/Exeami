@@ -60,7 +60,6 @@ function selectTheme(themeName) {
   const newThemeIcon = document.querySelector(`.theme-box .${themeName}-button`)
     .children[0]
 
-  const currentTheme = themeSwitcher.classList
   themeSwitcher.className = themeSwitcher.className.replace(
     /[a-z]+-theme-button/,
     `${themeName}-button`
