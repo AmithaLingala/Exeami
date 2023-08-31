@@ -286,6 +286,13 @@ article.card {
   width: 200px;
   height: 200px;
 }
+.photo.logo {
+  background-color: unset;
+  border-radius: unset;
+  width: 168px;
+  height: 168px;
+  padding: unset;
+}
 
 .is-1-by-2 {
   width: 50%;
