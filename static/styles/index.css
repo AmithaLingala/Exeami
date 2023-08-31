@@ -37,6 +37,16 @@
   --link-hov: #56c3ff;
 }
 
+.yellow-theme {
+  --primary-bg: #ffb74d;
+  --header-bg: #f57c00;
+  --content-bg: #ffb74d;
+  --box-bg: #ffa726;
+  --font-color: rgb(33, 33, 33);
+  --link: rgb(4, 41, 102);
+  --link-hov: rgb(2, 20, 50);
+}
+
 .white-theme {
   --primary-bg: rgb(255, 255, 245);
   --header-bg: rgb(238, 238, 229);
@@ -242,6 +252,13 @@ article.card {
   background-color: var(--content-bg);
   text-align: center;
 }
+.h-card {
+  padding: 1em;
+  box-shadow: var(--card-item-shadow);
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+}
 
 .profile-picture {
   position: sticky;
@@ -258,6 +275,16 @@ article.card {
   left: 0.5em;
 }
 
+.u-photo {
+  padding: 1rem;
+  background-color: var(--content-bg);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.u-photo:hover {
+  background-color: var(--header-bg);
+}
 .is-1-by-2 {
   width: 50%;
   display: flex;
@@ -267,12 +294,12 @@ article.card {
 }
 
 .image {
-  /* width: 100%; */
+  width: 100%;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
   height: auto;
 }
+
 .is-180x180 {
   width: 180px;
   height: 180px;
@@ -445,6 +472,9 @@ a.media-box:hover {
     padding: 1em;
   }
 
+  .h-card {
+    flex-direction: column;
+  }
   .media-box {
     flex-direction: column;
     margin: 1em 0;
