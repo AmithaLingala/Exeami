@@ -1,18 +1,11 @@
 [
     {
         "url": "/",
-        "title": "Home",
-        "subtitle": "Welcome to exeami!",
+        "title": "Exeami",
+        "subtitle": "Welcome to my home!",
         "keywords": "exeami, privacy blog, html, css, javascript, java, web development",
         "description": "Personal website of Amitha Lingala and blogs about data privacy",
         "is_hidden": true
-    },
-    {
-        "url": "/about",
-        "title": "About",
-        "subtitle": "Who is Exeami?",
-        "keywords": "Amitha, exeami",
-        "description": "Personal website of Amitha Lingala and blogs about data privacy"
     },
     {
         "url": "/blogs",
