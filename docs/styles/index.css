@@ -181,7 +181,7 @@ li {
 }
 
 .footer {
-  padding: 4em;
+  padding: 1em;
   text-align: center;
   background-color: var(--primary-bg);
   box-shadow: var(--card-shadow);
