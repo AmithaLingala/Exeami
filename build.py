@@ -6,6 +6,7 @@ from shutil import copyfile, rmtree, copytree
 import os
 import copy
 from os.path import join
+from datetime import date
 
 from fileinput import FileInput
 from pybars import Compiler
@@ -23,7 +24,7 @@ helpers={
     'get_content_page': get_content_page
 }
 
-def render_template(template, data, partial):
+def render_template(template, data, partial=None):
     template = compiler.compile(utils.read_file(template))
 
     if partial is not None:
@@ -96,6 +97,25 @@ def generate_website():
         if "sub_page_path" in route:
             generate_sub_pages(route)
 
+def generate_sitemap():
+    data = []
+    for route in utils.get_json_data("routes"):
+        if(route["url"] == "/"):
+            data.append({"url":"", "last_modified":str(date.today()), "priority":"1.00"})
+        else:
+            data.append({"url":route["url"], "last_modified":str(date.today()), "priority":"0.80"})
+    for blog in utils.get_json_data("blogs"):
+            data.append({"url":"/blogs/"+blog["url"], "last_modified":blog["last_modified"], "priority":"0.60"})
+    for post in utils.get_json_data("posts"):
+            data.append({"url": "/posts/"+post["url"], "last_modified":post["last_modified"], "priority":"0.60"})
+    for project in utils.get_json_data("projects"):
+            data.append({"url": "/projects/"+project["url"], "last_modified":project["last_modified"], "priority":"0.60"})
+
+    template = join("templates", "sitemap.xml")
+    rendered_template = render_template(template, data)
+    output_path = utils.get_output_path("sitemap.xml")
+    
+    utils.write_file(output_path, rendered_template)
 
 def main():
     if os.path.isdir(output_dir):
@@ -103,6 +123,7 @@ def main():
 
     copytree('static', output_dir)
     generate_website()
+    generate_sitemap()
     full_output_path = join(os.getcwd(), output_dir)
     print("Generated website can be found in {0}".format(full_output_path))
 
