@@ -42,16 +42,17 @@
         <h1 style="text-align: center;">Recent Blogs</h1>
         {{> blog-item data=page.suggestions}}
       </div>
-      <div class="media-box column">
-        <span class="is-content-center">
-          <h3><a href="/blogs">See all blogs</a></h3>
-        </span>
+      <div class="box is-content-center">
+        <h3><a href="/blogs">See all blogs</a></h3>
       </div>
       {{/if}}
       {{#if page.posts}}
       <div>
         <h1 style="text-align: center;">Recent Posts</h1>
         {{> post-item data=page.posts}}
+      </div>
+      <div class="box is-content-center">
+        <h3><a href="/posts">See all posts</a></h3>
       </div>
       {{/if}}
     </article>
