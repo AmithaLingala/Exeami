@@ -193,8 +193,8 @@ li {
   box-shadow: var(--box-shadow);
   color: var(--font-color);
   padding: 0;
-  margin-left: 0.2em;
-  margin-right: 0.2em;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-bottom: 1em;
   margin-top: 0;
 }
@@ -542,7 +542,10 @@ a.media-box:hover {
   .icon-wrapper {
     align-self: center;
   }
-
+  .box {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+  }
   .navbar {
     justify-content: space-between;
     padding-top: 0;
