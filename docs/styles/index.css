@@ -266,6 +266,9 @@ article.card {
   justify-content: center;
   display: grid;
 }
+.is-text-center {
+  text-align: center;
+}
 .profile-picture {
   position: sticky;
   top: 285px;
