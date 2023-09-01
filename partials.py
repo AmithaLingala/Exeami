@@ -10,6 +10,8 @@ footer = compiler.compile(utils.read_file(join("templates", "footer.html")))
 nav = compiler.compile(utils.read_file(join("templates", "nav.html")))
 blog_item = compiler.compile(
     utils.read_file(join("templates", "blogs-content.html")))
+post_item = compiler.compile(
+    utils.read_file(join("templates", "posts-item.html")))
 theme_switcher = compiler.compile(
     utils.read_file(join("templates", "theme-switcher.html")))
 
@@ -19,7 +21,8 @@ partials = {
     'nav': nav,
     'footer': footer,
     'theme-switcher': theme_switcher,
-    'blog-item': blog_item
+    'blog-item': blog_item,
+    'post-item': post_item
 }
 
 for item in utils.get_json_data('posts'):

@@ -9,7 +9,7 @@
       "privacy"
     ],
     "image": "/data-privacy/data-privacy.webp",
-    "last_modified": "21st July 2020"
+    "last_modified": "2020-07-21"
   },
   {
     "url": "homomorphic-encryption",
@@ -21,7 +21,7 @@
       "privacy"
     ],
     "image": "/homomorphic-encryption/encryption.webp",
-    "last_modified": "20th April 2020"
+    "last_modified": "2020-04-20"
   },
   {
     "url": "why-should-i-switch-to-signal",
@@ -33,6 +33,6 @@
       "privacy"
     ],
     "image": "/why-should-i-switch-to-signal/signal.webp",
-    "last_modified": "28th Feb 2020"
+    "last_modified": "2020-02-28"
   }
 ]
