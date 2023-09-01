@@ -188,12 +188,15 @@ li {
 }
 
 .box {
-  background-color: var(--box-bg);
+  background-color: var(--content-bg);
   border-radius: 6px;
   box-shadow: var(--box-shadow);
   color: var(--font-color);
-  padding: 1.25rem;
-  margin: 1em;
+  padding: 0;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  margin-bottom: 1em;
+  margin-top: 0;
 }
 .content-box {
   padding: 1rem;
