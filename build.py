@@ -38,7 +38,7 @@ def generate_blog_suggestions(route):
     page_file_name = utils.get_filename_from_page(route)
    
     blog_suggestions = []
-    for item in itertools.islice(utils.get_json_data("blogs"), 3):
+    for item in itertools.islice(utils.get_json_data("blogs"), 2):
         if(item["url"] != page_file_name):
             blog_suggestions.append(item)
     route["suggestions"] = blog_suggestions
