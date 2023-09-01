@@ -43,6 +43,12 @@
         {{> blog-item data=page.suggestions}}
       </div>
       {{/if}}
+      {{#if page.posts}}
+      <div>
+        <h1 style="text-align: center;">Recent Posts</h1>
+        {{> post-item data=page.posts}}
+      </div>
+      {{/if}}
     </article>
     {{> theme-switcher}}
   </main>

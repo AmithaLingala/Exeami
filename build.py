@@ -43,6 +43,13 @@ def generate_blog_suggestions(route):
             blog_suggestions.append(item)
     route["suggestions"] = blog_suggestions
 
+def generate_posts_suggestions(route):
+    page_file_name = utils.get_filename_from_page(route)
+   
+    post_suggestions = []
+    for item in itertools.islice(utils.get_json_data("posts"), 2):
+        post_suggestions.append(item)
+    route["posts"] = post_suggestions
 
 def generate_sub_pages(route):
     sub_pages = utils.get_json_data(route["sub_page_path"])
@@ -74,6 +81,8 @@ def generate_page(route, category="main"):
 
     if (category == "blogs" or page_file_name == "index"):
         generate_blog_suggestions(route)
+    if (page_file_name == "index"):
+        generate_posts_suggestions(route)
 
     partial = get_content_partial(route, category)
     rendered_template = render_template(output_path, route, partial)
