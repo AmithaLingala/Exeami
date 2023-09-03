@@ -450,47 +450,14 @@ a.media-box:hover {
 /* ************************************************************************************************************* */
 /* ************************************** Styles for smaller screens ******************************************* */
 /* ************************************************************************************************************* */
-
-@media only screen and (max-width: 760px),
-  (min-width: 768px) and (max-width: 1024px) {
-  main {
-    flex-direction: column-reverse;
-    margin-top: 0;
+@media only screen and (max-width: 760px) {
+  .banner {
+    width: 100%;
   }
-
-  .hide-in-mobile {
-    display: none !important;
-  }
-
-  .theme-box {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 2em;
-  }
-
-  .theme-switcher-button,
-  .theme-button {
-    display: block;
-    margin: 1.5em;
-    width: 40px;
-    height: 40px;
-  }
-
-  .theme-button {
-    margin: 0px;
-  }
-
-  .card {
-    width: auto;
-  }
-
-  article.card {
-    margin-left: 0px;
-  }
-
   .card-body {
     padding: 0.2em;
   }
+
   .card-header {
     padding: 1em;
   }
@@ -528,12 +495,6 @@ a.media-box:hover {
     width: 100%;
   }
 
-  .banner {
-    width: 100%;
-  }
-  .msg-wrapper {
-    margin-top: 5em;
-  }
   .msg {
     padding: 0.5em;
   }
@@ -548,6 +509,59 @@ a.media-box:hover {
   .box {
     margin-left: 0.2em;
     margin-right: 0.2em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .msg-wrapper {
+    margin-top: 5em;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 760px) {
+  .msg-wrapper {
+    margin-top: 3.5em;
+  }
+  .banner {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .msg-wrapper {
+    margin-top: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 760px),
+  (min-width: 760px) and (max-width: 1024px) {
+  main {
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+  .hide-in-mobile {
+    display: none !important;
+  }
+
+  article.card {
+    margin-left: 0px;
+  }
+  .card {
+    width: auto;
+  }
+  .theme-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+  }
+
+  .theme-switcher-button,
+  .theme-button {
+    display: block;
+    margin: 1.5em;
+    width: 40px;
+    height: 40px;
+  }
+
+  .theme-button {
+    margin: 0px;
   }
   .navbar {
     justify-content: space-between;
