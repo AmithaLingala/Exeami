@@ -3,7 +3,10 @@
   <span class="is-padding-left-1 title">
     {{this.category}}
   </span>
-  {{> (get_content_page this) page=this}}
+  <div class="media-content">
+    <h3>{{this.title}}</h3>
+    {{> (get_content_page this) page=this}}
+  </div>
   <div class="share-box">
     {{this.last_modified}}
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"

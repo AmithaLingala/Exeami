@@ -1,12 +1,25 @@
 [
   {
+    "url": "getting-to-know-indie-web",
+    "title": "Getting to know IndieWeb",
+    "subtitle": "What is IndieWeb and why do you need to know about it?",
+    "keywords": "IndieWeb, data ownership, webmentions, filter bubble, personal website,",
+    "description": "Introduction to indieweb and reasons why we need it",
+    "tags": [
+      "Ownership",
+      "IndieWeb"
+    ],
+    "image": "/getting-to-know-indie-web/globe-in-hand.webp",
+    "last_modified": "2023-09-07"
+  },
+  {
     "url": "data-privacy",
     "title": "Why should I care about data privacy?",
     "subtitle": "Six reasons why.",
     "keywords": "data privacy, filter bubble, Identity theft, personal assistants",
     "description": "Few reasons why we should care about data privacy",
     "tags": [
-      "privacy"
+      "Data Privacy"
     ],
     "image": "/data-privacy/data-privacy.webp",
     "last_modified": "2020-07-21"
@@ -18,7 +31,8 @@
     "keywords": "Homomorphic Encryption, encryption, HELib, Microsoft SEAL, PALISADE, security",
     "description": "Blog about Homomorphic Encryption ",
     "tags": [
-      "privacy"
+      "Encryption",
+      "Security"
     ],
     "image": "/homomorphic-encryption/encryption.webp",
     "last_modified": "2020-04-20"
@@ -30,7 +44,8 @@
     "keywords": "signal, whatsapp, messenger, security, signal prtocol, privacy",
     "description": "Blog about Signl messaging app and it's features",
     "tags": [
-      "privacy"
+      "Data Privacy",
+      "Signal"
     ],
     "image": "/why-should-i-switch-to-signal/signal.webp",
     "last_modified": "2020-02-28"

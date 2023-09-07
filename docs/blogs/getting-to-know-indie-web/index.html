@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+    content="base-uri 'none'; form-action 'none'; img-src 'self'; object-src 'none';">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="yandex-verification" content="8f16bbfd12051695">
+
+  <meta name="author" content="Amitha Lingala">
+  <meta name="description" content="Introduction to indieweb and reasons why we need it">
+  <meta name="keywords" content="IndieWeb, data ownership, webmentions, filter bubble, personal website,">
+  <title>Getting to know IndieWeb</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link rel="icon shortcut" type="image/png" href="/images/logos/exeami-light.webp">
+
+  <link rel="preload" href="/styles/index.css" as="style">
+  <link rel="stylesheet" href="/styles/index.css">
+  <script>document.documentElement.className =
+      localStorage.getItem('theme') || 'black-theme'</script>
+  <link rel="preload" href="/scripts/util.js" as="script">
+  <script src="/scripts/util.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img class="logo" src="/images/logos/exeami-light.webp" width="196" height="196" id="logo"
+        alt="exeami logo, infinity in curley brackets">
+    </a>
+  </div>
+  <button class="theme-switcher-button black-theme-button" data-theme="black-theme">
+    <img width=30 height=30 class=".is-30x30" src="/images/logos/theme.svg" alt="black theme switch">
+  </button>
+  <input id="menu-toggle" type="checkbox" />
+  <label class='menu-button-container' for="menu-toggle">
+    <span class="hidden-label">Menu</span>
+    <span class='menu-button'></span>
+  </label>
+  <div class="navbar-menu" id="navbar">
+    <a href="/blogs" class="navbar-item">Blogs</a>
+    <a href="/projects" class="navbar-item">Projects</a>
+    <a href="/posts" class="navbar-item">Posts</a>
+    <a href="/contact" class="navbar-item">Contact</a>
+  </div>
+</nav>
+  <main>
+    <article class="card">
+      <header class="card-header">
+        <h1>Getting to know IndieWeb</h1>
+        <h2 class="subtitle">What is IndieWeb and why do you need to know about it?</h2>
+
+        <p>
+          <time class="subtitle dt-published" datetime="2023-09-03">Created on 2023-09-03</time>
+        </p>
+
+        <div class="tags">
+    <span class="tag">Ownership</span>
+    <span class="tag">IndieWeb</span>
+</div>
+
+      </header>
+      <div class="card-body">
+        <div class="card-item">
+  <p>
+    Once I was reading about how Amazon gave a platform for many small businesses to sell products online and how it
+    helped them. You might even have heard that, but think about it, whenever we buy something from a small business on
+    Amazon, we often relate it as we bought it from Amazon and never really remember the seller or the creator. This
+    might seem trivial, but imagine if you were a seller of handmade crafts on Amazon and you had a loyal customer base
+    and a good reputation. What if
+    <a href="https://the-digital-reader.com/amazon-is-still-banning-authors-for-no-reason/">Amazon suddenly banned you
+      from selling on their platform</a>,
+    and you lost your source
+    of income and your hard work? Or what if you had to <a
+      href="https://www.buzzfeednews.com/article/leticiamiranda/amazon-sellers-say-the-tech-giant-is-crushing-them-with">lower
+      your prices to compete with other sellers?</a> Or <a
+      href="https://timesofindia.indiatimes.com/gadgets-news/amazon-imposes-new-fee-on-sellers-shipping-their-own-products/articleshow/102833427.cms">pay
+      a fee to
+      Amazon and limit your profit margin?</a>
+    Or what if you couldn't sell your products anywhere else for <a
+      href="https://finance.yahoo.com/news/amazon-keeps-prices-artificially-high-210059691.html">a lower price than on
+      Amazon</a>
+    , and you were stuck with their rules? Or
+    <a href="https://news.sky.com/story/amazon-sellers-fear-bankruptcy-after-rule-change-12936803">they suddenly change
+      terms and don't pay you?</a>
+    Amazon is one of many examples to show the control of big corporations have on us.
+  </p>
+
+  <p>
+    Every <a href="https://indieweb.org/silo">silo</a> site which is not yours, your data might feel like yours, but it
+    is not.
+  </p>
+
+  <blockquote cite="https://bradfrost.com/blog/post/write-on-your-own-website/" class="quote">
+    <p>
+      "Writing on your own website associates your thoughts and ideas with you as a person. Having a distinct website
+      design helps strengthen that association. Writing for another publication, you get a little circular avatar at the
+      beginning of the post and a brief bio at the end of the post, and that's about it. People will remember the
+      publication, but probably not your name."
+    </p>
+    <footer class="quote-footer">
+      <cite>
+        <a href="https://bradfrost.com/blog/post/write-on-your-own-website/">—Brad Frost on
+          Write on your own website
+        </a>
+      </cite>
+    </footer>
+  </blockquote>
+
+  <p>
+    When you know this, you want to change it and do something to change it. You also want your loved ones to be aware
+    of it and own their data. The good news is, you are not alone. It's wonderful to connect with people who share your
+    vision and work together for a better future. When I first got to know about IndieWeb It felt like a hope.
+  </p>
+  <h3>What is IndieWeb?</h3>
+  <p>
+    <strong>As Indie web is about ownership, Your content is yours, and You are in control.</strong>
+  </p>
+
+  <blockquote cite="https://indieweb.org/" class="quote">
+    <p>
+      "The IndieWeb is a community of independent & personal websites connected by simple
+      standards, based on the principles of: owning your domain & using it as your primary identity, publishing on your
+      ownsite (optionally syndicating elsewhere), and owning your data."
+    </p>
+    <footer class="quote-footer">
+      <cite>
+        <a href="https://indieweb.org/">— IndieWeb </a>
+      </cite>
+    </footer>
+  </blockquote>
+  <h3>Why do we need IndieWeb?</h3>
+  There are many reasons why It is good to have your space on the web where you own what is yours. I am just listing
+  down a few.
+  <ol>
+    <li>
+      If you do not want to part of social media where the more you spend time and contribute, <a
+        href="https://en.wikipedia.org/wiki/Targeted_advertising">the more they learn about you
+        and sell you</a> (sell your browsing habits to advertisers).
+    </li>
+    <li>
+      If you don't want Silos, control your experience of the web and decide <a
+        href="https://en.wikipedia.org/wiki/Filter_bubble">what you see</a> and <a
+        href="https://www.currentaffairs.org/2020/12/how-seo-is-gentrifying-the-internet">where your content goes.</a>
+    </li>
+    <li>
+      If you don't want to be part of evil where once you create a community, they keep it under paywall or
+      <a href="https://indieweb.org/login_wall">authwall</a> and
+      leave you
+      choose to <a
+        href="https://www.theverge.com/2023/6/20/23767848/reddit-blackout-api-protest-moderators-suspended-nsfw">obey
+        their rules or lose the community.</a>
+    </li>
+    <li>
+      If you <a href="https://www.thesun.ie/tech/11271562/instagram-users-lose-accounts-taylor-swift/">don't want to
+        need permission</a> to communicate, create and innovate with people around the globe with the
+      internet.
+    </li>
+    <li>
+      If you don't want to <a
+        href="https://www.howtogeek.com/403769/what-happens-to-your-digital-property-when-a-company-goes-out-of-business/">
+        lose all your data because the company gone out of business</a>
+    </li>
+    <li>
+      If you want to show that you are not consumed by the Silos.
+    </li>
+    <li>
+      If you want different monetization for your content in your way.
+    </li>
+  </ol>
+  <figure class="quote">
+    <img class="image" src="/images/blogs/getting-to-know-indie-web/xkcd.webp">
+    <figcaption class="quote-footer">
+      <cite>
+        <a href="https://xkcd.com/1150/">—xkcd - 1150</a>
+      </cite>
+    </figcaption>
+  </figure>
+
+  <h3>It's not just ownership</h3>
+  <dl>
+    <dt><strong>Identity</strong></dt>
+    <dd>Having a personal domain, which is the initial step of Indie web. It helps you to have more credibility,
+      improves personal branding and makes it easy to find you.</dd>
+  </dl>
+  <dl>
+    <dt><strong>Syndication</strong></dt>
+    <dd>If you want to let your friends read your posts, their way using social media like Instagram, Tumblr, Twitter
+      etc. You can post content on your site and publish links to 3rd party silos using POSSE (Publish (on your) Own
+      Site, Syndicate Elsewhere) And can back feed the post activity back to your website. Now we can have all in one
+      place, IndieWeb comments, and comments on your POSSE copies.</dd>
+  </dl>
+  <dl>
+    <dt><strong>Web Mentions</strong></dt>
+    <dd>Web Mentions is a simple communication protocol between websites that enables cross-site conversations and
+      website can display comments, likes, or other response. With Web mentions you are better connected, you decide
+      what and how to display the interaction on the content you own.
+    </dd>
+  </dl>
+  <dl>
+    <dt><strong>IndieAuth</strong></dt>
+    <dd>IndieAuth provides the ability to use your website (domain) to authenticate yourself on the web using a
+      federated login protocol for Web sign-in.
+    </dd>
+  </dl>
+  <dl>
+    <dt><strong>MicroFormats</strong></dt>
+    <dd> Add Microformats to your existing HTML to use structured data from your site to allow tools like feed readers.
+    </dd>
+  </dl>
+
+  <h3>Finally, It can be easy too…</h3>
+  <p>
+    I know many might think,
+  <ul>
+    <li>It is easy to create a silo account and post what they want with few steps.</li>
+    <li>I am not a celebrity or a company to own a domain.</li>
+    <li>I am not a web developer and I don't know how to do it.</li>
+  </ul>
+
+  There can many reasons and excuses we give ourselves to start. Even I am new to this, yet to understand a lot. Having
+  a sense of ownership gives pleasure and made me take my first step, you can find yours.
+  </p>
+  <p>
+    There are many tools, step-by-step guides and help available in the community to make it easy. Many smart people are
+    contributing to make it easier so that we can own what is ours.
+  </p>
+  <p>
+    Do it for yourself, have fun and pride creating something that is yours, and It will get easy.
+  </p>
+</div>
+
+      </div>
+      <div>
+        <h2 class="is-text-center">Recent Blogs</h2>
+        <a class="media-box" href="/blogs/data-privacy">
+  <figure class="media-figure is-1-by-2">
+    <img class="image" src="/images/blogs//data-privacy/data-privacy.webp" alt="/data-privacy/data-privacy.webp" width="400" height="200">
+  </figure>
+  <div class="media-content">
+    <h2 class="title">Why should I care about data privacy?</h2>
+    <h3 class="subtitle">Six reasons why.</h3>
+    <h3 class="subtitle">Created on 2020-07-21</h3>
+    <div class="tags">
+    <span class="tag">Data Privacy</span>
+</div>
+
+  </div>
+</a><a class="media-box" href="/blogs/homomorphic-encryption">
+  <figure class="media-figure is-1-by-2">
+    <img class="image" src="/images/blogs//homomorphic-encryption/encryption.webp" alt="/homomorphic-encryption/encryption.webp" width="400" height="200">
+  </figure>
+  <div class="media-content">
+    <h2 class="title">Homomorphic Encryption</h2>
+    <h3 class="subtitle">Trying figure out what it is.</h3>
+    <h3 class="subtitle">Created on 2020-04-20</h3>
+    <div class="tags">
+    <span class="tag">Encryption</span>
+    <span class="tag">Security</span>
+</div>
+
+  </div>
+</a>
+      </div>
+      <div class="box is-content-center">
+        <h3><a href="/blogs">See all blogs</a></h3>
+      </div>
+    </article>
+    <div class="theme-box hide-in-mobile">
+  <button class="black-theme-button theme-button" data-theme="black-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme.svg" alt="black theme switch"></button>
+  <button class="purple-theme-button theme-button" data-theme="purple-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme.svg" alt="purple theme switch"></button>
+  <button class="white-theme-button theme-button" data-theme="white-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme-light.svg" alt="white theme switch"></button>
+</div>
+  </main>
+  <footer class="footer">
+  <p>
+    <a rel="external" href="https://xn--sr8hvo.ws/previous"><span aria-hidden="true">←</span><span
+        class="visually-hidden">Previous IndieWeb Webring website</span></a>
+    <span aria-hidden="true">
+      💍🕸
+    </span>
+    <a rel="external" href="https://xn--sr8hvo.ws">IndieWeb Webring</a>
+    <span aria-hidden="true">
+      🕸💍
+    </span>
+    <a rel="external" href="https://xn--sr8hvo.ws/next"><span aria-hidden="true">→</span><span
+        class="visually-hidden">Next IndieWeb Webring website</span></a>
+  </p>
+  <p>
+    <strong>Exeami</strong> by
+    <a href="https://exeami.com">Amitha Lingala</a>. The source code is
+    licensed <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0 license</a>.
+    The website content is licensed
+    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+  </p>
+</footer>
+</body>
+
+</html>
