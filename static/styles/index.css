@@ -138,6 +138,19 @@ li {
   font-size: 16px;
 }
 
+.quote {
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  padding: 0.5em;
+  background-color: var(--box-bg);
+  font-style: italic;
+}
+
+.quote-footer {
+  justify-content: flex-end;
+  display: flex;
+}
+
 .logo {
   width: 40px;
   height: 40px;
@@ -306,6 +319,7 @@ article.card {
   overflow: hidden;
   align-items: center;
   justify-content: center;
+  min-width: 50%;
 }
 
 .image {
@@ -451,6 +465,10 @@ a.media-box:hover {
 /* ************************************** Styles for smaller screens ******************************************* */
 /* ************************************************************************************************************* */
 @media only screen and (max-width: 760px) {
+  .quote {
+    margin: 0.2em;
+  }
+
   .banner {
     width: 100%;
   }
