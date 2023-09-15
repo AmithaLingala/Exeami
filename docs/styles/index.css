@@ -137,6 +137,10 @@ li {
   line-height: 30px;
   font-size: 16px;
 }
+dt {
+  font-weight: bold;
+  font-size: 16px;
+}
 
 .quote {
   border-radius: 10px;

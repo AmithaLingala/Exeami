@@ -1,9 +1,22 @@
 [
   {
+    "url": "instagram-for-babies",
+    "title": "Instagram for babies",
+    "subtitle": "Please don't do it.",
+    "keywords": "Instagram, privacy, babies, data consent",
+    "description": "Reasons to avoid creating instagram for babies",
+    "tags": [
+      "Data Privacy",
+      "Social media"
+    ],
+    "image": "/instagram-for-babies/banner.png",
+    "last_modified": "2023-09-15"
+  },
+  {
     "url": "getting-to-know-indie-web",
     "title": "Getting to know IndieWeb",
     "subtitle": "What is IndieWeb and why do you need to know about it?",
-    "keywords": "IndieWeb, data ownership, webmentions, filter bubble, personal website,",
+    "keywords": "IndieWeb, data ownership, webmentions, filter bubble, personal website",
     "description": "Introduction to indieweb and reasons why we need it",
     "tags": [
       "Ownership",
