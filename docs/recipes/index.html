@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+    content="base-uri 'none'; form-action 'none'; img-src 'self'; object-src 'none';">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="yandex-verification" content="8f16bbfd12051695">
+
+  <meta name="author" content="Amitha Lingala">
+  <meta name="description" content="Personal website of Amitha Lingala and blogs about data privacy">
+  <meta name="keywords" content="exeami, privacy blog, html, css, javascript, java, web development, recipes">
+  <title>Recipes</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+  <link rel="icon shortcut" type="image/png" href="/images/logos/exeami-light.webp">
+
+  <link rel="preload" href="/styles/index.css" as="style">
+  <link rel="stylesheet" href="/styles/index.css">
+  <script>document.documentElement.className =
+      localStorage.getItem('theme') || 'black-theme'</script>
+  <link rel="preload" href="/scripts/util.js" as="script">
+  <script src="/scripts/util.js"></script>
+</head>
+
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img class="logo" src="/images/logos/exeami-light.webp" width="196" height="196" id="logo"
+        alt="exeami logo, infinity in curley brackets">
+    </a>
+  </div>
+  <button class="theme-switcher-button black-theme-button" data-theme="black-theme">
+    <img width=30 height=30 class=".is-30x30" src="/images/logos/theme.svg" alt="black theme switch">
+  </button>
+  <input id="menu-toggle" type="checkbox" />
+  <label class='menu-button-container' for="menu-toggle">
+    <span class="hidden-label">Menu</span>
+    <span class='menu-button'></span>
+  </label>
+  <div class="navbar-menu" id="navbar">
+    <a href="/blogs" class="navbar-item">Blogs</a>
+    <a href="/projects" class="navbar-item">Projects</a>
+    <a href="/posts" class="navbar-item">Posts</a>
+    <a href="/recipes" class="navbar-item">Recipes</a>
+    <a href="/contact" class="navbar-item">Contact</a>
+  </div>
+</nav>
+  <main>
+    <article class="card">
+      <header class="card-header">
+        <h1>Recipes</h1>
+        <h2 class="subtitle">Some simple recipes</h2>
+
+
+      </header>
+      <div class="card-body">
+
+        <a class="media-box" href="/recipes/tomato-chutney">
+  <figure class="media-figure is-1-by-2">
+    <img class="image" src="/images/recipes//tomato-chutney/final.webp" alt="/tomato-chutney/final.webp" width="400" height="200">
+  </figure>
+  <div class="media-content">
+    <h2 class="title">Tomato Chutney</h2>
+    <h3 class="subtitle">Must try!</h3>
+    <div class="tags">
+</div>
+
+  </div>
+</a>
+      </div>
+    </article>
+    <div class="theme-box hide-in-mobile">
+  <button class="black-theme-button theme-button" data-theme="black-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme.svg" alt="black theme switch"></button>
+  <button class="purple-theme-button theme-button" data-theme="purple-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme.svg" alt="purple theme switch"></button>
+  <button class="white-theme-button theme-button" data-theme="white-theme"><img width=30 height=30 class=".is-30x30"
+      src="/images/logos/theme-light.svg" alt="white theme switch"></button>
+</div>
+  </main>
+  <footer class="footer">
+  <p>
+    <a rel="external" href="https://xn--sr8hvo.ws/previous"><span aria-hidden="true">←</span><span
+        class="visually-hidden">Previous IndieWeb Webring website</span></a>
+    <span aria-hidden="true">
+      💍🕸
+    </span>
+    <a rel="external" href="https://xn--sr8hvo.ws">IndieWeb Webring</a>
+    <span aria-hidden="true">
+      🕸💍
+    </span>
+    <a rel="external" href="https://xn--sr8hvo.ws/next"><span aria-hidden="true">→</span><span
+        class="visually-hidden">Next IndieWeb Webring website</span></a>
+  </p>
+  <p>
+    <strong>Exeami</strong> by
+    <a href="https://exeami.com">Amitha Lingala</a>. The source code is
+    licensed <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0 license</a>.
+    The website content is licensed
+    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+  </p>
+</footer>
+</body>
+
+</html>
