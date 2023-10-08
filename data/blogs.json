@@ -1,6 +1,7 @@
 [
   {
     "url": "instagram-for-kids",
+    "cat": "blogs",
     "title": "Instagram for kids",
     "subtitle": "Please don't do it.",
     "keywords": "Instagram, privacy, kids, data consent",
@@ -14,6 +15,7 @@
   },
   {
     "url": "getting-to-know-indie-web",
+    "cat": "blogs",
     "title": "Getting to know IndieWeb",
     "subtitle": "What is IndieWeb and why do you need to know about it?",
     "keywords": "IndieWeb, data ownership, webmentions, filter bubble, personal website",
@@ -27,6 +29,7 @@
   },
   {
     "url": "data-privacy",
+    "cat": "blogs",
     "title": "Why should I care about data privacy?",
     "subtitle": "Six reasons why.",
     "keywords": "data privacy, filter bubble, Identity theft, personal assistants",
@@ -39,6 +42,7 @@
   },
   {
     "url": "homomorphic-encryption",
+    "cat": "blogs",
     "title": "Homomorphic Encryption",
     "subtitle": "Trying figure out what it is.",
     "keywords": "Homomorphic Encryption, encryption, HELib, Microsoft SEAL, PALISADE, security",
@@ -52,6 +56,7 @@
   },
   {
     "url": "why-should-i-switch-to-signal",
+    "cat": "blogs",
     "title": "Why should I switch to Signal?",
     "subtitle": "A privacy respecting secure messenger.",
     "keywords": "signal, whatsapp, messenger, security, signal prtocol, privacy",

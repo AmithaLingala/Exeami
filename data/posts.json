@@ -1,6 +1,7 @@
 [
   {
     "url": "best-practices-for-better-websites",
+    "cat": "posts",
     "title": "Best practices for better websites by Darek Kay",
     "subtitle": "",
     "keywords": "",
@@ -13,6 +14,7 @@
   },
   {
     "url": "mobile-view",
+    "cat": "posts",
     "title": "Mobile View",
     "subtitle": "",
     "keywords": "",
@@ -25,6 +27,7 @@
   },
   {
     "url": "organ-donation",
+    "cat": "posts",
     "title": "Organ Donation",
     "subtitle": "",
     "keywords": "",
@@ -37,6 +40,7 @@
   },
   {
     "url": "exeami-logo",
+    "cat": "posts",
     "title": "Story behind my logo",
     "subtitle": "",
     "keywords": "",
@@ -49,6 +53,7 @@
   },
   {
     "url": "low-carb-diet",
+    "cat": "posts",
     "title": "Comic by Idan Schneider",
     "subtitle": "",
     "keywords": "",
@@ -61,6 +66,7 @@
   },
   {
     "url": "printer",
+    "cat": "posts",
     "title": "Comic by Andrew",
     "subtitle": "",
     "keywords": "",
@@ -73,6 +79,7 @@
   },
   {
     "url": "money",
+    "cat": "posts",
     "title": "Comic by Jeff Lofvers",
     "subtitle": "",
     "keywords": "",
@@ -85,6 +92,7 @@
   },
   {
     "url": "spying-device",
+    "cat": "posts",
     "title": "Comic by Zach Weinersmith",
     "subtitle": "",
     "keywords": "",
