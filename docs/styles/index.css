@@ -251,6 +251,11 @@ article.card {
   border-radius: 8px;
   margin-bottom: 2em;
 }
+ul.card-item,
+ol.card-item {
+  padding-left: 2.5rem;
+  padding-top: 2em;
+}
 
 .banner {
   width: 600px;
@@ -508,6 +513,7 @@ button.link-button {
   .card-item {
     margin-bottom: 1em;
   }
+
   .about-card {
     flex-direction: column;
   }

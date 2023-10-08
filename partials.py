@@ -30,7 +30,7 @@ for item in utils.get_json_data('posts'):
     template =utils.read_file(join("content","posts","{0}.html".format(item["url"])))
     partials[partialName] = compiler.compile(template)
 
-special_pages = ["blogs", "projects", "posts"]
+special_pages = ["blogs", "projects", "posts", "recipes"]
 
 
 def get_partial_for_special_page(page_name, route):
