@@ -1,6 +1,7 @@
 [
   {
     "url": "exeami",
+    "cat": "projects",
     "title": "This website",
     "subtitle": "My personal website containing my blogs, projects and things I do.",
     "keywords": "html, css, python, personal portfolio, multi-theme, exeami",
@@ -17,6 +18,7 @@
   },
   {
     "url": "cops-n-robber",
+    "cat": "projects",
     "title": "Cops and Robber",
     "subtitle": "Turn-based 2d platform chasing game.",
     "keywords": "java, game, libGDX, andriod games",
@@ -31,6 +33,7 @@
   },
   {
     "url": "exeami-desktop",
+    "cat": "projects",
     "title": "Desktop",
     "subtitle": "Website which gives a feel of Desktop.",
     "keywords": "html, css, javascript, desktop, exeami",
@@ -45,6 +48,7 @@
   },
   {
     "url": "golden-shoe",
+    "cat": "projects",
     "title": "Golden Shoe",
     "subtitle": "e-commerce website for imaginary shoe company.",
     "keywords": "html, css, python flask, javascript, e-commerce website",

@@ -414,6 +414,28 @@ a.media-box:hover {
   margin-right: 0.75em;
   margin-bottom: 0.75em;
 }
+
+.reply-box {
+  display: flex;
+  justify-content: center;
+}
+
+button.link-button {
+  font-size: large;
+}
+
+.link-button {
+  border-radius: 10px;
+  border: 1px solid var(--font-color);
+  box-shadow: var(--card-shadow);
+  font-weight: 600;
+  padding: 1em;
+  text-align: center;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+}
+
 .share-box {
   padding: 1em;
   display: flex;
