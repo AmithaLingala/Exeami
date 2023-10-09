@@ -279,13 +279,21 @@ article.card {
   box-shadow: var(--card-item-shadow);
   border-radius: 8px;
 }
+
 .is-content-center {
   justify-content: center;
   display: grid;
 }
+
 .is-text-center {
   text-align: center;
 }
+
+.spread-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
 .profile-picture {
   position: sticky;
   top: 285px;
@@ -392,6 +400,7 @@ a.media-box:hover {
   text-align: inherit;
   padding: 1em;
   background-color: var(--content-bg);
+  width: 100%;
 }
 .hidden-label {
   position: absolute;
