@@ -420,7 +420,9 @@ a.media-box:hover {
   display: flex;
   justify-content: center;
 }
-
+code {
+  display: block;
+}
 button.link-button {
   font-size: large;
 }

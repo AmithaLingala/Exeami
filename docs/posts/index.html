@@ -68,19 +68,20 @@
   So, documenting it here. I know there might be better ways to do it, but it these steps worked for me.</p>
 <ol>
   <li>Convert PST file to MBOX using PST converter tool like <a
-      href="https://www.sysinfotools.com/linux/pst-converter.php">Sysinfo Linux PST Converter</a></li>
-  <li>Create a local folder (xxx) and add it to Thunderbird (Add <a
-      href="https://addons.thunderbird.net/en-US/thunderbird/addon/localfolder/">LocalFolders Extension</a> if needed)
-    and close thunderbird.</li>
-  <li>Navigate to the folder you created (xxx), and you can see a list of files for each mail folder (e.g., Inbox and
-    Inbox.msf).</li>
-  <li>Rename the MBOX file you created to one of the file names (eg., Inbox) and copy to the above folder,
-    overwriting the Inbox file (leave Inbox.msf untouched).</li>
-  <li>Open Thunderbird, and you should be able to read your Outlook mails.</li>
+      href="https://www.sysinfotools.com/linux/pst-converter.php">Sysinfo Linux PST Converter.</a></li>
+  <li>Create a folder in your system, this will be used to store the mails.</li>
+  <li>Copy the MBOX file to the folder you created and remove the file extension (e.g., example.mbx to example)</li>
+  <li>Repeat the above step if you have multiple .pst files</li>
+  <li>Add the folder you created to Thunderbird.
+    <code>Settings -&gt; Account Settings-&gt; Account Actions -&gt; Add Local folder</code>
+    <figure>
+      <img class="image" src="/images/posts/AddFolder.png">
+    </figure>
+    (If you don't see <i>Add Local folder</i>, install </code> <a
+      href="https://addons.thunderbird.net/en-US/thunderbird/addon/localfolder/">LocalFolders Extension</a>).
+  </li>
+  <li>Close and open Thunderbird, and you should be able to read your Outlook mails.</li>
 </ol>
-<p>
-  If you have multiple .pst files, you might need to repeat these steps for each file.
-</p>
   </div>
   <div class="share-box">
     2023-09-09
