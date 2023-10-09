@@ -30,11 +30,15 @@
       </header>
       <div class="card-body">
         {{#if page.content}}
-        {{> (lookup page 'content')}}
         {{#if page.cat}}
+        <div class="card-item">
+          {{> (lookup page 'content')}}
+        </div>
         <span class="reply-box"><a class="link-button"
             href="mailto:exeami@proton.me?subject=Comment on '{{page.title}}'&amp;body=Link: https://exeami.com/{{page.cat}}/{{page.url}}">Comment
             via email</a></span><br>
+        {{else}}
+        {{> (lookup page 'content')}}
         {{/if}}
         {{/if}}
 

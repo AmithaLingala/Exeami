@@ -416,6 +416,7 @@ a.media-box:hover {
 }
 
 .reply-box {
+  margin-top: 1em;
   display: flex;
   justify-content: center;
 }
