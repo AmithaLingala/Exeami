@@ -68,11 +68,12 @@
         <div class="card-item">
           <h3>Source Code</h3>
 <a href="https://github.com/AmithaLingala/cops-n-robbers">https://github.com/AmithaLingala/cops-n-robbers</a>
-<h3>Little background</h3>
+<h3>Background</h3>
 <p>
   I did game development back in 2016 for university mini projects. At that time I used <a
     href="https://www.construct.net/en">Contruct2</a> which did not require
-  much coding. I enjoyed developing games and wanted to try that again and made me start this game. I decided to use
+  much coding. I enjoyed developing games and wanted to try that again. When I had to decide on the final semester
+  project during masters, It was a simple choice to develop a game. I decided to use
   Java as I did not work much on it before this project. After few considerations on game develoment framework, I
   decided to use <a href="https://libgdx.com/">LibGDX</a> as it is open-source, cross-platform Java game development
   framework with very good
@@ -96,13 +97,10 @@
   <dd>
     <p>
       I planned to use BFS for the cop’s algorithm but, as we have multiple cops and the shortest path sometimes returns
-      the
-      same for all the cops. So, I sorted the cops based on the distance from the robber. Traverse through the sorted
-      list
-      of cops and call BFS for the
-      Shortest Path to the first cop. From the next cop, we remove the path of the first cop from our graph and
-      continue.
-      This way, the nearest cop will move toward the robber and other cops
+      the same path for all the cops, I decided to fix that. The solution was to sort the cops based on the distance
+      from the robber. Traverse through the sorted list of cops and call BFS for the
+      shortest path to the first cop. From the next cop, we remove the path of the first cop from our graph and
+      continue. This way, the nearest cop will move toward the robber and other cops
       will take a detour.
     </p>
   </dd>
@@ -116,21 +114,22 @@
     </p>
     <p>
       The idea is to increase the
-      number of obstacles until level 5. To Implement the above, I
-      have taken a variable ”prob”, the minimum of 5(threshold level)
-      and current level. Then, I randomly select an integer from 1 to
-      100 and check if it is less than two times of variable ”prob”. If
+      number of obstacles as we level up. But after few levels, as the gird size stays same, the game had too many
+      obstacles and less room to move. So, I decided to increase them only till level 5. To implement the above, I
+      have taken variable "prob" which is the minimum of threshold level (5) and the current level. Then, I randomly
+      selected an integer from 1 to 100 and check if it is less than two times of variable ”prob”. If
       yes, then the cell will be an obstacle. The above makes sure the
       number of obstacles is random, increasing for every level until
-      level 5 and won’t cover more than 10% of the map. Now, I have
-      set walls on all sides and set the gate on the top left corner of the
+      level 5 and won’t cover more than 10% of the map. Now, I have set walls on all sides and set the gate in the top
+      left corner of the map.
     </p>
     <p>
       For generating cops and Robber, I have divided the grid map into five divisions. The robber generator will
       randomly select an empty cell (not an obstacle) in the given division. For the first six levels, the robber
       position will be in the middle division and from level seven to level ten, that will be in the bottom right to
       increase the game difficulty. The current level number and cop number (two cops for the first nine levels and
-      three cops for the 10th level) decides the division for the cop.
+      three cops for the 10th level) decides the division for the cop. We also have a check
+      to avoid the case where the cop gets blocked by obstacles.
     </p>
     <p>
       The number of coins is twice the current level number and, the number of
@@ -146,22 +145,28 @@
 </p>
 <h3>Screenshots</h3>
 <figure>
-  <img class="image" src="/images/projects/cops-n-robbers/GameScreen.webp">
+  <img class="image" loading="lazy" src="/images/projects/cops-n-robbers/GameScreen.webp">
+  <figcaption class="is-text-center">Game Screen</figcaption>
 </figure>
 <figure>
-  <img class="image" src="/images/projects/cops-n-robbers/CopFreeze.webp">
+  <img class="image" loading="lazy" src="/images/projects/cops-n-robbers/CopFreeze.webp">
+  <figcaption class="is-text-center">Frozen Cop</figcaption>
 </figure>
 <figure>
-  <img class="image" src="/images/projects/cops-n-robbers/HghLight.webp">
+  <img class="image" loading="lazy" src="/images/projects/cops-n-robbers/HghLight.webp">
+  <figcaption class="is-text-center">Highlighted cells where robber can drop bomb</figcaption>
 </figure>
 <figure>
-  <img class="image" src="/images/projects/cops-n-robbers/mobile.webp">
+  <img class="image" loading="lazy" src="/images/projects/cops-n-robbers/mobile.webp">
+  <figcaption class="is-text-center">Mobile View</figcaption>
 </figure>
 <figure>
-  <img class="image" src="/images/projects/cops-n-robbers/NextLevelScreen.webp">
+  <img class="image" loading="lazy" src="/images/projects/cops-n-robbers/NextLevelScreen.webp">
+  <figcaption class="is-text-center">Next level screen</figcaption>
 </figure>
 <figure>
-  <img class="image" src="/images/projects/cops-n-robbers/EndScreen.webp">
+  <img class="image" loading="lazy" src="/images/projects/cops-n-robbers/EndScreen.webp">
+  <figcaption class="is-text-center">Game end screen</figcaption>
 </figure>
         </div>
         <span class="reply-box"><a class="link-button"
