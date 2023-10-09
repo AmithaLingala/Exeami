@@ -57,7 +57,6 @@
           <time class="subtitle dt-published" datetime="2021-12-17">Created on 2021-12-17</time>
         </p>
 
-        <h3 class="subtitle">Source: <a href="https://github.com/AmithaLingala/cops-n-robbers" target="_blank">https://github.com/AmithaLingala/cops-n-robbers</a></h3>
         <div class="tags">
     <span class="tag">java</span>
     <span class="tag">Game</span>
@@ -67,11 +66,85 @@
       </header>
       <div class="card-body">
         <div class="card-item">
-          <!-- <p>
-  Cops and Robber is a turn-based 2d platform game where multiple cops try to capture a robber. Help the robber escape
-  from the cops by reaching the exit.
+          <h3>Source Code</h3>
+<a href="https://github.com/AmithaLingala/cops-n-robbers">https://github.com/AmithaLingala/cops-n-robbers</a>
+<h3>Little background</h3>
+<p>
+  I did game development back in 2016 for university mini projects. At that time I used <a
+    href="https://www.construct.net/en">Contruct2</a> which did not require
+  much coding. I enjoyed developing games and wanted to try that again and made me start this game. I decided to use
+  Java as I did not work much on it before this project. After few considerations on game develoment framework, I
+  decided to use <a href="https://libgdx.com/">LibGDX</a> as it is open-source, cross-platform Java game development
+  framework with very good
+  documentation.
 </p>
-<h2 class="Subtitle">Screenshots</h2>
+<h3>Overview</h3>
+<p>
+  Cops and Robber is a turn-based 2d platform game where multiple cops try to capture a robber. Robber can collect coins
+  to increase the game score and can collect weapons to use them to freeze cops or destroy obstacles. Currently, there
+  are 10 levels with increasing difficulty.
+</p>
+<h3>Implementation details</h3>
+<p>
+  Planning the level generation and cop's algorithm was main in this project. The remaining bits like updating score,
+  weapons, coins, robber's moment were simple to implement.
+</p>
+<dl>
+  <dt>
+    Cop's Algorithm
+  </dt>
+  <dd>
+    <p>
+      I planned to use BFS for the cop’s algorithm but, as we have multiple cops and the shortest path sometimes returns
+      the
+      same for all the cops. So, I sorted the cops based on the distance from the robber. Traverse through the sorted
+      list
+      of cops and call BFS for the
+      Shortest Path to the first cop. From the next cop, we remove the path of the first cop from our graph and
+      continue.
+      This way, the nearest cop will move toward the robber and other cops
+      will take a detour.
+    </p>
+  </dd>
+  <dt>
+    Level generation
+  </dt>
+  <dd>
+    <p>
+      As I planned to have increased difficulty for each level and do want to randomize the map every time we play. I
+      have to figure out the position of obstacles, coins, robber and cop.
+    </p>
+    <p>
+      The idea is to increase the
+      number of obstacles until level 5. To Implement the above, I
+      have taken a variable ”prob”, the minimum of 5(threshold level)
+      and current level. Then, I randomly select an integer from 1 to
+      100 and check if it is less than two times of variable ”prob”. If
+      yes, then the cell will be an obstacle. The above makes sure the
+      number of obstacles is random, increasing for every level until
+      level 5 and won’t cover more than 10% of the map. Now, I have
+      set walls on all sides and set the gate on the top left corner of the
+    </p>
+    <p>
+      For generating cops and Robber, I have divided the grid map into five divisions. The robber generator will
+      randomly select an empty cell (not an obstacle) in the given division. For the first six levels, the robber
+      position will be in the middle division and from level seven to level ten, that will be in the bottom right to
+      increase the game difficulty. The current level number and cop number (two cops for the first nine levels and
+      three cops for the 10th level) decides the division for the cop.
+    </p>
+    <p>
+      The number of coins is twice the current level number and, the number of
+      weapons is a random number from 1 to the current level number. The above makes sure that the items are spread
+      throughout the map and motivates to increase the count of collectables for later levels.
+    </p>
+  </dd>
+</dl>
+<h3>Conclusion</h3>
+<p>
+  Overall, It was a very good experience and interesting project. I enjoyed playing it in my mobile. I plan to add more
+  features and levels to this game in future.
+</p>
+<h3>Screenshots</h3>
 <figure>
   <img class="image" src="/images/projects/cops-n-robbers/GameScreen.webp">
 </figure>
@@ -89,8 +162,7 @@
 </figure>
 <figure>
   <img class="image" src="/images/projects/cops-n-robbers/EndScreen.webp">
-</figure> -->
-Coming Soon!
+</figure>
         </div>
         <span class="reply-box"><a class="link-button"
             href="mailto:exeami@proton.me?subject=Comment on 'Cops and Robber'&amp;body=Link: https://exeami.com/projects/cops-n-robber">Comment
