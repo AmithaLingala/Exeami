@@ -205,10 +205,12 @@
   I had some outlook backup files and I wanted to open them in Thunderbird. I spent some time figuring out how to do it.
   So, documenting it here. I know there might be better ways to do it, but it these steps worked for me.</p>
 <ol>
-  <li>Convert PST file to MBOX using PST converter tool like <a
-      href="https://www.sysinfotools.com/linux/pst-converter.php">Sysinfo Linux PST Converter.</a></li>
+  <li>Convert PST file to MBOX using PST converter tool like <a href="https://www.five-ten-sg.com/libpst/">libpst</a>
+    (search in your package manager, and you will find it).
+  </li>
   <li>Create a folder in your system, this will be used to store the mails.</li>
-  <li>Copy the MBOX file to the folder you created and remove the file extension (e.g., example.mbx to example)</li>
+  <li>Copy the MBOX file to the folder you created and if it has a file extension, remove it.(e.g., example.mbx to
+    example)</li>
   <li>Repeat the above step if you have multiple .pst files</li>
   <li>Add the folder you created to Thunderbird.
     <code>Settings -&gt; Account Settings-&gt; Account Actions -&gt; Add Local folder</code>
