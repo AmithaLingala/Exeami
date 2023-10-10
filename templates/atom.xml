@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/atom.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<title>Exeami Blogs</title>
+<subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
+<link rel="self" href="https://exeami.com/blogs"/>
+<updated>{{updated}}T00:00:00Z</updated>
+<author>
+  <name>Exeami</name>
+  <email>exeami@proton.me</email>
+  <uri>https://exeami.com/</uri>
+</author>
+<icon>https://exeami.com/images/logos/exeami.webp</icon>
+<id>https://exeami.com/</id>
+
+{{#each pages as |page|}}
+  <entry>
+    <title>{{page.title}}</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/{{page.cat}}/{{page.url}}"/>
+    <id>https://exeami.com/{{page.cat}}/{{page.url}}</id>
+    <updated>{{page.last_modified}}T00:00:00Z</updated>
+    <summary>{{page.desc}}</summary>
+  </entry>
+{{/each}}
+</feed>
+
