@@ -2,7 +2,7 @@
 <?xml-stylesheet href="/atom.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-<title>Exeami Blogs</title>
+<title>Exeami blogs</title>
 <subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
 <link rel="self" href="https://exeami.com/blogs/feed/" />
 <updated>2023-09-15T00:00:00Z</updated>
@@ -455,7 +455,7 @@ down a few.
     <link rel="alternate" type="text/html" href="https://exeami.com/blogs/homomorphic-encryption"/>
     <id>https://exeami.com/blogs/homomorphic-encryption</id>
     <updated>2020-04-20T00:00:00Z</updated>
-    <summary>Blog about Homomorphic Encryption </summary>
+    <summary>Brief introduction on Homomorphic Encryption</summary>
     <content type="html">
       &lt;p&gt;
   &lt;a href=&quot;https://en.wikipedia.org/wiki/Homomorphic_encryption&quot; target=&quot;_blank&quot;&gt;Homomorphic Encryption&lt;/a&gt; is an
@@ -524,7 +524,7 @@ down a few.
     <link rel="alternate" type="text/html" href="https://exeami.com/blogs/why-should-i-switch-to-signal"/>
     <id>https://exeami.com/blogs/why-should-i-switch-to-signal</id>
     <updated>2020-02-28T00:00:00Z</updated>
-    <summary>Blog about Signl messaging app and it's features</summary>
+    <summary>Reasons to switch to Signl messaging app and it's features</summary>
     <content type="html">
       &lt;p&gt;
     &lt;a href=&quot;https://www.signal.org/&quot; target=&quot;_blank&quot;&gt;Signal&lt;/a&gt; is a messaging app by Open Whisperer Systems,

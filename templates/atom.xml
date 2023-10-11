@@ -2,10 +2,10 @@
 <?xml-stylesheet href="/atom.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-<title>Exeami Blogs</title>
+<title>Exeami {{cat}}</title>
 <subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
-<link rel="self" href="https://exeami.com/blogs/feed/" />
-<updated>{{this.date}}T00:00:00Z</updated>
+<link rel="self" href="https://exeami.com/{{cat}}/feed/" />
+<updated>{{date}}T00:00:00Z</updated>
 <author>
   <name>Exeami</name>
   <email>exeami@proton.me</email>
@@ -20,7 +20,9 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/{{this.cat}}/{{this.url}}"/>
     <id>https://exeami.com/{{this.cat}}/{{this.url}}</id>
     <updated>{{this.last_modified}}T00:00:00Z</updated>
+    {{#if (is_defined this 'description') }}
     <summary>{{this.description}}</summary>
+    {{/if}}
     <content type="html">
       {{this.content}}
 		</content>

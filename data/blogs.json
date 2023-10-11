@@ -46,7 +46,7 @@
     "title": "Homomorphic Encryption",
     "subtitle": "Trying figure out what it is.",
     "keywords": "Homomorphic Encryption, encryption, HELib, Microsoft SEAL, PALISADE, security",
-    "description": "Blog about Homomorphic Encryption ",
+    "description": "Brief introduction on Homomorphic Encryption",
     "tags": [
       "Encryption",
       "Security"
@@ -60,7 +60,7 @@
     "title": "Why should I switch to Signal?",
     "subtitle": "A privacy respecting secure messenger.",
     "keywords": "signal, whatsapp, messenger, security, signal prtocol, privacy",
-    "description": "Blog about Signl messaging app and it's features",
+    "description": "Reasons to switch to Signl messaging app and it's features",
     "tags": [
       "Data Privacy",
       "Signal"

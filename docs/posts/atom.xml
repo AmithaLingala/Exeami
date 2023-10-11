@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/atom.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<title>Exeami posts</title>
+<subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
+<link rel="self" href="https://exeami.com/posts/feed/" />
+<updated>2023-09-09T00:00:00Z</updated>
+<author>
+  <name>Exeami</name>
+  <email>exeami@proton.me</email>
+  <uri>https://exeami.com/</uri>
+</author>
+<icon>https://exeami.com/images/logos/exeami.webp</icon>
+<id>https://exeami.com/</id>
+
+  <entry>
+    <title>Import Outlook mails to Thuderbird without Account</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/outlook-mails-to-thunderbird"/>
+    <id>https://exeami.com/posts/outlook-mails-to-thunderbird</id>
+    <updated>2023-09-09T00:00:00Z</updated>
+    <content type="html">
+      &lt;p&gt;
+  I had some outlook backup files and I wanted to open them in Thunderbird. I spent some time figuring out how to do it.
+  So, documenting it here. There might be better ways to do it, but it these steps worked for me.
+&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Convert PST file to MBOX using PST converter tool like &lt;a href=&quot;https://www.five-ten-sg.com/libpst/&quot;&gt;libpst&lt;/a&gt;
+    (search in your package manager, and you will find it).
+  &lt;/li&gt;
+  &lt;li&gt;Create a folder in your system, this will be used to store the mails.&lt;/li&gt;
+  &lt;li&gt;Copy the MBOX file to the folder you created and if it has a file extension, remove it.(e.g., example.mbx to
+    example)&lt;/li&gt;
+  &lt;li&gt;Repeat the above step if you have multiple .pst files&lt;/li&gt;
+  &lt;li&gt;Add the folder you created to Thunderbird.
+    &lt;code&gt;Settings -&amp;gt; Account Settings-&amp;gt; Account Actions -&amp;gt; Add Local folder&lt;/code&gt;
+    &lt;figure&gt;
+      &lt;img class=&quot;image&quot; src=&quot;/images/posts/AddFolder.png&quot;&gt;
+    &lt;/figure&gt;
+    (If you don&#x27;t see &lt;i&gt;Add Local folder&lt;/i&gt;, install &lt;a
+      href=&quot;https://addons.thunderbird.net/en-US/thunderbird/addon/localfolder/&quot;&gt;LocalFolders Extension&lt;/a&gt;).
+  &lt;/li&gt;
+  &lt;li&gt;Close and open Thunderbird, and you should be able to read your Outlook mails.&lt;/li&gt;
+&lt;/ol&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Best practices for better websites by Darek Kay</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/best-practices-for-better-websites"/>
+    <id>https://exeami.com/posts/best-practices-for-better-websites</id>
+    <updated>2023-09-02T00:00:00Z</updated>
+    <content type="html">
+      &lt;p&gt;
+  I found &lt;a href=&quot;https://darekkay.com/best-practices/&quot; target=&quot;_blank&quot;&gt;Best Practices for Building Better Websites
+    by Darek Kay&lt;/a&gt; when going through &lt;a href=&quot;https://codingotaku.com/blogroll&quot; target=&quot;_blank&quot;&gt;Coding Otaku&#x27;s
+    Blogroll&lt;/a&gt;, which is very useful for someone like me who started learning website building. I started
+  implementing a few things in my website after reading the blog.&lt;a href=&quot;https://darekkay.com/&quot; target=&quot;_blank&quot;&gt;
+    Darek&lt;/a&gt; has many more interesting blogs on accessibility that I have yet to explore.
+&lt;/p&gt;
+&lt;p&gt;
+  Now, I am visiting some awesome websites with web rings and blogrolls that I did not see before with search engine
+  results. It feels like a new world unlocked.
+&lt;/p&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Mobile View</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/mobile-view"/>
+    <id>https://exeami.com/posts/mobile-view</id>
+    <updated>2023-08-31T00:00:00Z</updated>
+    <content type="html">
+      &lt;p&gt;
+  When I was developing this website, It was a feat to make my website have the same look and feel in mobile or small
+  screen devices as it is on my desktop. I had to compromise and make a few decisions to achieve it (I hope I did).
+&lt;/p&gt;
+&lt;p&gt;
+  One day, when browsing, I stumbled upon &lt;a href=&quot;https://eduardoboucas.com/&quot; target=&quot;_blank&quot;&gt;Eduardo&#x27;s website.&lt;/a&gt;
+  The moment I saw this website, I fell in love with the styles
+  and the colour scheme. It is so soothing, and the feel of the newspaper made me subconsciously immerse in the site.
+  Then I shared it, and the person opened it on a mobile phone, and he did not understand what I was talking about.
+  The
+  mobile view for this site is good, and it is &lt;a href=&quot;https://en.wikipedia.org/wiki/Responsive_web_design&quot;
+    target=&quot;_blank&quot;&gt;responsive design&lt;/a&gt;, but it did not do any justice to the desktop site. I
+  felt sad as many did not experience what I did and might not even know that other version exists.&lt;/p&gt;
+&lt;p&gt;
+  That day, I realized that many of us might be missing some wonderful things on the internet when we get stuck with
+  small screen devices.
+&lt;/p&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Organ Donation</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/organ-donation"/>
+    <id>https://exeami.com/posts/organ-donation</id>
+    <updated>2023-08-31T00:00:00Z</updated>
+    <content type="html">
+      &lt;p&gt;
+  I like to believe most people are in favour of organ donation as it can &lt;a
+    href=&quot;https://www.organdonation.nhs.uk/helping-you-to-decide/personal-stories/&quot; target=&quot;_blank&quot;&gt;save lives&lt;/a&gt;,
+  and if
+  not donated, organs are
+  useless. The fact is, there are always &lt;a href=&quot;https://en.wikipedia.org/wiki/Organ_donation#Organ_shortfall&quot;
+    target=&quot;_blank&quot;&gt;more people waiting&lt;/a&gt; for the organs. When I think about it, maybe many support the
+  idea, but because they never got to sign for it, organs are not automatically used to save or improve other lives.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Then comes the debate whether organ donation should be opt-in or opt-out. I might say it should be opt-out, as I
+  can not
+  comprehend why anyone not want to donate after death, but I know there can be reasons beyond my understanding.
+&lt;/p&gt;
+
+&lt;p&gt;
+  So, the only solution is educating and spreading awareness about organ donation and letting individuals decide what
+  is wrong or right for them.
+&lt;/p&gt;
+
+&lt;p&gt;
+  If you support organ donation, not only signing up for it (if you are in a country where it is opt-in), but also
+  talking
+  about it whenever you can, might make a difference that you might not even realize. I wish the government and
+  educational institutes add it to the curriculum so that people can decide early in their life, but as I can not
+  control that, I will do what I can and hope you do what you can.
+&lt;/p&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Story behind my logo</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/exeami-logo"/>
+    <id>https://exeami.com/posts/exeami-logo</id>
+    <updated>2023-08-18T00:00:00Z</updated>
+    <content type="html">
+      &lt;p&gt;
+  I use my logo everywhere online as my profile picture, and often people ask me about it. When you look at my logo,
+  it might look like it doesn&#x27;t have any meaning, but it does!
+&lt;/p&gt;
+&lt;div class=&quot;is-row&quot;&gt;
+  &lt;p&gt;
+    When I tried to design a logo for my website, I spent a lot of time (I am bad at it), and my best was this cute
+    lion made out of letters in &quot;exeami&quot;.&lt;br&gt;
+
+    I was very proud of it. But wherever I used it, the details of the logo were not visible. &lt;br&gt;
+    I was back to square
+    one. I wanted my logo to be noticeable, even in favicon, and represent me.
+  &lt;/p&gt;
+  &lt;figure class=&quot;is-180x180&quot;&gt;
+    &lt;img class=&quot;posts-item&quot; id=&quot;logo-old&quot; src=&quot;/images/logos/logo-old.svg&quot; width=&quot;612&quot; height=&quot;612&quot;
+      alt=&quot;Loin with letters exeami&quot; /&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;
+  After struggling with my logo design skills, I decided to use symbols instead of writing letters.&lt;br&gt; Here is my
+  logo.
+&lt;/p&gt;
+&lt;div class=&quot;is-row&quot;&gt;
+  &lt;figure class=&quot;is-180x180&quot;&gt;
+    &lt;img class=&quot;posts-item&quot; id=&quot;logo-new&quot; src=&quot;/images/logos/exeami.webp&quot; width=&quot;612&quot; height=&quot;612&quot;
+      alt=&quot;infinity symbol in curley brackets&quot; /&gt;
+  &lt;/figure&gt;
+  &lt;p&gt;
+    As you might already know, my name is Amitha which means boundless, limitless or infinite (which
+    can be a perfect symbol for my logo). This is a platform to group my thoughts in one place using code, So the code
+    block {}. Wrapping amitha in code block {∞} is what my logo is. I made some changes to make it look like a person
+    with glasses (maybe it&#x27;s just for me, as I stared at it long enough and imagined things 😛), I got my logo. I
+    ended up using it everywhere not just in this website :).
+  &lt;/p&gt;
+&lt;/div&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Comic by Idan Schneider</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/low-carb-diet"/>
+    <id>https://exeami.com/posts/low-carb-diet</id>
+    <updated>2023-08-10T00:00:00Z</updated>
+    <content type="html">
+      &lt;figure class=&quot;media-figure&quot;&gt;
+  &lt;img class=&quot;posts-item&quot; src=&quot;/images/posts/low-carb-diet.webp&quot; alt=&quot;Comic on stress asking to eat when on deit&quot;
+    loading=&quot;lazy&quot; width=1100 height=1265&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;media-content&quot;&gt;
+  &lt;p&gt;Thank you &lt;strong&gt;Idan Schneider&lt;/strong&gt; for the Comic!&lt;/p&gt;
+  &lt;a href=&quot;https://www.csectioncomics.com/comics/low-carb-diet&quot; target=&quot;_blank&quot;&gt;Comic Source&lt;/a&gt;
+&lt;/div&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Comic by Andrew</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/printer"/>
+    <id>https://exeami.com/posts/printer</id>
+    <updated>2023-08-10T00:00:00Z</updated>
+    <content type="html">
+      &lt;figure class=&quot;media-figure&quot;&gt;
+  &lt;img class=&quot;posts-item&quot; src=&quot;/images/posts/printer.webp&quot; alt=&quot;Comic on how we can not take prints if low on one ink&quot;
+    loading=&quot;lazy&quot; width=880 height=880&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;media-content&quot;&gt;
+  &lt;p&gt;Thank you &lt;strong&gt;Andrew&lt;/strong&gt; for the Comic!&lt;/p&gt;
+  &lt;a href=&quot;https://www.webtoons.com/en/canvas/system32comics/printers/viewer?title_no=235074&amp;amp;episode_no=42&quot; target=&quot;_blank&quot;&gt;Comic Source&lt;/a&gt;
+&lt;/div&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Comic by Jeff Lofvers</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/money"/>
+    <id>https://exeami.com/posts/money</id>
+    <updated>2020-07-22T00:00:00Z</updated>
+    <content type="html">
+      &lt;figure class=&quot;media-figure&quot;&gt;
+  &lt;img class=&quot;posts-item&quot; src=&quot;/images/posts/money.webp&quot; alt=&quot;Comic on subscription based buggy software&quot;
+    loading=&quot;lazy&quot; width=1042 height=1014&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;media-content&quot;&gt;
+  &lt;p&gt;Thank you &lt;strong&gt;Jeff Lofvers&lt;/strong&gt; for the Comic!&lt;/p&gt;
+  &lt;a href=&quot;https://donthitsave.com/comic/2015/11/06/software-innovation&quot; target=&quot;_blank&quot;&gt;Comic Source&lt;/a&gt;
+&lt;/div&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Comic by Zach Weinersmith</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/spying-device"/>
+    <id>https://exeami.com/posts/spying-device</id>
+    <updated>2020-07-22T00:00:00Z</updated>
+    <content type="html">
+      &lt;figure class=&quot;media-figure&quot;&gt;
+  &lt;img class=&quot;posts-item&quot; src=&quot;/images/posts/spyingdevice.webp&quot;
+    alt=&quot;Comic on how surveillance devices marketed as smart devices&quot; loading=&quot;lazy&quot; width=1024 height=963&gt;
+&lt;/figure&gt;
+&lt;div class=&quot;media-content&quot;&gt;
+  &lt;p&gt;Thank you &lt;strong&gt;Zach Weinersmith&lt;/strong&gt; for the Comic!&lt;/p&gt;
+  &lt;a href=&quot;https://www.smbc-comics.com/comic/listening&quot; target=&quot;_blank&quot;&gt;Comic Source&lt;/a&gt;
+&lt;/div&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+</feed>
+
