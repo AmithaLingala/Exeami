@@ -118,19 +118,21 @@ def generate_sitemap():
     utils.write_file(output_path, rendered_template)
 
 def generate_atom_feed():
+    dates = []
     template = join("templates", "atom.xml")
-    partial = compiler.compile(utils.read_file(template))
     output_path = utils.get_output_path("atom.xml")
-    blogs = utils.get_json_data("blogs")
-    
+    blogs = utils.get_json_data("blogs")  
     for blog in blogs:
+        dates.append(blog["last_modified"])
         page_name = utils.get_filename_from_page(blog)
         content_file_name = utils.get_page_path(page_name, "blogs")
         content_file = join("content", "{0}.html".format(content_file_name))
         blog["content"] = compiler.compile(utils.read_file(content_file))
-        # print(blog["content"]({}))
         blog["content"] = utils.escape(blog["content"]({}))
-    rendered_template = partial({"pages": blogs})
+    dates.sort(reverse=True)
+    partial = compiler.compile(utils.read_file(template))
+    rendered_template = partial({"pages": blogs, "date" : dates[0]})
+
     utils.write_file(output_path, rendered_template)
 
 def main():

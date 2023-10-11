@@ -5,7 +5,7 @@
 <title>Exeami Blogs</title>
 <subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
 <link rel="self" href="https://exeami.com/blogs/feed/" />
-<updated>2023-10-11T00:00:00Z</updated>
+<updated>{{this.date}}T00:00:00Z</updated>
 <author>
   <name>Exeami</name>
   <email>exeami@proton.me</email>
