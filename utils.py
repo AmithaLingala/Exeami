@@ -2,6 +2,7 @@
 import os
 from os.path import join
 import json
+import re
 
 output_dir = "docs"
 def get_filename_from_page(page):
@@ -31,4 +32,24 @@ def read_file(file_name):
 def write_file(file_name, content):
     with open(file_name, "w") as data_file:
         data_file.writelines(content)
+
+_map = {
+    '&': '&amp;',
+    '"': '&quot;',
+    "'": '&#x27;',
+    '`': '&#x60;',
+    '<': '&lt;',
+    '>': '&gt;',
+    }
+
+
+def substitute(match, _map=_map):
+    return _map[match.group(0)]
+
+
+_escape_re = re.compile(r"&|\"|'|`|<|>")
+
+
+def escape(something, _escape_re=_escape_re, substitute=substitute):
+    return _escape_re.sub(substitute, something)
 

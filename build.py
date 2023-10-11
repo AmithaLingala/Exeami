@@ -20,7 +20,10 @@ default_template = "page"
 def get_content_page(this, option):
     return "posts/{0}".format(option["url"])
 
+def is_defined(this, option, attribute):
+    return option[attribute] != ""
 helpers={
+    'is_defined': is_defined,
     'get_content_page': get_content_page
 }
 
@@ -117,6 +120,24 @@ def generate_sitemap():
     
     utils.write_file(output_path, rendered_template)
 
+def generate_atom_feed(cat):
+    dates = []
+    template = join("templates", "atom.xml")
+    output_path = utils.get_output_path("{0}/atom.xml".format(cat))
+    cat_items = utils.get_json_data(cat)  
+    for cat_item in cat_items:
+        dates.append(cat_item["last_modified"])
+        page_name = utils.get_filename_from_page(cat_item)
+        content_file_name = utils.get_page_path(page_name, cat)
+        content_file = join("content", "{0}.html".format(content_file_name))
+        cat_item["content"] = compiler.compile(utils.read_file(content_file))
+        cat_item["content"] = utils.escape(cat_item["content"]({"page" : cat_item}))
+    dates.sort(reverse=True)
+    partial = compiler.compile(utils.read_file(template))
+    rendered_template = partial({"pages": cat_items, "date" : dates[0], "cat": cat},helpers=helpers)
+
+    utils.write_file(output_path, rendered_template)
+
 def main():
     if os.path.isdir(output_dir):
         rmtree(output_dir)
@@ -124,6 +145,8 @@ def main():
     copytree('static', output_dir)
     generate_website()
     generate_sitemap()
+    generate_atom_feed("blogs")
+    generate_atom_feed("posts")
     full_output_path = join(os.getcwd(), output_dir)
     print("Generated website can be found in {0}".format(full_output_path))
 
