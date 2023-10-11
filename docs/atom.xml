@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/atom.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<title>Exeami Blogs</title>
+<subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
+<link rel="self" href="https://exeami.com/blogs/feed/" />
+<updated>2023-10-11T00:00:00Z</updated>
+<author>
+  <name>Exeami</name>
+  <email>exeami@proton.me</email>
+  <uri>https://exeami.com/</uri>
+</author>
+<icon>https://exeami.com/images/logos/exeami.webp</icon>
+<id>https://exeami.com/</id>
+
+  <entry>
+    <title>Instagram for kids</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/blogs/instagram-for-kids"/>
+    <id>https://exeami.com/blogs/instagram-for-kids</id>
+    <updated>2023-09-15T00:00:00Z</updated>
+    <summary>Reasons to avoid creating instagram for kids</summary>
+    <content type="html">
+      &lt;p&gt;
+  If you have an Instagram account for your babies or plan to have one, I want you to think twice before doing it.
+  Most of us are immature and innocent and follow the trend without being fully aware that some things we share on the
+  internet might be bad for us and our loved ones in many ways.
+&lt;/p&gt;
+&lt;p&gt;
+  I want to point out a few reasons why sharing too much about kids online is not a good idea.
+&lt;/p&gt;
+&lt;dl&gt;
+  &lt;dt&gt;Consent&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;When sharing personal details, pictures and day-to-day activities of your kids online, you are creating
+      a personally identifiable &lt;strong&gt;permanent digital footprint&lt;/strong&gt; of them whether they like it or not. I
+      feel that kids
+      should have a right to their digital privacy, as some of these details or fame might change events in their
+      lives the way they don&#x27;t want them to be, and they might not even be able to change it.
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;Safety&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;Everyone wants to safeguard and protect their kids as they love them, and it&#x27;s their duty, and they are
+      responsible for the kid&#x27;s safety. Predators, stalkers, and paedophiles are all over the internet. It&#x27;s an easy
+      way to get
+      the information, so please don&#x27;t be the one who provides it. I heard some parents sharing full names, locations,
+      school names, bus timings, activities, and everything on social media that can become a huge safety concern. If
+      not, the photo you thought was cute might expose your kids to bullies.
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;Misuse&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;The photos you share can be misappropriated and reused, or others use them for commercial purposes without your
+      knowledge. &lt;a href=&quot;https://firewalltimes.com/instagram-data-breach-timeline/&quot;&gt;Do not think that just because
+        you have a private account, you can control who gets access to the photos.&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;Comparison&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;Based on the &lt;a href=&quot; https://doi.org/10.1038/s44271-023-00013-0&quot;&gt;DIPF | Leibniz Institute for Research and
+        Information in Education, and Center for Research on Individual Development and Adaptive Education of Children
+        at Risk (IDeA)&lt;/a&gt; paper demonstrating that upward social
+      comparison, comparing with people
+      we consider to be socially better off is associated with reduced
+      well-being such as lower life satisfaction or more depressive symptoms. The better the lives of others on social
+      media, the worse we feel. Many parents compare parenting standards and doubt themselves. Many feel depressed
+      when
+      they get fewer likes on their baby&#x27;s pictures. This is not only bad for your mental health but also affects the
+      &lt;a href=&quot;https://journals.sagepub.com/doi/full/10.1177/2156869320912520&quot;&gt;child&#x27;s well-being in the long
+        term.&lt;/a&gt;
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt&gt;Discomfort&lt;/dt&gt;
+  &lt;dd&gt;
+    &lt;p&gt;How much time do you spend getting the right picture with perfect lighting? How many photos are you taking? And
+      how much time are you editing and trying to make it the best? And are you doing this for fun or for
+      likes and comments? Taking a few pictures on occasion is good, but when we fall into the trap of
+      being emotionally attached to the engagement of our posts, we might end up causing discomfort to our loved ones
+      by unconsciously forcing them to do things that they don&#x27;t want to do.
+    &lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;
+  Some parents might be doing this for commercial reasons, I don&#x27;t have a say in it. But if you are doing it as
+  everyone
+  else doing it or for making a digital album and sharing it with close friends and family. I recommend sharing on an
+  end-to-end encrypted channel like &lt;a href=&quot;https://www.signal.org/&quot;&gt;Signal&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  The above applies if you only post photos of your children to your personal account, and you shouldn&#x27;t feel a
+  false sense of protection. I focused on sperate account, as this means you plan to share a lot.
+&lt;/p&gt;
+&lt;p&gt;
+  Always ask yourself if it is needed or worth the attention and virtual fame before posting anything about your
+  babies online. Stay safe.
+&lt;/p&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Getting to know IndieWeb</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/blogs/getting-to-know-indie-web"/>
+    <id>https://exeami.com/blogs/getting-to-know-indie-web</id>
+    <updated>2023-09-07T00:00:00Z</updated>
+    <summary>Introduction to indieweb and reasons why we need it</summary>
+    <content type="html">
+      &lt;p&gt;
+  Once I was reading about how Amazon gave a platform for many small businesses to sell products online and how it
+  helped them. You might even have heard that, but think about it, whenever we buy something from a small business on
+  Amazon, we often relate it as we bought it from Amazon and never really remember the seller or the creator. This
+  might seem trivial, but imagine if you were a seller of handmade crafts on Amazon and you had a loyal customer base
+  and a good reputation. What if
+  &lt;a href=&quot;https://the-digital-reader.com/amazon-is-still-banning-authors-for-no-reason/&quot;&gt;Amazon suddenly banned you
+    from selling on their platform&lt;/a&gt;,
+  and you lost your source
+  of income and your hard work? Or what if you had to &lt;a
+    href=&quot;https://www.buzzfeednews.com/article/leticiamiranda/amazon-sellers-say-the-tech-giant-is-crushing-them-with&quot;&gt;lower
+    your prices to compete with other sellers?&lt;/a&gt; Or &lt;a
+    href=&quot;https://timesofindia.indiatimes.com/gadgets-news/amazon-imposes-new-fee-on-sellers-shipping-their-own-products/articleshow/102833427.cms&quot;&gt;pay
+    a fee to
+    Amazon and limit your profit margin?&lt;/a&gt;
+  Or what if you couldn&#x27;t sell your products anywhere else for &lt;a
+    href=&quot;https://finance.yahoo.com/news/amazon-keeps-prices-artificially-high-210059691.html&quot;&gt;a lower price than on
+    Amazon&lt;/a&gt;
+  , and you were stuck with their rules? Or
+  &lt;a href=&quot;https://news.sky.com/story/amazon-sellers-fear-bankruptcy-after-rule-change-12936803&quot;&gt;they suddenly change
+    terms and don&#x27;t pay you?&lt;/a&gt;
+  Amazon is one of many examples to show the control of big corporations have on us.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Every &lt;a href=&quot;https://indieweb.org/silo&quot;&gt;silo&lt;/a&gt; site which is not yours, your data might feel like yours, but it
+  is not.
+&lt;/p&gt;
+
+&lt;blockquote cite=&quot;https://bradfrost.com/blog/post/write-on-your-own-website/&quot; class=&quot;quote&quot;&gt;
+  &lt;p&gt;
+    &quot;Writing on your own website associates your thoughts and ideas with you as a person. Having a distinct website
+    design helps strengthen that association. Writing for another publication, you get a little circular avatar at the
+    beginning of the post and a brief bio at the end of the post, and that&#x27;s about it. People will remember the
+    publication, but probably not your name.&quot;
+  &lt;/p&gt;
+  &lt;footer class=&quot;quote-footer&quot;&gt;
+    &lt;cite&gt;
+      &lt;a href=&quot;https://bradfrost.com/blog/post/write-on-your-own-website/&quot;&gt;—Brad Frost on
+        Write on your own website
+      &lt;/a&gt;
+    &lt;/cite&gt;
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;
+  When you know this, you want to change it and do something to change it. You also want your loved ones to be aware
+  of it and own their data. The good news is, you are not alone. It&#x27;s wonderful to connect with people who share your
+  vision and work together for a better future. When I first got to know about IndieWeb It felt like a hope.
+&lt;/p&gt;
+&lt;h3&gt;What is IndieWeb?&lt;/h3&gt;
+&lt;p&gt;
+  &lt;strong&gt;As Indie web is about ownership, Your content is yours, and You are in control.&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;blockquote cite=&quot;https://indieweb.org/&quot; class=&quot;quote&quot;&gt;
+  &lt;p&gt;
+    &quot;The IndieWeb is a community of independent &amp; personal websites connected by simple
+    standards, based on the principles of: owning your domain &amp; using it as your primary identity, publishing on your
+    ownsite (optionally syndicating elsewhere), and owning your data.&quot;
+  &lt;/p&gt;
+  &lt;footer class=&quot;quote-footer&quot;&gt;
+    &lt;cite&gt;
+      &lt;a href=&quot;https://indieweb.org/&quot;&gt;— IndieWeb &lt;/a&gt;
+    &lt;/cite&gt;
+  &lt;/footer&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Why do we need IndieWeb?&lt;/h3&gt;
+There are many reasons why It is good to have your space on the web where you own what is yours. I am just listing
+down a few.
+&lt;ol&gt;
+  &lt;li&gt;
+    If you do not want to part of social media where the more you spend time and contribute, &lt;a
+      href=&quot;https://en.wikipedia.org/wiki/Targeted_advertising&quot;&gt;the more they learn about you
+      and sell you&lt;/a&gt; (sell your browsing habits to advertisers).
+  &lt;/li&gt;
+  &lt;li&gt;
+    If you don&#x27;t want Silos, control your experience of the web and decide &lt;a
+      href=&quot;https://en.wikipedia.org/wiki/Filter_bubble&quot;&gt;what you see&lt;/a&gt; and &lt;a
+      href=&quot;https://www.currentaffairs.org/2020/12/how-seo-is-gentrifying-the-internet&quot;&gt;where your content goes.&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    If you don&#x27;t want to be part of evil where once you create a community, they keep it under paywall or
+    &lt;a href=&quot;https://indieweb.org/login_wall&quot;&gt;authwall&lt;/a&gt; and
+    leave you
+    choose to &lt;a
+      href=&quot;https://www.theverge.com/2023/6/20/23767848/reddit-blackout-api-protest-moderators-suspended-nsfw&quot;&gt;obey
+      their rules or lose the community.&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    If you &lt;a href=&quot;https://www.thesun.ie/tech/11271562/instagram-users-lose-accounts-taylor-swift/&quot;&gt;don&#x27;t want to
+      need permission&lt;/a&gt; to communicate, create and innovate with people around the globe with the
+    internet.
+  &lt;/li&gt;
+  &lt;li&gt;
+    If you don&#x27;t want to &lt;a
+      href=&quot;https://www.howtogeek.com/403769/what-happens-to-your-digital-property-when-a-company-goes-out-of-business/&quot;&gt;
+      lose all your data because the company gone out of business.&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    If you want to show that you are not consumed by the Silos.
+  &lt;/li&gt;
+  &lt;li&gt;
+    If you want different monetization for your content in your way.
+  &lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;quote&quot;&gt;
+  &lt;img class=&quot;image&quot; src=&quot;/images/blogs/getting-to-know-indie-web/xkcd.webp&quot;&gt;
+  &lt;figcaption class=&quot;quote-footer&quot;&gt;
+    &lt;cite&gt;
+      &lt;a href=&quot;https://xkcd.com/1150/&quot;&gt;—xkcd - 1150&lt;/a&gt;
+    &lt;/cite&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3&gt;It&#x27;s not just ownership&lt;/h3&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;https://indieweb.org/personal-domain&quot;&gt;Identity&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;Having a personal domain, which is the initial step of Indie web. It helps you to have more credibility,
+    improves personal branding and makes it easy to find you.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;https://indieweb.org/POSSE&quot;&gt;Syndication&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;If you want to let your friends read your posts, their way using social media like Instagram, Tumblr, Twitter
+    etc. You can post content on your site and publish links to 3rd party silos using POSSE (Publish (on your) Own
+    Site, Syndicate Elsewhere) And can back feed the post activity back to your website. Now we can have all in one
+    place, IndieWeb comments, and comments on your POSSE copies.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;https://indieweb.org/Webmention&quot;&gt;Web Mentions&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;Web Mentions is a simple communication protocol between websites that enables cross-site conversations and
+    website can display comments, likes, or other response. With Web mentions you are better connected, you decide
+    what and how to display the interaction on the content you own.
+  &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;https://indieweb.org/IndieAuth&quot;&gt;IndieAuth&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt;IndieAuth provides the ability to use your website (domain) to authenticate yourself on the web using a
+    federated login protocol for Web sign-in.
+  &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;dl&gt;
+  &lt;dt&gt;&lt;strong&gt;&lt;a href=&quot;https://indieweb.org/microformats&quot;&gt;MicroFormats&lt;/a&gt;&lt;/strong&gt;&lt;/dt&gt;
+  &lt;dd&gt; Add Microformats to your existing HTML to use structured data from your site to allow tools like feed readers.
+  &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h3&gt;Finally, It can be easy too…&lt;/h3&gt;
+&lt;p&gt;
+  I know many might think,&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It is easy to create a silo account and post what they want with few steps.&lt;/li&gt;
+  &lt;li&gt;I am not a celebrity or a company to own a domain.&lt;/li&gt;
+  &lt;li&gt;I am not a web developer and I don&#x27;t know how to do it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  There can many reasons and excuses we give ourselves to start. Even I am new to this, yet to understand a lot. Having
+  a sense of ownership gives pleasure and made me take my first step, you can find yours.
+&lt;/p&gt;
+&lt;p&gt;
+  There are many &lt;a href=&quot;https://indieweb.org/tools&quot;&gt;tools&lt;/a&gt;, &lt;a
+    href=&quot;https://indieweb.org/Getting_Started&quot;&gt;step-by-step guides&lt;/a&gt; and &lt;a
+    href=&quot;https://indieweb.org/discuss&quot;&gt;help&lt;/a&gt; available in
+  the community to make it easy. Many smart people are
+  contributing to make it easier so that we can own what is ours.
+&lt;/p&gt;
+&lt;p&gt;
+  Do it for yourself, have fun and pride creating something that is yours, and It will get easy.
+&lt;/p&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Why should I care about data privacy?</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/blogs/data-privacy"/>
+    <id>https://exeami.com/blogs/data-privacy</id>
+    <updated>2020-07-21T00:00:00Z</updated>
+    <summary>Few reasons why we should care about data privacy</summary>
+    <content type="html">
+      &lt;p&gt;
+  Recently when I was speaking about data privacy to a friend, he said &quot;How do I get affected if my data is collected,
+  in a way I am getting personal suggestions, so it seems to be good, as I have nothing to hide?&quot;
+&lt;/p&gt;
+&lt;p&gt;
+  We usually listen to this in various forms, from many people around us, so I want to bring this up to you.
+&lt;/p&gt;
+&lt;p&gt;
+  The way we think about privacy is misleading.
+&lt;/p&gt;
+&lt;p&gt;
+  You might say, how can I watch a song of my favourite singer last night can possibly affect me? Or things I search
+  for my academic project will harm me?
+  It&#x27;s not the bits of data, but the complete profile of you, collected from different sources. All of it combined can
+  provide a detailed profile of you that even you didn&#x27;t know of.
+&lt;/p&gt;
+
+&lt;h3 id=&quot;reasons-heading&quot;&gt;Why is it harmful?&lt;/h3&gt;
+&lt;ol&gt;
+
+  &lt;li&gt;
+    &lt;dt&gt;Protect your freedom of thought&lt;/dt&gt;
+  &lt;/li&gt;
+
+  &lt;dd&gt;
+    &lt;p&gt;Have you ever heard of &lt;a href=&quot;https://en.wikipedia.org/wiki/Hawthorne_effect&quot; target=&quot;_blank&quot;&gt;&quot;Hawthorne
+        Effect&quot;&lt;/a&gt;? Let me tell you, people behave differently if they know they are being watched.
+
+      If I say, &quot;you are exploring things about your sexuality or religious beliefs or medical problems today may cause
+      you
+      to
+      lose your dream job after 10 years or a maybe physical threat to you or your family by unacceptable society,
+      will
+      you
+      do that?&quot;
+    &lt;/p&gt;
+    &lt;p&gt;
+      This is not hoaxed, your employer with your profile in hand with opposite beliefs can target you and your
+      comment
+      on
+      some social media might keep your life at risk by the mob.
+
+      The point is, if you don&#x27;t have the privacy to do this kind of self-exploration,
+      you aren&#x27;t free.
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;li&gt;
+    &lt;dt&gt;Price Discrimination&lt;/dt&gt;
+  &lt;/li&gt;
+
+  &lt;dd&gt;
+    &lt;p&gt;
+      &quot;Relevant ads are nice, at least I am not seeing some lipstick ad which I am least interested to watch&quot;, says
+      one
+      of
+      my friends. It would be fine if you decided to give up this information for tangible benefits, right?
+
+      If I say these exciting bargains are everything personal about you: your age, income, family&#x27;s ages, and income,
+      medical history, dietary habits, favourite websites, your birthday...the list goes on and may never
+      see a benefit aside from this ad, and no ones including you in the decision.
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;li&gt;
+    &lt;dt&gt;Identity theft&lt;/dt&gt;
+  &lt;/li&gt;
+  &lt;dd&gt;
+    &lt;p&gt;
+      &lt;a href=&quot;https://en.wikipedia.org/wiki/Identity_theft&quot; target=&quot;_blank&quot;&gt;Identity theft&lt;/a&gt; is usually done for
+      financial gain, but it will be possible to steal your sensitive data from your accounts as well as those
+      belonging
+      to your family, friends and can use your credentials to harm your reputation or cause online public
+      humiliation.
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;li&gt;
+    &lt;dt&gt;Privacy is a Human right&lt;/dt&gt;
+  &lt;/li&gt;
+
+  &lt;dd&gt;
+    &lt;p&gt;
+      Not caring about it shows little knowledge about the history and the importance of it.
+
+      It&#x27;s a human right just like the right to equality, to justice, freedom, a nationality, the right to religion,
+      etc.
+
+      It&#x27;s your Data, it exists because you exist, and you have complete right on every byte of it, playing around
+      psychologically to steal data or to use it without your consent for personal gain, making you a fool
+      by hiding things is not right and never will be.
+
+      Simply it&#x27;s &lt;strong&gt;NOT ETHICAL&lt;/strong&gt;
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;li&gt;
+    &lt;dt&gt;The creepers&lt;/dt&gt;
+  &lt;/li&gt;
+
+  &lt;dd&gt;
+    &lt;p&gt;
+      How do you feel if someone is constantly listening to you when you are discussing a sensitive or personal
+      topic?
+
+      I will say it&#x27;s happening right now. Your own devices, you got for your convenience, are spying on you.
+
+      Sometimes a user, by default, is opted into being tracked by the listening devices (aka personal assistants like
+      &lt;a href=&quot;https://www.newsweek.com/amazon-alexa-recordings-romania-sex-privacy-1452173&quot; target=&quot;_blank&quot;&gt;Alexa&lt;/a&gt;,
+      &lt;a href=&quot;https://nypost.com/2019/07/29/apples-siri-routinely-records-you-having-sex/&quot; target=&quot;_blank&quot;&gt;Siri&lt;/a&gt;,
+      and &lt;a href=&quot;https://money.cnn.com/2017/10/11/technology/google-home-mini-security-flaw/index.html&quot;
+        target=&quot;_blank&quot;&gt;Google Home&lt;/a&gt;) which records your private conversations without your consent.
+      And are being listened by not just some algorithm, but by a human.
+    &lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;li&gt;
+    &lt;dt&gt;The Filter bubble&lt;/dt&gt;
+  &lt;/li&gt;
+
+
+  &lt;dd&gt;
+    &lt;p&gt; Did we talk about personal suggestions? They are good, right? what possibly can be bad about having the things
+      on
+      the
+      plate which we want? Check out &lt;a href=&quot;https://en.wikipedia.org/wiki/Filter_bubble&quot; target=&quot;_blank&quot;&gt;&quot;filter
+        bubble&quot;&lt;/a&gt;.
+    &lt;/p&gt;
+    &lt;p&gt;
+      Filter bubbles refer to the state of intellectual isolation that can result from personalized searches on search
+      engines or social media sites. As a result,&lt;strong&gt;&lt;i&gt; users become separated from most information that
+          presents
+          an
+          opposing viewpoint.&lt;/i&gt;&lt;/strong&gt;&lt;/p&gt;
+    &lt;p&gt;
+      If I say for example you don&#x27;t want to wear a mask and if you search about it, if this filter bubble shows you
+      the
+      things which might bad for wearing a mask and make your opinion stronger and make you feel good, but if you
+      don&#x27;t
+      know the use of that it might make your life risky.
+    &lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+  These are just six good reasons to care about data privacy, there are a lot more things we need to
+  worry
+  about.
+  we will meet again here, as privacy cannot be covered in a single blog post.
+&lt;/p&gt;
+&lt;p&gt;
+  I want to conclude with Edward Snowden&#x27;s quote,
+&lt;/p&gt;
+
+&lt;p class=&quot;content-box&quot;&gt;&lt;i&gt;&quot;Arguing that you don&#x27;t care about the right to privacy because you have nothing to
+    hide,
+    is
+    no
+    different from saying you don&#x27;t care about free speech because you have nothing to say.&quot;&lt;/i&gt;
+&lt;/p&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Homomorphic Encryption</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/blogs/homomorphic-encryption"/>
+    <id>https://exeami.com/blogs/homomorphic-encryption</id>
+    <updated>2020-04-20T00:00:00Z</updated>
+    <summary>Blog about Homomorphic Encryption </summary>
+    <content type="html">
+      &lt;p&gt;
+  &lt;a href=&quot;https://en.wikipedia.org/wiki/Homomorphic_encryption&quot; target=&quot;_blank&quot;&gt;Homomorphic Encryption&lt;/a&gt; is an
+  encryption technique where we can perform computations on encrypted data and get the result which will be encrypted
+  and can be decrypted only by the owner with the secret key.
+&lt;/p&gt;
+&lt;h3&gt;Why would anyone need Homomorphic Encryption?&lt;/h3&gt;
+&lt;p&gt;
+  Consider the scenario where you want some computation to be performed on some metadata
+  with the help of third-party services, but you don&#x27;t want to expose your or your user&#x27;s data for security or
+  privacy concerns.
+&lt;/p&gt;
+&lt;p&gt;
+  The best &lt;i&gt;(and currently known)&lt;/i&gt; use case would be on cloud computing.
+&lt;/p&gt;
+&lt;p&gt;
+  The major scope of Homomorphic encryption can be in Genomics, Medical History, Finance, and wherever we deal
+  with very sensitive private data but needs to perform some basic operations on a more generalized
+  metadata.
+&lt;/p&gt;
+&lt;h3&gt;A bit of history&lt;/h3&gt;
+&lt;p&gt;
+  The problem of constructing a fully homomorphic encryption scheme was first proposed in 1978 - within a year of
+  publishing of the RSA scheme.
+  But Fully homomorphic system was not described until 2009, when computer scientist &lt;strong&gt;Craig Gentry&lt;/strong&gt;
+  published thesis on &lt;a href=&quot;https://crypto.stanford.edu/craig/&quot;&gt;‘Fully Homomorphic Encryption using ideal
+    lattices&#x27;.&lt;/a&gt;
+&lt;/p&gt;
+&lt;h3&gt;Challenges&lt;/h3&gt;
+&lt;p&gt;
+  The major challenge now computational time. Many research activities are going on to speed up the process by
+  decreasing the computational overhead that&#x27;s required for homomorphic encryption. The encryption in actual
+  homomorphic
+  schemes&#x27; functions are considerably more complicated, often they use a mathematical calculation involving lattices
+  with a high number of dimensions, called the &lt;a
+    href=&quot;https://en.wikipedia.org/wiki/Ring_learning_with_errors&quot;&gt;Ring-Learning With Errors (RLWE) problem.&lt;/a&gt;
+&lt;/p&gt;
+&lt;h3&gt;Availability&lt;/h3&gt;
+&lt;p&gt;
+  Several open-source implementations of homomorphic encryption schemes exist today.
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/shaih/HElib&quot; target=&quot;_blank&quot;&gt;HELib&lt;/a&gt;: An early and widely used library
+    from IBM that supports the BGV scheme and bootstrapping.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Microsoft/SEAL&quot; target=&quot;_blank&quot;&gt;Microsoft SEAL&lt;/a&gt;: A widely used open
+    source library from Microsoft that supports the BFV and the CKKS schemes.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gchq/Palisade&quot; target=&quot;_blank&quot;&gt;PALISADE&lt;/a&gt;: A widely-used open source
+    library from a consortium of DARPA-funded defense contractors that provides lattice cryptography building blocks
+    and supports leading homomorphic encryption schemes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;
+  Though the encryption scheme has been known from many years, because of complicated computations, we don&#x27;t
+  have an optimal and practical solution yet. Hope we see the Fully Homomorphic encryption within a few decades
+  with a wider scope.
+&lt;/p&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+  <entry>
+    <title>Why should I switch to Signal?</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/blogs/why-should-i-switch-to-signal"/>
+    <id>https://exeami.com/blogs/why-should-i-switch-to-signal</id>
+    <updated>2020-02-28T00:00:00Z</updated>
+    <summary>Blog about Signl messaging app and it's features</summary>
+    <content type="html">
+      &lt;p&gt;
+    &lt;a href=&quot;https://www.signal.org/&quot; target=&quot;_blank&quot;&gt;Signal&lt;/a&gt; is a messaging app by Open Whisperer Systems,
+    just like WhatsApp or iMessage or Facebook Messenger, but one that&#x27;s geared towards privacy and security. It&#x27;s
+    encrypted, simple, and free.
+&lt;/p&gt;
+
+&lt;h3&gt;Signal Vs WhatsApp&lt;/h3&gt;
+
+
+&lt;p&gt;
+    They both use the same underlying encryption &quot;the Signal Protocol&quot; but drastically differ
+    in terms of underlying philosophy.
+&lt;/p&gt;
+
+&lt;p&gt;
+    WhatsApp can&#x27;t see what&#x27;s inside the messages, but they can see who is sending a message to whom and
+    when - which is a large risk.
+    And according to the WhatsApp privacy policy, &lt;strong&gt;the company reserves the right to record this
+        information, known as message metadata&lt;/strong&gt;, and give it to governments.
+&lt;/p&gt;
+&lt;p&gt;
+    &lt;strong&gt;The only data Signal retains is the phone number you register with and when you last logged
+        into their server.&lt;/strong&gt;
+    That&#x27;s it. It doesn&#x27;t even record the hour, minute, or second - only the day.
+&lt;/p&gt;
+
+&lt;p&gt;
+    Signal is open-source and funded by donors, on the other hand WhatsApp is owned by Facebook, leaves users
+    to being nothing more than another data collection point for Facebook for ad-targeting.
+    WhatsApp was a messaging app first and added the security features later. Signal was all about security
+    first. Because of this, WhatsApp has more now-traditional chat features. Both Signal and WhatsApp also include
+    voice calling and video calling to round out the messaging apps.
+&lt;/p&gt;
+
+&lt;figure class=&quot;image media-figure is-1-by-2&quot;&gt;
+    &lt;img src=&quot;/images/blogs/why-should-i-switch-to-signal/signal_app.webp&quot; alt=&quot;Signal app image&quot; loading=&quot;lazy&quot;
+        width=&quot;400&quot; height=&quot;342&quot;&gt;
+&lt;/figure&gt;
+
+
+&lt;p&gt;
+    Signal has plenty of features too including GIFs, can send your location, and Signal even has disappearing
+    messages.Even voice calls on Signal are encrypted and screenshots can be disabled.
+&lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;
+    Signal, the non-profit organization, points out that &quot;there are no ads, no affiliate marketers, no
+    creepy tracking&quot;, and it&#x27;s hard to ask for much more than that in terms of privacy. And It&#x27;s recommended by
+    Edward Snowden.
+    When you have an alternative which doesn&#x27;t need you to compromise on privacy, why not to switch to
+    Signal.
+&lt;/p&gt;
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
+</feed>
+

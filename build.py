@@ -117,6 +117,22 @@ def generate_sitemap():
     
     utils.write_file(output_path, rendered_template)
 
+def generate_atom_feed():
+    template = join("templates", "atom.xml")
+    partial = compiler.compile(utils.read_file(template))
+    output_path = utils.get_output_path("atom.xml")
+    blogs = utils.get_json_data("blogs")
+    
+    for blog in blogs:
+        page_name = utils.get_filename_from_page(blog)
+        content_file_name = utils.get_page_path(page_name, "blogs")
+        content_file = join("content", "{0}.html".format(content_file_name))
+        blog["content"] = compiler.compile(utils.read_file(content_file))
+        # print(blog["content"]({}))
+        blog["content"] = utils.escape(blog["content"]({}))
+    rendered_template = partial({"pages": blogs})
+    utils.write_file(output_path, rendered_template)
+
 def main():
     if os.path.isdir(output_dir):
         rmtree(output_dir)
@@ -124,6 +140,7 @@ def main():
     copytree('static', output_dir)
     generate_website()
     generate_sitemap()
+    generate_atom_feed()
     full_output_path = join(os.getcwd(), output_dir)
     print("Generated website can be found in {0}".format(full_output_path))
 

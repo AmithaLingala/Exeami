@@ -4,8 +4,8 @@
 
 <title>Exeami Blogs</title>
 <subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
-<link rel="self" href="https://exeami.com/blogs"/>
-<updated>{{updated}}T00:00:00Z</updated>
+<link rel="self" href="https://exeami.com/blogs/feed/" />
+<updated>2023-10-11T00:00:00Z</updated>
 <author>
   <name>Exeami</name>
   <email>exeami@proton.me</email>
@@ -14,13 +14,20 @@
 <icon>https://exeami.com/images/logos/exeami.webp</icon>
 <id>https://exeami.com/</id>
 
-{{#each pages as |page|}}
+{{#each pages}}
   <entry>
-    <title>{{page.title}}</title>
-    <link rel="alternate" type="text/html" href="https://exeami.com/{{page.cat}}/{{page.url}}"/>
-    <id>https://exeami.com/{{page.cat}}/{{page.url}}</id>
-    <updated>{{page.last_modified}}T00:00:00Z</updated>
-    <summary>{{page.desc}}</summary>
+    <title>{{this.title}}</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/{{this.cat}}/{{this.url}}"/>
+    <id>https://exeami.com/{{this.cat}}/{{this.url}}</id>
+    <updated>{{this.last_modified}}T00:00:00Z</updated>
+    <summary>{{this.description}}</summary>
+    <content type="html">
+      {{this.content}}
+		</content>
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
   </entry>
 {{/each}}
 </feed>
