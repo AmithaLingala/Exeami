@@ -10,7 +10,7 @@
 	        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	        <title>Feed | <xsl:value-of select="atom:feed/atom:title" /></title>
 	        <link rel="stylesheet" href="/styles/atom.css" />
-	        <link rel="icon shortcut" href="/images/logos/exeami.webp"/>
+	        <link rel="icon shortcut" href="/images/logos/exeami-with-bg.webp"/>
 	      </head>
 	      <body>
 	        <div class="content">
