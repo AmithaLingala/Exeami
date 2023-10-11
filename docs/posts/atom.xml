@@ -19,6 +19,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/outlook-mails-to-thunderbird"/>
     <id>https://exeami.com/posts/outlook-mails-to-thunderbird</id>
     <updated>2023-09-09T00:00:00Z</updated>
+    <summary>📄 Note</summary>
     <content type="html">
       &lt;p&gt;
   I had some outlook backup files and I wanted to open them in Thunderbird. I spent some time figuring out how to do it.
@@ -54,6 +55,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/best-practices-for-better-websites"/>
     <id>https://exeami.com/posts/best-practices-for-better-websites</id>
     <updated>2023-09-02T00:00:00Z</updated>
+    <summary>📄 Note</summary>
     <content type="html">
       &lt;p&gt;
   I found &lt;a href=&quot;https://darekkay.com/best-practices/&quot; target=&quot;_blank&quot;&gt;Best Practices for Building Better Websites
@@ -78,6 +80,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/mobile-view"/>
     <id>https://exeami.com/posts/mobile-view</id>
     <updated>2023-08-31T00:00:00Z</updated>
+    <summary>💭 Thoughts</summary>
     <content type="html">
       &lt;p&gt;
   When I was developing this website, It was a feat to make my website have the same look and feel in mobile or small
@@ -108,6 +111,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/organ-donation"/>
     <id>https://exeami.com/posts/organ-donation</id>
     <updated>2023-08-31T00:00:00Z</updated>
+    <summary>💭 Thoughts</summary>
     <content type="html">
       &lt;p&gt;
   I like to believe most people are in favour of organ donation as it can &lt;a
@@ -149,6 +153,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/exeami-logo"/>
     <id>https://exeami.com/posts/exeami-logo</id>
     <updated>2023-08-18T00:00:00Z</updated>
+    <summary>📄 Note</summary>
     <content type="html">
       &lt;p&gt;
   I use my logo everywhere online as my profile picture, and often people ask me about it. When you look at my logo,
@@ -197,6 +202,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/low-carb-diet"/>
     <id>https://exeami.com/posts/low-carb-diet</id>
     <updated>2023-08-10T00:00:00Z</updated>
+    <summary>🔁 Re-Post</summary>
     <content type="html">
       &lt;figure class=&quot;media-figure&quot;&gt;
   &lt;img class=&quot;posts-item&quot; src=&quot;/images/posts/low-carb-diet.webp&quot; alt=&quot;Comic on stress asking to eat when on deit&quot;
@@ -218,6 +224,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/printer"/>
     <id>https://exeami.com/posts/printer</id>
     <updated>2023-08-10T00:00:00Z</updated>
+    <summary>🔁 Re-Post</summary>
     <content type="html">
       &lt;figure class=&quot;media-figure&quot;&gt;
   &lt;img class=&quot;posts-item&quot; src=&quot;/images/posts/printer.webp&quot; alt=&quot;Comic on how we can not take prints if low on one ink&quot;
@@ -239,6 +246,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/money"/>
     <id>https://exeami.com/posts/money</id>
     <updated>2020-07-22T00:00:00Z</updated>
+    <summary>🔁 Re-Post</summary>
     <content type="html">
       &lt;figure class=&quot;media-figure&quot;&gt;
   &lt;img class=&quot;posts-item&quot; src=&quot;/images/posts/money.webp&quot; alt=&quot;Comic on subscription based buggy software&quot;
@@ -260,6 +268,7 @@
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/spying-device"/>
     <id>https://exeami.com/posts/spying-device</id>
     <updated>2020-07-22T00:00:00Z</updated>
+    <summary>🔁 Re-Post</summary>
     <content type="html">
       &lt;figure class=&quot;media-figure&quot;&gt;
   &lt;img class=&quot;posts-item&quot; src=&quot;/images/posts/spyingdevice.webp&quot;
