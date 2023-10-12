@@ -17,12 +17,12 @@
         {{/if}}
 
         {{#if page.category}}
-        <span class="is-padding-left-1 title">
+        <span class="p-category is-padding-left-1 title">
           {{page.category}}
         </span>
         {{/if}}
         {{#if page.tags}}
-        <span class="p-category"> {{> tags tags=page.tags}} </span>
+        <span> {{> tags tags=page.tags}} </span>
         {{/if}}
       </header>
       <div class="card-body e-content">
