@@ -5,44 +5,48 @@
 <body>
   {{> nav routes=page.routes}}
   <main>
-    <article class="card h-entry">
-      <header class="card-header">
-        <h1 class="p-name">{{page.title}}</h1>
-        <h2 class="subtitle">{{page.subtitle}}</h2>
+    <article class="card">
+      <span class="h-entry">
+        <header class="card-header">
+          <h1 class="p-name">{{page.title}}</h1>
+          <h2 class="subtitle">{{page.subtitle}}</h2>
 
-        {{#if page.last_modified}}
-        <p>
-          <time class="subtitle dt-published" datetime="{{page.last_modified}}">Created on {{page.last_modified}}</time>
-        </p>
-        {{/if}}
+          {{#if page.last_modified}}
+          <p>
+            <time class="subtitle dt-published" datetime="{{page.last_modified}}">Created on
+              {{page.last_modified}}</time>
+          </p>
+          {{/if}}
 
-        {{#if page.category}}
-        <span class="p-category is-padding-left-1 title">
-          {{page.category}}
-        </span>
-        {{/if}}
-        {{#if page.tags}}
-        <span> {{> tags tags=page.tags}} </span>
-        {{/if}}
-      </header>
-      <div class="card-body e-content">
-        {{#if page.content}}
-        {{#if page.cat}}
-        <div class="card-item">
+          {{#if page.category}}
+          <span class="p-category is-padding-left-1 title">
+            {{page.category}}
+          </span>
+          {{/if}}
+          {{#if page.tags}}
+          <span> {{> tags tags=page.tags}} </span>
+          {{/if}}
+        </header>
+        <div class="card-body e-content">
+          {{#if page.content}}
+          {{#if page.cat}}
+          <div class="card-item">
+            {{> (lookup page 'content')}}
+          </div>
+          <span class="reply-box"><a class="link-button"
+              href="mailto:exeami@proton.me?subject=Comment on '{{page.title}}'&amp;body=Link: https://exeami.com/{{page.cat}}/{{page.url}}">Comment
+              via email</a></span><br>
+          {{else}}
           {{> (lookup page 'content')}}
-        </div>
-        <span class="reply-box"><a class="link-button"
-            href="mailto:exeami@proton.me?subject=Comment on '{{page.title}}'&amp;body=Link: https://exeami.com/{{page.cat}}/{{page.url}}">Comment
-            via email</a></span><br>
-        {{else}}
-        {{> (lookup page 'content')}}
-        {{/if}}
-        {{/if}}
+          {{/if}}
+          {{/if}}
 
-        {{#if page.content-item}}
-        {{> (lookup page 'content-item') data=page.content-data}}
-        {{/if}}
-      </div>
+          {{#if page.content-item}}
+          {{> (lookup page 'content-item') data=page.content-data}}
+          {{/if}}
+        </div>
+
+      </span>
       {{#if page.suggestions}}
       <div>
         <h2 class="is-text-center">Recent Blogs</h2>
