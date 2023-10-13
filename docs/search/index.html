@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-GB-oed">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy"
@@ -10,9 +11,9 @@
   <meta name="yandex-verification" content="8f16bbfd12051695">
 
   <meta name="author" content="Amitha Lingala">
-  <meta name="description" content="💭 Thoughts">
-  <meta name="keywords" content="organ denation">
-  <title>Organ Donation</title>
+  <meta name="description" content="Personal website of Amitha Lingala and blogs about data privacy">
+  <meta name="keywords" content="exeami, amitha lingala, github/amithalingala">
+  <title>Search</title>
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
   <link rel="alternate" type="application/atom+xml" href="https://exeami.com/blogs/atom.xml" title="All blogs - Atom">
@@ -29,6 +30,7 @@
       localStorage.getItem('theme') || 'black-theme'</script>
   <link rel="preload" href="/scripts/util.js" as="script">
   <script src="/scripts/util.js"></script>
+  <link rel="preload" href="/scripts/search.js" as="script">
 </head>
 
 <body>
@@ -56,62 +58,7 @@
 </nav>
 <input type="search" class="search-query" id="search" name="q" placeholder="Search exeami" tabindex="2" value="">
   <main>
-    <article class="card">
-      <span class="h-entry">
-        <header class="card-header">
-          <h1 class="p-name">Organ Donation</h1>
-          <h2 class="subtitle"></h2>
-
-          <p>
-            <time class="subtitle dt-published" datetime="2023-08-31">Created on
-              2023-08-31</time>
-          </p>
-
-          <span class="p-category is-padding-left-1 title">
-            💭 Thoughts
-          </span>
-        </header>
-        <div class="card-body e-content">
-          <div class="card-item">
-            <p>
-  I like to believe most people are in favour of organ donation as it can <a
-    href="https://www.organdonation.nhs.uk/helping-you-to-decide/personal-stories/" target="_blank">save lives</a>,
-  and if
-  not donated, organs are
-  useless. The fact is, there are always <a href="https://en.wikipedia.org/wiki/Organ_donation#Organ_shortfall"
-    target="_blank">more people waiting</a> for the organs. When I think about it, maybe many support the
-  idea, but because they never got to sign for it, organs are not automatically used to save or improve other lives.
-</p>
-
-<p>
-  Then comes the debate whether organ donation should be opt-in or opt-out. I might say it should be opt-out, as I
-  can not
-  comprehend why anyone not want to donate after death, but I know there can be reasons beyond my understanding.
-</p>
-
-<p>
-  So, the only solution is educating and spreading awareness about organ donation and letting individuals decide what
-  is wrong or right for them.
-</p>
-
-<p>
-  If you support organ donation, not only signing up for it (if you are in a country where it is opt-in), but also
-  talking
-  about it whenever you can, might make a difference that you might not even realize. I wish the government and
-  educational institutes add it to the curriculum so that people can decide early in their life, but as I can not
-  control that, I will do what I can and hope you do what you can.
-</p>
-          </div>
-          <span class="reply-box"><a class="link-button"
-              href="mailto:exeami@proton.me?subject=Comment on 'Organ Donation'&amp;body=Link: https://exeami.com/posts/organ-donation">Comment
-              via email</a></span><br>
-
-        </div>
-
-      </span>
-      <div class="box is-content-center">
-        <h3><a href="/posts">See all posts</a></h3>
-      </div>
+    <article id="search-results" class="card">
     </article>
     <div class="theme-box hide-in-mobile">
   <button class="black-theme-button theme-button" data-theme="black-theme"><img width=30 height=30 class=".is-30x30"
@@ -144,6 +91,7 @@
     <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
   </p>
 </footer>
+  <script src="/scripts/search.js"></script>
 </body>
 
 </html>

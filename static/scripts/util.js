@@ -125,4 +125,13 @@ window.onload = function () {
       themeBox.classList.add('hide-in-mobile')
     }
   }
+
+  document.getElementById('search').onkeyup = (event) => {
+    if (event.key === 'Enter') {
+      const query = document.getElementById('search').value
+      if (query.trim().length > 0) {
+        window.location.replace(`/search?q=${query}`)
+      }
+    }
+  }
 }

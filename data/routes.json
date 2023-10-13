@@ -37,5 +37,14 @@
         "subtitle": "Feel free to get in touch!",
         "keywords": "exeami, amitha lingala, github/amithalingala",
         "description": "Personal website of Amitha Lingala and blogs about data privacy"
+    },
+    {
+        "url": "/search",
+        "title": "Search",
+        "subtitle": "",
+        "keywords": "exeami, amitha lingala, github/amithalingala",
+        "description": "Personal website of Amitha Lingala and blogs about data privacy",
+        "is_hidden": true,
+        "template": "search"
     }
 ]

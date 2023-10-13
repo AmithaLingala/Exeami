@@ -65,7 +65,10 @@ def generate_sub_pages(route):
 
 
 def create_output_path(route, category, page_file_name):
-    page_template_file = join("templates", "{0}.html".format(default_template))
+    template_name = default_template
+    if "template" in route:
+        template_name = route["template"]
+    page_template_file = join("templates", "{0}.html".format(template_name))
 
     page_file_path = utils.get_page_path(page_file_name, category)
 

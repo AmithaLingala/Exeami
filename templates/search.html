@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-GB-oed">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+    content="base-uri 'none'; form-action 'none'; img-src 'self'; object-src 'none';">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta name="yandex-verification" content="8f16bbfd12051695">
+
+  <meta name="author" content="Amitha Lingala">
+  <meta name="description" content="{{page.description}}">
+  <meta name="keywords" content="{{page.keywords}}">
+  <title>{{page.title}}</title>
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+
+  <link rel="alternate" type="application/atom+xml" href="https://exeami.com/blogs/atom.xml" title="All blogs - Atom">
+  <link rel="alternate" type="application/atom+xml" href="https://exeami.com/posts/atom.xml" title="All posts - Atom">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logos/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logos/favicon-16x16.png">
+  <link rel="manifest" href="/images/logos/site.webmanifest">
+
+  <link rel="preload" href="/styles/index.css" as="style">
+  <link rel="stylesheet" href="/styles/index.css">
+  <script>document.documentElement.className =
+      localStorage.getItem('theme') || 'black-theme'</script>
+  <link rel="preload" href="/scripts/util.js" as="script">
+  <script src="/scripts/util.js"></script>
+  <link rel="preload" href="/scripts/search.js" as="script">
+</head>
+
+<body>
+  {{> nav routes=page.routes}}
+  <main>
+    <article id="search-results" class="card">
+    </article>
+    {{> theme-switcher}}
+  </main>
+  {{> footer}}
+  <script src="/scripts/search.js"></script>
+</body>
+
+</html>
