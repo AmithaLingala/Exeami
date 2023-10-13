@@ -8,7 +8,7 @@ async function search(query) {
     if (results.length == 0) {
       const div = document.createElement('div')
       div.classList.add('is-text-center', 'title', 'is-padding-1')
-      div.innerText = 'Nothing results found!'
+      div.innerText = 'No results found!'
       result_div.appendChild(div)
     }
 
