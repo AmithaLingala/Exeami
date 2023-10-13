@@ -23,21 +23,21 @@ async function search(query) {
 
       const h2 = document.createElement('h2')
       h2.classList.add('title')
-      h2.innerHTML = highlight(result[1], query)
+      h2.innerHTML = highlight(result.title, query)
       div.appendChild(h2)
 
       const h4 = document.createElement('h4')
       h4.classList.add('url')
-      h4.innerHTML = highlight(result[0], query)
+      h4.innerHTML = highlight(result.url, query)
       div.appendChild(h4)
 
       const h3 = document.createElement('h3')
       h3.classList.add('subtitle')
-      h3.innerHTML = highlight(result[2], query)
+      h3.innerHTML = highlight(result.summary, query)
       div.appendChild(h3)
 
       const p = document.createElement('p')
-      p.innerHTML = highlight(result[4], query)
+      p.innerHTML = highlight(result.content, query)
       div.appendChild(p)
 
       result_div.appendChild(a)
