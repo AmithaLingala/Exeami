@@ -399,8 +399,18 @@ article.card {
   margin: 1em;
   text-decoration: none;
 }
+.search-box {
+  display: flex;
+  background-color: var(--primary-bg);
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  color: var(--font-color);
+  margin: 1em;
+  text-decoration: none;
+}
 
-a.media-box:hover {
+a.media-box:hover,
+a.search-box:hover {
   color: var(--font-color);
   text-decoration: none;
   box-shadow: var(--header-bg) 0 0 4px 2px, var(--font-color) 0 0 4px 2px;
@@ -568,6 +578,15 @@ button.link-button {
     margin-right: 0.2em;
     margin-bottom: 1em;
     margin-top: 1em;
+    height: unset;
+  }
+  .search-box {
+    flex-direction: column;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 0;
     height: unset;
   }
 

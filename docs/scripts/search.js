@@ -14,7 +14,7 @@ async function search(query) {
 
     for (let result of results) {
       const a = document.createElement('a')
-      a.classList.add('media-box')
+      a.classList.add('search-box')
       a.href = result.url
 
       const div = document.createElement('div')
