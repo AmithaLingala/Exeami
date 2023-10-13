@@ -1,7 +1,7 @@
 import utils
 from pybars import Compiler
 
-from os.path import join
+from os.path import join, isfile
 
 compiler = Compiler()
 tags = compiler.compile(utils.read_file(join("templates", "tags.html")))
@@ -55,7 +55,8 @@ def get_content_partial(route, category):
 
     route["content"] = utils.get_page_path(page_name, category)
     content_file = join("content", "{0}.html".format(route["content"]))
-
-    partial[route["content"]] = compiler.compile(utils.read_file(content_file))
-
+    if isfile(content_file):
+        partial[route["content"]] = compiler.compile(utils.read_file(content_file))
+    else:
+        partial[route["content"]] = ""
     return partial
