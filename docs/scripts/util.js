@@ -119,10 +119,16 @@ window.onload = function () {
   themeSwitcher.onclick = () => {
     swapThemeButtons()
     const themeBox = document.querySelector('.theme-box')
+    const searchBox = document.querySelector('.search-query')
     if (themeBox.classList.contains('hide-in-mobile')) {
       themeBox.classList.remove('hide-in-mobile')
     } else {
       themeBox.classList.add('hide-in-mobile')
+    }
+    if (searchBox.classList.contains('hide-in-mobile')) {
+      searchBox.classList.remove('hide-in-mobile')
+    } else {
+      searchBox.classList.add('hide-in-mobile')
     }
   }
 

@@ -525,8 +525,9 @@ button.link-button {
   border-radius: 1em;
   padding: 1em;
   align-self: center;
-  width: 30%;
+  width: 20%;
   margin-top: 1em;
+  max-width: 300px;
 }
 
 /* ************************************************************************************************************* */
@@ -536,6 +537,9 @@ button.link-button {
   .search-query {
     margin-bottom: 1em;
     width: 90%;
+    position: absolute;
+    top: 5em;
+    margin-left: 2em;
   }
   .quote {
     margin: 0.2em;
@@ -624,14 +628,18 @@ button.link-button {
   (min-width: 760px) and (max-width: 1024px) {
   main {
     flex-direction: column-reverse;
-    margin-top: 0;
+    margin-top: 4em;
   }
   .hide-in-mobile {
     display: none !important;
   }
   .search-query {
-    margin-bottom: 1em;
-    width: 90%;
+    margin-bottom: 2em;
+    width: 70%;
+    position: absolute;
+    top: 7em;
+    margin-left: 15%;
+    max-width: 800px;
   }
 
   article.card {
