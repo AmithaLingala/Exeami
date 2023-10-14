@@ -1,5 +1,18 @@
 [
   {
+    "url": "add-search-for-website",
+    "cat": "blogs",
+    "title": "Implementing search for a website",
+    "subtitle": "The way I did it.",
+    "keywords": "",
+    "description": "The way I implemented in-house search for my website",
+    "tags": [
+      "Search"
+    ],
+    "image": "/add-search-for-website/banner2.png",
+    "last_modified": "2023-10-14"
+  },
+  {
     "url": "instagram-for-kids",
     "cat": "blogs",
     "title": "Instagram for kids",

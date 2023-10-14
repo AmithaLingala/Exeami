@@ -40,14 +40,15 @@
   --highlight: rgb(86, 89, 100);
 }
 
-.yellow-theme {
-  --primary-bg: #ffb74d;
-  --header-bg: #f57c00;
-  --content-bg: #ffb74d;
-  --box-bg: #ffa726;
+.pink-theme {
+  --primary-bg: rgb(255, 222, 222);
+  --header-bg: rgb(255, 192, 192);
+  --content-bg: rgb(255, 222, 222);
+  --box-bg: rgb(247, 204, 204);
   --font-color: rgb(33, 33, 33);
   --link: rgb(4, 41, 102);
   --link-hov: rgb(2, 20, 50);
+  --highlight: rgba(235, 235, 106, 0.5);
 }
 
 .white-theme {

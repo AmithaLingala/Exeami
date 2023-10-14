@@ -5,7 +5,7 @@
 <title>Exeami blogs</title>
 <subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
 <link rel="self" href="https://exeami.com/blogs/feed/" />
-<updated>2023-09-15T00:00:00Z</updated>
+<updated>2023-10-14T00:00:00Z</updated>
 <author>
   <name>Exeami</name>
   <email>exeami@proton.me</email>
@@ -14,6 +14,23 @@
 <icon>https://exeami.com/images/logos/exeami-with-bg.webp</icon>
 <id>https://exeami.com/</id>
 
+  <entry>
+    <title>Implementing search for a website</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/blogs/add-search-for-website"/>
+    <id>https://exeami.com/blogs/add-search-for-website</id>
+    <updated>2023-10-14T00:00:00Z</updated>
+    <summary>The way I implemented in-house search for my website</summary>
+    <content type="html">
+      &lt;p&gt;
+
+&lt;/p&gt;
+		</content>
+    
+    <author>
+			<name>Exeami</name>
+			<email>exeami@proton.me</email>
+		</author>
+  </entry>
   <entry>
     <title>Instagram for kids</title>
     <link rel="alternate" type="text/html" href="https://exeami.com/blogs/instagram-for-kids"/>
