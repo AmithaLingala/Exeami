@@ -8,9 +8,14 @@ async function search(query) {
     if (results.length == 0) {
       const div = document.createElement('div')
       div.classList.add('is-text-center', 'title', 'is-padding-1')
-      div.innerText = 'No results found!'
+      div.innerText = `No search results found for "${query}"`
       result_div.appendChild(div)
+      return
     }
+    const title = document.createElement('h2')
+    title.classList.add('is-text-center', 'title', 'is-padding-1')
+    title.innerText = `Search results for "${query}"`
+    result_div.appendChild(title)
 
     for (let result of results) {
       const a = document.createElement('a')
