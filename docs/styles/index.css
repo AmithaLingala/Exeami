@@ -195,7 +195,7 @@ mark {
 }
 
 .navbar-item {
-  padding: 2em;
+  padding: 1.5em;
   height: 40px;
   text-decoration: none;
   text-align: center;
@@ -203,8 +203,9 @@ mark {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: larger;
+  font-size: 22px;
   font-weight: bold;
+  margin: 0.2em;
 }
 
 .navbar-item:hover {
@@ -382,6 +383,10 @@ article.card {
   margin-bottom: 2em;
   text-decoration: none;
 }
+
+.media-figure {
+  margin: auto;
+}
 .search-box {
   display: flex;
   background-color: var(--primary-bg);
@@ -405,10 +410,6 @@ a.search-box:hover {
   padding: 1em;
   background-color: var(--content-bg);
   width: 100%;
-}
-.hidden-label {
-  position: absolute;
-  top: -99999px;
 }
 
 .tag {
