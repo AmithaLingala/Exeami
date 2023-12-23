@@ -19,9 +19,9 @@
 }
 
 .purple-theme {
-  --primary-bg: rgb(68, 60, 104);
+  --primary-bg: rgb(99, 89, 133);
   --header-bg: rgb(24, 18, 43);
-  --box-bg: rgb(99, 89, 133);
+  --box-bg: rgb(68, 60, 104);
   --content-bg: rgb(68, 60, 104);
   --font-color: rgb(235, 235, 235);
   --link: #56c3ff;
@@ -30,32 +30,23 @@
 }
 
 .black-theme {
-  --primary-bg: rgb(31, 32, 40);
-  --content-bg: rgb(31, 32, 40);
+  --primary-bg: rgb(46, 48, 57);
+  --content-bg: rgb(28, 27, 34);
   --header-bg: rgb(1, 22, 39);
-  --box-bg: rgb(46, 48, 57);
+  --box-bg: rgb(28, 27, 34);
   --font-color: rgb(200, 200, 200);
   --link: #36a3ff;
   --link-hov: #56c3ff;
   --highlight: rgb(86, 89, 100);
 }
 
-.yellow-theme {
-  --primary-bg: #ffb74d;
-  --header-bg: #f57c00;
-  --content-bg: #ffb74d;
-  --box-bg: #ffa726;
-  --font-color: rgb(33, 33, 33);
-  --link: rgb(4, 41, 102);
-  --link-hov: rgb(2, 20, 50);
-}
-
 .white-theme {
-  --primary-bg: rgb(255, 255, 245);
-  --header-bg: rgb(238, 238, 229);
-  --content-bg: rgb(255, 255, 245);
-  --box-bg: rgb(238, 238, 229, 0.5);
-  --font-color: rgb(33, 33, 33);
+  --primary-bg: #8fbabf;
+
+  --header-bg: rgb(255, 255, 255);
+  --content-bg: rgb(255, 255, 255);
+  --box-bg: rgb(255, 255, 255);
+  --font-color: black;
   --link: rgb(4, 41, 102);
   --link-hov: rgb(2, 20, 50);
   --highlight: rgba(235, 235, 106, 0.5);
@@ -138,12 +129,12 @@ a:hover {
 p,
 dd,
 li {
-  line-height: 30px;
-  font-size: 16px;
+  line-height: 40px;
+  font-size: 18px;
 }
 dt {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 mark {
@@ -230,28 +221,14 @@ mark {
   box-shadow: var(--card-shadow);
 }
 
-.box {
-  background-color: var(--content-bg);
-  border-radius: 6px;
-  box-shadow: var(--box-shadow);
-  color: var(--font-color);
-  padding: 0;
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  margin-top: 0;
-}
 .content-box {
   padding: 1rem;
 }
 
 .card {
-  background-color: var(--box-bg);
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  box-shadow: var(--card-shadow);
-  margin-bottom: 2em;
+  margin-bottom: 5em;
   max-width: 1000px;
   width: 1000px;
 }
@@ -262,20 +239,15 @@ article.card {
 
 .card-header {
   padding: 2em;
-  border-radius: 10px 10px 0 0;
   background-color: var(--header-bg);
 }
 
-.card-body {
-  padding: 2em;
-}
-
 .card-item {
-  padding: 1em;
+  padding: 5em;
   box-shadow: var(--card-item-shadow);
   background-color: var(--content-bg);
-  border-radius: 8px;
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .banner {
@@ -301,9 +273,7 @@ article.card {
   text-align: center;
 }
 .about-card {
-  padding: 1em;
   box-shadow: var(--card-item-shadow);
-  border-radius: 8px;
 }
 
 .is-content-center {
@@ -406,12 +376,11 @@ article.card {
 
 .media-box {
   display: flex;
-  background-color: var(--primary-bg);
-  border-radius: 6px;
-  box-shadow: var(--box-shadow);
+  background-color: var(--box-bg);
   color: var(--font-color);
-  padding: 1em 0;
-  margin: 1em;
+  padding: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   text-decoration: none;
 }
 .search-box {
@@ -582,6 +551,7 @@ button.link-button {
   }
   .card-item {
     margin-bottom: 1em;
+    padding: 1em;
   }
   .about-card {
     flex-direction: column;
@@ -633,10 +603,6 @@ button.link-button {
   }
   .icon-wrapper {
     align-self: center;
-  }
-  .box {
-    margin-left: 0.2em;
-    margin-right: 0.2em;
   }
 }
 @media only screen and (max-width: 400px) {
