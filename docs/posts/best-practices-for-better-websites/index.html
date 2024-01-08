@@ -46,7 +46,7 @@
   </button>
   <input id="menu-toggle" type="checkbox" />
   <label class='menu-button-container' for="menu-toggle">
-    <span class="hidden-label">Menu</span>
+    <span class="visually-hidden">Menu</span>
     <span class='menu-button'></span>
   </label>
   <div class="navbar-menu" id="navbar">
@@ -55,6 +55,7 @@
     <a href="/posts" class="navbar-item">Posts</a>
     <a href="/contact" class="navbar-item">Contact</a>
   </div>
+  <label for="search" class="visually-hidden">Search</label>
   <input type="search" class="search-query" id="search" name="q" placeholder="Search exeami" value="">
 </nav>
   <main>
@@ -66,7 +67,7 @@
 
           <p>
             <time class="subtitle dt-published" datetime="2023-09-02">Created on
-              2023-09-02</time>
+              2023-09-02</time> by <a href="https://exeami.com">Exeami</a>
           </p>
 
           <span class="p-category is-padding-left-1 title">
@@ -88,14 +89,14 @@
 </p>
           </div>
           <span class="reply-box"><a class="link-button"
-              href="mailto:exeami@proton.me?subject=Comment on 'Best practices for better websites by Darek Kay'&amp;body=Link: https://exeami.com/posts/best-practices-for-better-websites">Comment
+              href="mailto:contact@exeami.com?subject=Comment on 'Best practices for better websites by Darek Kay'&amp;body=Link: https://exeami.com/posts/best-practices-for-better-websites">Comment
               via email</a></span><br>
 
         </div>
 
       </span>
-      <div class="box is-content-center">
-        <h3><a href="/posts">See all posts</a></h3>
+      <div>
+        <h3 class="is-text-center"><a href="/posts">See all posts</a></h3>
       </div>
     </article>
     <div class="theme-box hide-in-mobile">

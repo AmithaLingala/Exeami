@@ -8,7 +8,7 @@
 <updated>2023-10-09T00:00:00Z</updated>
 <author>
   <name>Exeami</name>
-  <email>exeami@proton.me</email>
+  <email>contact@exeami.com</email>
   <uri>https://exeami.com/</uri>
 </author>
 <icon>https://exeami.com/images/logos/exeami-with-bg.webp</icon>
@@ -36,7 +36,8 @@
   &lt;li&gt;Add the folder you created to Thunderbird.
     &lt;code&gt;Settings -&amp;gt; Account Settings-&amp;gt; Account Actions -&amp;gt; Add Local folder&lt;/code&gt;
     &lt;figure&gt;
-      &lt;img class=&quot;image&quot; src=&quot;/images/posts/AddFolder.png&quot;&gt;
+      &lt;img class=&quot;image&quot; alt=&quot;Screenshot of adding local folder in thunderbird application&quot;
+        src=&quot;/images/posts/AddFolder.png&quot;&gt;
     &lt;/figure&gt;
     (If you don&#x27;t see &lt;i&gt;Add Local folder&lt;/i&gt;, install &lt;a
       href=&quot;https://addons.thunderbird.net/en-US/thunderbird/addon/localfolder/&quot;&gt;LocalFolders Extension&lt;/a&gt;).
@@ -47,7 +48,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
   <entry>
@@ -72,7 +73,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
   <entry>
@@ -103,7 +104,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
   <entry>
@@ -145,7 +146,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
   <entry>
@@ -194,7 +195,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
   <entry>
@@ -216,7 +217,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
   <entry>
@@ -238,7 +239,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
   <entry>
@@ -260,7 +261,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
   <entry>
@@ -282,7 +283,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
 </feed>

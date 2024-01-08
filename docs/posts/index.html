@@ -46,7 +46,7 @@
   </button>
   <input id="menu-toggle" type="checkbox" />
   <label class='menu-button-container' for="menu-toggle">
-    <span class="hidden-label">Menu</span>
+    <span class="visually-hidden">Menu</span>
     <span class='menu-button'></span>
   </label>
   <div class="navbar-menu" id="navbar">
@@ -55,6 +55,7 @@
     <a href="/posts" class="navbar-item">Posts</a>
     <a href="/contact" class="navbar-item">Contact</a>
   </div>
+  <label for="search" class="visually-hidden">Search</label>
   <input type="search" class="search-query" id="search" name="q" placeholder="Search exeami" value="">
 </nav>
   <main>
@@ -68,7 +69,7 @@
         </header>
         <div class="card-body e-content">
 
-          <div class="media-box column">
+          <div class="card-item column">
   <span class="is-padding-left-1 title">
     📄 Note
   </span>
@@ -89,7 +90,8 @@
   <li>Add the folder you created to Thunderbird.
     <code>Settings -&gt; Account Settings-&gt; Account Actions -&gt; Add Local folder</code>
     <figure>
-      <img class="image" src="/images/posts/AddFolder.png">
+      <img class="image" alt="Screenshot of adding local folder in thunderbird application"
+        src="/images/posts/AddFolder.png">
     </figure>
     (If you don't see <i>Add Local folder</i>, install <a
       href="https://addons.thunderbird.net/en-US/thunderbird/addon/localfolder/">LocalFolders Extension</a>).
@@ -102,7 +104,7 @@
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
       onclick="copyPath(this, '/posts/outlook-mails-to-thunderbird')">Copy post link</button>
   </div>
-</div><div class="media-box column">
+</div><div class="card-item column">
   <span class="is-padding-left-1 title">
     📄 Note
   </span>
@@ -125,7 +127,7 @@
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
       onclick="copyPath(this, '/posts/best-practices-for-better-websites')">Copy post link</button>
   </div>
-</div><div class="media-box column">
+</div><div class="card-item column">
   <span class="is-padding-left-1 title">
     💭 Thoughts
   </span>
@@ -154,7 +156,7 @@
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
       onclick="copyPath(this, '/posts/mobile-view')">Copy post link</button>
   </div>
-</div><div class="media-box column">
+</div><div class="card-item column">
   <span class="is-padding-left-1 title">
     💭 Thoughts
   </span>
@@ -194,7 +196,7 @@
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
       onclick="copyPath(this, '/posts/organ-donation')">Copy post link</button>
   </div>
-</div><div class="media-box column">
+</div><div class="card-item column">
   <span class="is-padding-left-1 title">
     📄 Note
   </span>
@@ -241,7 +243,7 @@
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
       onclick="copyPath(this, '/posts/exeami-logo')">Copy post link</button>
   </div>
-</div><div class="media-box column">
+</div><div class="card-item column">
   <span class="is-padding-left-1 title">
     🔁 Re-Post
   </span>
@@ -261,7 +263,7 @@
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
       onclick="copyPath(this, '/posts/low-carb-diet')">Copy post link</button>
   </div>
-</div><div class="media-box column">
+</div><div class="card-item column">
   <span class="is-padding-left-1 title">
     🔁 Re-Post
   </span>
@@ -281,7 +283,7 @@
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
       onclick="copyPath(this, '/posts/printer')">Copy post link</button>
   </div>
-</div><div class="media-box column">
+</div><div class="card-item column">
   <span class="is-padding-left-1 title">
     🔁 Re-Post
   </span>
@@ -301,7 +303,7 @@
     <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
       onclick="copyPath(this, '/posts/money')">Copy post link</button>
   </div>
-</div><div class="media-box column">
+</div><div class="card-item column">
   <span class="is-padding-left-1 title">
     🔁 Re-Post
   </span>

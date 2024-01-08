@@ -14,7 +14,7 @@
           {{#if page.last_modified}}
           <p>
             <time class="subtitle dt-published" datetime="{{page.last_modified}}">Created on
-              {{page.last_modified}}</time>
+              {{page.last_modified}}</time> by <a href="https://exeami.com">Exeami</a>
           </p>
           {{/if}}
 
@@ -34,7 +34,7 @@
             {{> (lookup page 'content')}}
           </div>
           <span class="reply-box"><a class="link-button"
-              href="mailto:exeami@proton.me?subject=Comment on '{{page.title}}'&amp;body=Link: https://exeami.com/{{page.cat}}/{{page.url}}">Comment
+              href="mailto:contact@exeami.com?subject=Comment on '{{page.title}}'&amp;body=Link: https://exeami.com/{{page.cat}}/{{page.url}}">Comment
               via email</a></span><br>
           {{else}}
           {{> (lookup page 'content')}}
@@ -52,8 +52,8 @@
         <h2 class="is-text-center">Recent Blogs</h2>
         {{> blog-item data=page.suggestions}}
       </div>
-      <div class="box is-content-center">
-        <h3><a href="/blogs">See all blogs</a></h3>
+      <div>
+        <h3 class="is-text-center"><a href="/blogs">See all blogs</a></h3>
       </div>
       {{/if}}
       {{#if page.posts}}
@@ -61,13 +61,13 @@
         <h2 class="is-text-center">Recent Posts</h2>
         {{> post-item data=page.posts}}
       </div>
-      <div class="box is-content-center">
-        <h3><a href="/posts">See all posts</a></h3>
+      <div>
+        <h3 class="is-text-center"><a href="/posts">See all posts</a></h3>
       </div>
       {{/if}}
       {{#if page.category}}
-      <div class="box is-content-center">
-        <h3><a href="/posts">See all posts</a></h3>
+      <div>
+        <h3 class="is-text-center"><a href="/posts">See all posts</a></h3>
       </div>
       {{/if}}
     </article>

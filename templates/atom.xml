@@ -8,7 +8,7 @@
 <updated>{{date}}T00:00:00Z</updated>
 <author>
   <name>Exeami</name>
-  <email>exeami@proton.me</email>
+  <email>contact@exeami.com</email>
   <uri>https://exeami.com/</uri>
 </author>
 <icon>https://exeami.com/images/logos/exeami-with-bg.webp</icon>
@@ -29,7 +29,7 @@
     
     <author>
 			<name>Exeami</name>
-			<email>exeami@proton.me</email>
+			<email>contact@exeami.com</email>
 		</author>
   </entry>
 {{/each}}

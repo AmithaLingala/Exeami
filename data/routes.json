@@ -46,13 +46,5 @@
         "description": "Personal website of Amitha Lingala and blogs about data privacy",
         "is_hidden": true,
         "template": "search"
-    },
-    {
-        "url": "/random",
-        "title": "Random",
-        "subtitle": "",
-        "keywords": "exeami, amitha lingala, github/amithalingala",
-        "description": "Personal website of Amitha Lingala and blogs about data privacy",
-        "is_hidden": true
     }
 ]

@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en-GB-oed">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="Content-Security-Policy"
@@ -33,30 +34,31 @@
 
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
-  <a class="skip-link" href="#content">Skip to main content</a>
-  <a class="skip-link" href="#search">Skip to search</a>
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      <img class="logo" src="/images/logos/exeami-light.webp" width="196" height="196" id="logo"
-        alt="exeami logo, infinity in curley brackets">
-    </a>
-  </div>
-  <button class="theme-switcher-button black-theme-button" data-theme="black-theme">
-    <img width=30 height=30 class=".is-30x30" src="/images/logos/theme.svg" alt="black theme switch">
-  </button>
-  <input id="menu-toggle" type="checkbox" />
-  <label class='menu-button-container' for="menu-toggle">
-    <span class="hidden-label">Menu</span>
-    <span class='menu-button'></span>
-  </label>
-  <div class="navbar-menu" id="navbar">
-    <a href="/blogs" class="navbar-item">Blogs</a>
-    <a href="/projects" class="navbar-item">Projects</a>
-    <a href="/posts" class="navbar-item">Posts</a>
-    <a href="/contact" class="navbar-item">Contact</a>
-  </div>
-  <input type="search" class="search-query" id="search" name="q" placeholder="Search exeami" value="">
-</nav>
+    <a class="skip-link" href="#content">Skip to main content</a>
+    <a class="skip-link" href="#search">Skip to search</a>
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img class="logo" src="/images/logos/exeami-light.webp" width="196" height="196" id="logo"
+          alt="exeami logo, infinity in curley brackets">
+      </a>
+    </div>
+    <button class="theme-switcher-button black-theme-button" data-theme="black-theme">
+      <img width=30 height=30 class=".is-30x30" src="/images/logos/theme.svg" alt="black theme switch">
+    </button>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <span class="visually-hidden">Menu</span>
+      <span class='menu-button'></span>
+    </label>
+    <div class="navbar-menu" id="navbar">
+      <a href="/blogs" class="navbar-item">Blogs</a>
+      <a href="/projects" class="navbar-item">Projects</a>
+      <a href="/posts" class="navbar-item">Posts</a>
+      <a href="/contact" class="navbar-item">Contact</a>
+    </div>
+    <label for="search" class="visually-hidden">Search</label>
+    <input type="search" class="search-query" id="search" name="q" placeholder="Search exeami" value="">
+  </nav>
   <main>
     <article class="card" id="content">
       <span class="h-entry">
@@ -67,73 +69,82 @@
 
         </header>
         <div class="card-body e-content">
+          <div class="card-item about-card h-card">
+            <div class="is-content-center">
+              <img class="photo u-photo" src="/images/home/profile.webp" alt="my picture" width="836" height="853">
+              <h2>Little about me...</h2>
+            </div>
+            <p>
+              Hi 👋,
+              I'm <span class="p-name">Amitha Lingala</span>, aka exeami.
+              I'm a <span class="p-job-title">Software Engineer</span>, currently living in London.
+
+              I enjoy creating stuff, be it a DIY craft that recycles things around the house or some new recipe to try,
+              or code
+              which does cool things.
+
+              Also, I like things organized and ends up spending a lot of time planning.<br>
+            </p>
+            <p>
+              I have a very low online presence, you can't find me on Twitter or Instagram or any other social media
+              besides
+              LinkedIn (where I have zero activity), and the best way to know me more is this website.<br>
+            </p>
+            <p>
+              If you want to contact me, you can email me at <a class="u-email"
+                href="mailto:contact@exeami.com">contact@exeami.com</a>,
+              and you can also find me on
+              <a rel="me" target="_blank" href="https://github.com/AmithaLingala">GitHub</a> and
+              <a rel="me" target="_blank" href="https://www.linkedin.com/in/amithalingala">LinkedIn</a>!
+            </p>
+          </div>
           <div class="card-item about-card">
-  <div class="is-content-center">
-    <img class="photo" src="/images/home/profile.webp" alt="my picture" width="836" height="853">
-    <h2>Little about me...</h2>
-  </div>
-  <p>
-    Hi 👋,
-    I'm <span class="p-name">Amitha Lingala</span>, aka exeami.
-    I'm a <span class="p-job-title">Software Engineer</span>, currently living in London.
+            <div class="is-content-center">
+              <span class="photo">
+                <img class="photo logo" src="/images/logos/exeami-light.webp" alt="exeami logo" width="196"
+                  height="196">
+              </span>
+              <h2>About this website</h2>
+            </div>
+            <p>This is my personal website, this site is always under development as I am learning and changing things
+              here
+              constantly.</p>
 
-    I enjoy creating stuff, be it a DIY craft that recycles things around the house or some new recipe to try, or code
-    which does cool things.
-
-    Also, I like things organized and ends up spending a lot of time planning.<br>
-  </p>
-  <p>
-    I have a very low online presence, you can't find me on Twitter or Instagram or any other social media besides
-    LinkedIn (where I have zero activity), and the best way to know me more is this website.<br>
-  </p>
-  <p>
-    If you want to contact me, you can email me at <a class="u-email"
-      href="mailto:exeami@proton.me">exeami@proton.me</a>,
-    and you can also find me on
-    <a rel="me" target="_blank" href="https://github.com/AmithaLingala">GitHub</a> and
-    <a rel="me" target="_blank" href="https://www.linkedin.com/in/amithalingala">LinkedIn</a>!
-  </p>
-</div>
-<div class="card-item about-card">
-  <div class="is-content-center">
-    <span class="photo">
-      <img class="photo logo" src="/images/logos/exeami-light.webp" alt="exeami logo" width="196" height="196">
-    </span>
-    <h2>About this website</h2>
-  </div>
-  <p>This is my personal website, this site is always under development as I am learning and changing things here
-    constantly.</p>
-
-  <h3 class="title"> Exeami 🤔?</h3>
-  <p>
-    When I decided to make my website, I couldn't figure out what
-    to name it. I wanted something simple, small and with my name in it. After considering a lot of combinations, I
-    felt exeami is perfect as it is unique and available. At that moment, it made a lot of sense, as I took
-    Exe from <a href="https://en.wikipedia.org/wiki/Executable">Executable</a> (I write code and create
-    executables 😛) and Ami from Amitha.
-    <br>
-  </p>
-  <h3 class="title">What's in here?</h3>
-  <p>
-    As I have my personal website now, which is a great platform to share my thoughts on various
-    topics, I will be sharing the things I find interesting. Mostly I will be sharing about Data Privacy, which I feel
-    most important to know and talk about in this digital world.
-    Apart from this, I will write about things that grab my attention.</p>
-  <p>
-    You can find my <a href="/blogs">blogs</a> which generally are detailed articles and <a href="/posts">posts</a>
-    which are collection of some quick writings and things I find on the internet. I also have a few of my <a
-      href="/projects">projects</a> here.
-  </p>
-  <p>You can subscribe to feeds for my <a href="/blogs/atom.xml">blogs</a> and <a href="/posts/atom.xml">posts</a> now.
-  </p>
-</div>
-<div class="card-item">
-  <h3 class="title">Credits</h3>
-  <p>
-    Big thanks to <a href="https://codingotaku.com" target="_blank">Coding Otaku</a> for the guidance and help, and to
-    all the wonderful people who document and share their knowledge on internet 🙏
-  </p>
-</div>
+            <h3 class="title"> Exeami 🤔?</h3>
+            <p>
+              When I decided to make my website, I couldn't figure out what
+              to name it. I wanted something simple, small and with my name in it. After considering a lot of
+              combinations, I
+              felt exeami is perfect as it is unique and available. At that moment, it made a lot of sense, as I took
+              Exe from <a href="https://en.wikipedia.org/wiki/Executable">Executable</a> (I write code and create
+              executables 😛) and Ami from Amitha.
+              <br>
+            </p>
+            <h3 class="title">What's in here?</h3>
+            <p>
+              As I have my personal website now, which is a great platform to share my thoughts on various
+              topics, I will be sharing the things I find interesting. Mostly I will be sharing about Data Privacy,
+              which I feel
+              most important to know and talk about in this digital world.
+              Apart from this, I will write about things that grab my attention.</p>
+            <p>
+              You can find my <a href="/blogs">blogs</a> which generally are detailed articles and <a
+                href="/posts">posts</a>
+              which are collection of some quick writings and things I find on the internet. I also have a few of my <a
+                href="/projects">projects</a> here.
+            </p>
+            <p>You can subscribe to feeds for my <a href="/blogs/atom.xml">blogs</a> and <a
+                href="/posts/atom.xml">posts</a> now.
+            </p>
+          </div>
+          <div class="card-item">
+            <h3 class="title">Credits</h3>
+            <p>
+              Big thanks to <a href="https://codingotaku.com" target="_blank">Coding Otaku</a> for the guidance and
+              help, and to
+              all the wonderful people who document and share their knowledge on internet 🙏
+            </p>
+          </div>
 
         </div>
 
@@ -141,173 +152,206 @@
       <div>
         <h2 class="is-text-center">Recent Blogs</h2>
         <a class="media-box" href="/blogs/add-search-for-website">
-  <figure class="media-figure is-1-by-2">
-    <img class="image" src="/images/blogs//add-search-for-website/banner2.png" alt="/add-search-for-website/banner2.png" width="400" height="200">
-  </figure>
-  <div class="media-content">
-    <h2 class="title">Implementing search for a website</h2>
-    <h3 class="subtitle">The way I did it.</h3>
-    <h3 class="subtitle">Created on 2023-10-14</h3>
-    <div class="tags">
-  <span class="p-category tag">Search</span>
-</div>
-  </div>
-</a><a class="media-box" href="/blogs/instagram-for-kids">
-  <figure class="media-figure is-1-by-2">
-    <img class="image" src="/images/blogs//instagram-for-kids/banner.png" alt="/instagram-for-kids/banner.png" width="400" height="200">
-  </figure>
-  <div class="media-content">
-    <h2 class="title">Instagram for kids</h2>
-    <h3 class="subtitle">Please don't do it.</h3>
-    <h3 class="subtitle">Created on 2023-09-15</h3>
-    <div class="tags">
-  <span class="p-category tag">Data Privacy</span>
-  <span class="p-category tag">Social media</span>
-</div>
-  </div>
-</a><a class="media-box" href="/blogs/getting-to-know-indie-web">
-  <figure class="media-figure is-1-by-2">
-    <img class="image" src="/images/blogs//getting-to-know-indie-web/globe-in-hand.webp" alt="/getting-to-know-indie-web/globe-in-hand.webp" width="400" height="200">
-  </figure>
-  <div class="media-content">
-    <h2 class="title">Getting to know IndieWeb</h2>
-    <h3 class="subtitle">What is IndieWeb and why do you need to know about it?</h3>
-    <h3 class="subtitle">Created on 2023-09-07</h3>
-    <div class="tags">
-  <span class="p-category tag">Ownership</span>
-  <span class="p-category tag">IndieWeb</span>
-</div>
-  </div>
-</a>
+          <figure class="media-figure is-1-by-2">
+            <img class="image" src="/images/blogs//add-search-for-website/banner2.png"
+              alt="/add-search-for-website/banner2.png" width="400" height="200">
+          </figure>
+          <div class="media-content">
+            <h2 class="title">Implementing search for a website</h2>
+            <h3 class="subtitle">The way I did it.</h3>
+            <h3 class="subtitle">Created on 2023-10-14</h3>
+            <div class="tags">
+              <span class="p-category tag">Search</span>
+            </div>
+          </div>
+        </a><a class="media-box" href="/blogs/instagram-for-kids">
+          <figure class="media-figure is-1-by-2">
+            <img class="image" src="/images/blogs//instagram-for-kids/banner.png"
+              alt="Banner image for Instagram for kids blog" width="400" height="200">
+          </figure>
+          <div class="media-content">
+            <h2 class="title">Instagram for kids</h2>
+            <h3 class="subtitle">Please don't do it.</h3>
+            <h3 class="subtitle">Created on 2023-09-15</h3>
+            <div class="tags">
+              <span class="p-category tag">Data Privacy</span>
+              <span class="p-category tag">Social media</span>
+            </div>
+          </div>
+        </a><a class="media-box" href="/blogs/getting-to-know-indie-web">
+          <figure class="media-figure is-1-by-2">
+            <img class="image" src="/images/blogs//getting-to-know-indie-web/globe-in-hand.webp"
+              alt="Banner image for Getting to know IndieWeb blog" width="400" height="200">
+          </figure>
+          <div class="media-content">
+            <h2 class="title">Getting to know IndieWeb</h2>
+            <h3 class="subtitle">What is IndieWeb and why do you need to know about it?</h3>
+            <h3 class="subtitle">Created on 2023-09-07</h3>
+            <div class="tags">
+              <span class="p-category tag">Ownership</span>
+              <span class="p-category tag">IndieWeb</span>
+            </div>
+          </div>
+        </a><a class="media-box" href="/blogs/data-privacy">
+          <figure class="media-figure is-1-by-2">
+            <img class="image" src="/images/blogs//data-privacy/data-privacy.webp"
+              alt="Banner image for Why should I care about data privacy? blog" width="400" height="200">
+          </figure>
+          <div class="media-content">
+            <h2 class="title">Why should I care about data privacy?</h2>
+            <h3 class="subtitle">Six reasons why.</h3>
+            <h3 class="subtitle">Created on 2020-07-21</h3>
+            <div class="tags">
+              <span class="p-category tag">Data Privacy</span>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="box is-content-center">
-        <h3><a href="/blogs">See all blogs</a></h3>
+      <div>
+        <h3 class="is-text-center"><a href="/blogs">See all blogs</a></h3>
       </div>
       <div>
         <h2 class="is-text-center">Recent Posts</h2>
-        <div class="media-box column">
-  <span class="is-padding-left-1 title">
-    📄 Note
-  </span>
-  <div class="media-content">
-    <h3>Import Outlook mails to thunderbird without Account</h3>
-    <p>
-  I had some outlook backup files and I wanted to open them in Thunderbird. I spent some time figuring out how to do it.
-  So, documenting it here. There might be better ways to do it, but it these steps worked for me.
-</p>
-<ol>
-  <li>Convert PST file to MBOX using PST converter tool like <a href="https://www.five-ten-sg.com/libpst/">libpst</a>
-    (search in your package manager, and you will find it).
-  </li>
-  <li>Create a folder in your system, this will be used to store the mails.</li>
-  <li>Copy the MBOX file to the folder you created and if it has a file extension, remove it.(e.g., example.mbx to
-    example)</li>
-  <li>Repeat the above step if you have multiple .pst files</li>
-  <li>Add the folder you created to Thunderbird.
-    <code>Settings -&gt; Account Settings-&gt; Account Actions -&gt; Add Local folder</code>
-    <figure>
-      <img class="image" src="/images/posts/AddFolder.png">
-    </figure>
-    (If you don't see <i>Add Local folder</i>, install <a
-      href="https://addons.thunderbird.net/en-US/thunderbird/addon/localfolder/">LocalFolders Extension</a>).
-  </li>
-  <li>Close and open Thunderbird, and you should be able to read your Outlook mails.</li>
-</ol>
-  </div>
-  <div class="share-box">
-    2023-10-09
-    <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
-      onclick="copyPath(this, '/posts/outlook-mails-to-thunderbird')">Copy post link</button>
-  </div>
-</div><div class="media-box column">
-  <span class="is-padding-left-1 title">
-    📄 Note
-  </span>
-  <div class="media-content">
-    <h3>Best practices for better websites by Darek Kay</h3>
-    <p>
-  I found <a href="https://darekkay.com/best-practices/" target="_blank">Best Practices for Building Better Websites
-    by Darek Kay</a> when going through <a href="https://codingotaku.com/blogroll" target="_blank">Coding Otaku's
-    Blogroll</a>, which is very useful for someone like me who started learning website building. I started
-  implementing a few things in my website after reading the blog.<a href="https://darekkay.com/" target="_blank">
-    Darek</a> has many more interesting blogs on accessibility that I have yet to explore.
-</p>
-<p>
-  Now, I am visiting some awesome websites with web rings and blogrolls that I did not see before with search engine
-  results. It feels like a new world unlocked.
-</p>
-  </div>
-  <div class="share-box">
-    2023-09-02
-    <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
-      onclick="copyPath(this, '/posts/best-practices-for-better-websites')">Copy post link</button>
-  </div>
-</div><div class="media-box column">
-  <span class="is-padding-left-1 title">
-    💭 Thoughts
-  </span>
-  <div class="media-content">
-    <h3>Mobile View</h3>
-    <p>
-  When I was developing this website, It was a feat to make my website have the same look and feel in mobile or small
-  screen devices as it is on my desktop. I had to compromise and make a few decisions to achieve it (I hope I did).
-</p>
-<p>
-  One day, when browsing, I stumbled upon <a href="https://eduardoboucas.com/" target="_blank">Eduardo's website.</a>
-  The moment I saw this website, I fell in love with the styles
-  and the colour scheme. It is so soothing, and the feel of the newspaper made me subconsciously immerse in the site.
-  Then I shared it, and the person opened it on a mobile phone, and he did not understand what I was talking about.
-  The
-  mobile view for this site is good, and it is <a href="https://en.wikipedia.org/wiki/Responsive_web_design"
-    target="_blank">responsive design</a>, but it did not do any justice to the desktop site. I
-  felt sad as many did not experience what I did and might not even know that other version exists.</p>
-<p>
-  That day, I realized that many of us might be missing some wonderful things on the internet when we get stuck with
-  small screen devices.
-</p>
-  </div>
-  <div class="share-box">
-    2023-08-31
-    <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
-      onclick="copyPath(this, '/posts/mobile-view')">Copy post link</button>
-  </div>
-</div>
+        <div class="card-item column">
+          <span class="is-padding-left-1 title">
+            📄 Note
+          </span>
+          <div class="media-content">
+            <h3>Import Outlook mails to thunderbird without Account</h3>
+            <p>
+              I had some outlook backup files and I wanted to open them in Thunderbird. I spent some time figuring out
+              how to do it.
+              So, documenting it here. There might be better ways to do it, but it these steps worked for me.
+            </p>
+            <ol>
+              <li>Convert PST file to MBOX using PST converter tool like <a
+                  href="https://www.five-ten-sg.com/libpst/">libpst</a>
+                (search in your package manager, and you will find it).
+              </li>
+              <li>Create a folder in your system, this will be used to store the mails.</li>
+              <li>Copy the MBOX file to the folder you created and if it has a file extension, remove it.(e.g.,
+                example.mbx to
+                example)</li>
+              <li>Repeat the above step if you have multiple .pst files</li>
+              <li>Add the folder you created to Thunderbird.
+                <code>Settings -&gt; Account Settings-&gt; Account Actions -&gt; Add Local folder</code>
+                <figure>
+                  <img class="image" alt="Screenshot of adding local folder in thunderbird application"
+                    src="/images/posts/AddFolder.png">
+                </figure>
+                (If you don't see <i>Add Local folder</i>, install <a
+                  href="https://addons.thunderbird.net/en-US/thunderbird/addon/localfolder/">LocalFolders
+                  Extension</a>).
+              </li>
+              <li>Close and open Thunderbird, and you should be able to read your Outlook mails.</li>
+            </ol>
+          </div>
+          <div class="share-box">
+            2023-10-09
+            <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
+              onclick="copyPath(this, '/posts/outlook-mails-to-thunderbird')">Copy post link</button>
+          </div>
+        </div>
+        <div class="card-item column">
+          <span class="is-padding-left-1 title">
+            📄 Note
+          </span>
+          <div class="media-content">
+            <h3>Best practices for better websites by Darek Kay</h3>
+            <p>
+              I found <a href="https://darekkay.com/best-practices/" target="_blank">Best Practices for Building Better
+                Websites
+                by Darek Kay</a> when going through <a href="https://codingotaku.com/blogroll" target="_blank">Coding
+                Otaku's
+                Blogroll</a>, which is very useful for someone like me who started learning website building. I started
+              implementing a few things in my website after reading the blog.<a href="https://darekkay.com/"
+                target="_blank">
+                Darek</a> has many more interesting blogs on accessibility that I have yet to explore.
+            </p>
+            <p>
+              Now, I am visiting some awesome websites with web rings and blogrolls that I did not see before with
+              search engine
+              results. It feels like a new world unlocked.
+            </p>
+          </div>
+          <div class="share-box">
+            2023-09-02
+            <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
+              onclick="copyPath(this, '/posts/best-practices-for-better-websites')">Copy post link</button>
+          </div>
+        </div>
+        <div class="card-item column">
+          <span class="is-padding-left-1 title">
+            💭 Thoughts
+          </span>
+          <div class="media-content">
+            <h3>Mobile View</h3>
+            <p>
+              When I was developing this website, It was a feat to make my website have the same look and feel in mobile
+              or small
+              screen devices as it is on my desktop. I had to compromise and make a few decisions to achieve it (I hope
+              I did).
+            </p>
+            <p>
+              One day, when browsing, I stumbled upon <a href="https://eduardoboucas.com/" target="_blank">Eduardo's
+                website.</a>
+              The moment I saw this website, I fell in love with the styles
+              and the colour scheme. It is so soothing, and the feel of the newspaper made me subconsciously immerse in
+              the site.
+              Then I shared it, and the person opened it on a mobile phone, and he did not understand what I was talking
+              about.
+              The
+              mobile view for this site is good, and it is <a href="https://en.wikipedia.org/wiki/Responsive_web_design"
+                target="_blank">responsive design</a>, but it did not do any justice to the desktop site. I
+              felt sad as many did not experience what I did and might not even know that other version exists.</p>
+            <p>
+              That day, I realized that many of us might be missing some wonderful things on the internet when we get
+              stuck with
+              small screen devices.
+            </p>
+          </div>
+          <div class="share-box">
+            2023-08-31
+            <button class="share-button" data-original-value="Copy post link" data-copy-value="Copied!"
+              onclick="copyPath(this, '/posts/mobile-view')">Copy post link</button>
+          </div>
+        </div>
       </div>
-      <div class="box is-content-center">
-        <h3><a href="/posts">See all posts</a></h3>
+      <div>
+        <h3 class="is-text-center"><a href="/posts">See all posts</a></h3>
       </div>
     </article>
     <div class="theme-box hide-in-mobile">
-  <button class="black-theme-button theme-button" data-theme="black-theme"><img width=30 height=30 class=".is-30x30"
-      src="/images/logos/theme.svg" alt="black theme switch"></button>
-  <button class="purple-theme-button theme-button" data-theme="purple-theme"><img width=30 height=30 class=".is-30x30"
-      src="/images/logos/theme.svg" alt="purple theme switch"></button>
-  <button class="white-theme-button theme-button" data-theme="white-theme"><img width=30 height=30 class=".is-30x30"
-      src="/images/logos/theme-light.svg" alt="white theme switch"></button>
-</div>
+      <button class="black-theme-button theme-button" data-theme="black-theme"><img width=30 height=30 class=".is-30x30"
+          src="/images/logos/theme.svg" alt="black theme switch"></button>
+      <button class="purple-theme-button theme-button" data-theme="purple-theme"><img width=30 height=30
+          class=".is-30x30" src="/images/logos/theme.svg" alt="purple theme switch"></button>
+      <button class="white-theme-button theme-button" data-theme="white-theme"><img width=30 height=30 class=".is-30x30"
+          src="/images/logos/theme-light.svg" alt="white theme switch"></button>
+    </div>
   </main>
   <footer class="footer">
-  <p>
-    <a rel="external" href="https://xn--sr8hvo.ws/previous"><span aria-hidden="true">←</span><span
-        class="visually-hidden">Previous IndieWeb Webring website</span></a>
-    <span aria-hidden="true">
-      💍🕸
-    </span>
-    <a rel="external" href="https://xn--sr8hvo.ws">IndieWeb Webring</a>
-    <span aria-hidden="true">
-      🕸💍
-    </span>
-    <a rel="external" href="https://xn--sr8hvo.ws/next"><span aria-hidden="true">→</span><span
-        class="visually-hidden">Next IndieWeb Webring website</span></a>
-  </p>
-  <p>
-    <strong>Exeami</strong> by
-    <a href="https://exeami.com">Amitha Lingala</a>. The source code is
-    licensed <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0 license</a>.
-    The website content is licensed
-    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-  </p>
-</footer>
+    <p>
+      <a rel="external" href="https://xn--sr8hvo.ws/previous"><span aria-hidden="true">←</span><span
+          class="visually-hidden">Previous IndieWeb Webring website</span></a>
+      <span aria-hidden="true">
+        💍🕸
+      </span>
+      <a rel="external" href="https://xn--sr8hvo.ws">IndieWeb Webring</a>
+      <span aria-hidden="true">
+        🕸💍
+      </span>
+      <a rel="external" href="https://xn--sr8hvo.ws/next"><span aria-hidden="true">→</span><span
+          class="visually-hidden">Next IndieWeb Webring website</span></a>
+    </p>
+    <p>
+      <strong>Exeami</strong> by
+      <a href="https://exeami.com">Amitha Lingala</a>. The source code is
+      licensed <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL-3.0 license</a>.
+      The website content is licensed
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </footer>
 </body>
 
 </html>
