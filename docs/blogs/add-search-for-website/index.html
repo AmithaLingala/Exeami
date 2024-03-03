@@ -66,8 +66,8 @@
           <h2 class="subtitle">The way I did it.</h2>
 
           <p>
-            <time class="subtitle dt-published" datetime="2023-10-14">Created on
-              2023-10-14</time> by <a href="https://exeami.com">Exeami</a>
+            <time class="subtitle dt-published" datetime="2024-01-08">Created on
+              2024-01-08</time> by <a href="https://exeami.com">Exeami</a>
           </p>
 
           <span> <div class="tags">
@@ -76,8 +76,40 @@
         </header>
         <div class="card-body e-content">
           <div class="card-item">
-            <p>
+            <h3>Backgroud</h3>
+<p>
+  I always felt having a search in any website is useful, and I wanted to have one in mine. Even though I know how to
+  exactly navigate to the content I want in my website, I sometimes feel lazy and wish I had a quick way to ask and get
+  what I want.
+</p>
+<p>
+  The reasons why I want search are maybe obvious, but for some reason I had a feeling that it will be tough to
+  implement and needs a lot of work till I actually did it. I had a fully functioning search which fits my requirements
+  in less than a day of effort. That is the reason I wanted to write this blog to tell how easy it can be to have your
+  own search in your website.
+</p>
+<p>
+  When I searched how to add to search to my website in a search engine, the most popular option is
+  implementing search boxes from leading search engine providers. Most of the articles pointed out how to add these
+  search boxes to my site. I leaned towards adding DuckDuckGo search box as I do not need to register to the service
+  like google and as always I prefer DuckDuckGo. It took few minutes to add DuckDuckGo search box to my site, it works
+  well, but I did not like the fact I will be redirected to DuckDuckGo. Pardon me with the metaphore, but it felt like I
+  am leaving my home to search something from my home, and did it feel right. Then I realized that I need to implement
+  custom search.
+</p>
+<p>
+  Next step in my search of adding search was to go and check in <a
+    href="https://indieweb.org/search#IndieWeb_Examples">IndieWeb</a> where I found that <a
+    href="/User:Petermolnar.eu">Peter Molnar</a> uses <a class="external text"
+    href="https://www.sqlite.org/fts3.html#fts4">SQLite3 FTS4</a> engine for full text searching his site. That felt
+  like a good way for me but I did not get to see how he did it or any reference to his code. And I knew I had to do it
+  my way following the documentation.
+</p>
 
+<h3>The way I did it</h3>
+<p>
+  On high level, my search is simple, I need a list of web pages to crawl, need to save the content of those pages in
+  db, query the db and share the page link which matches my search query using FTS.
 </p>
           </div>
           <span class="reply-box"><a class="link-button"

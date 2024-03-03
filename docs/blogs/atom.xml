@@ -5,7 +5,7 @@
 <title>Exeami blogs</title>
 <subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
 <link rel="self" href="https://exeami.com/blogs/feed/" />
-<updated>2023-10-14T00:00:00Z</updated>
+<updated>2024-01-08T00:00:00Z</updated>
 <author>
   <name>Exeami</name>
   <email>contact@exeami.com</email>
@@ -18,11 +18,43 @@
     <title>Implementing search for a website</title>
     <link rel="alternate" type="text/html" href="https://exeami.com/blogs/add-search-for-website"/>
     <id>https://exeami.com/blogs/add-search-for-website</id>
-    <updated>2023-10-14T00:00:00Z</updated>
+    <updated>2024-01-08T00:00:00Z</updated>
     <summary>The way I implemented in-house search for my website</summary>
     <content type="html">
-      &lt;p&gt;
+      &lt;h3&gt;Backgroud&lt;/h3&gt;
+&lt;p&gt;
+  I always felt having a search in any website is useful, and I wanted to have one in mine. Even though I know how to
+  exactly navigate to the content I want in my website, I sometimes feel lazy and wish I had a quick way to ask and get
+  what I want.
+&lt;/p&gt;
+&lt;p&gt;
+  The reasons why I want search are maybe obvious, but for some reason I had a feeling that it will be tough to
+  implement and needs a lot of work till I actually did it. I had a fully functioning search which fits my requirements
+  in less than a day of effort. That is the reason I wanted to write this blog to tell how easy it can be to have your
+  own search in your website.
+&lt;/p&gt;
+&lt;p&gt;
+  When I searched how to add to search to my website in a search engine, the most popular option is
+  implementing search boxes from leading search engine providers. Most of the articles pointed out how to add these
+  search boxes to my site. I leaned towards adding DuckDuckGo search box as I do not need to register to the service
+  like google and as always I prefer DuckDuckGo. It took few minutes to add DuckDuckGo search box to my site, it works
+  well, but I did not like the fact I will be redirected to DuckDuckGo. Pardon me with the metaphore, but it felt like I
+  am leaving my home to search something from my home, and did it feel right. Then I realized that I need to implement
+  custom search.
+&lt;/p&gt;
+&lt;p&gt;
+  Next step in my search of adding search was to go and check in &lt;a
+    href=&quot;https://indieweb.org/search#IndieWeb_Examples&quot;&gt;IndieWeb&lt;/a&gt; where I found that &lt;a
+    href=&quot;/User:Petermolnar.eu&quot;&gt;Peter Molnar&lt;/a&gt; uses &lt;a class=&quot;external text&quot;
+    href=&quot;https://www.sqlite.org/fts3.html#fts4&quot;&gt;SQLite3 FTS4&lt;/a&gt; engine for full text searching his site. That felt
+  like a good way for me but I did not get to see how he did it or any reference to his code. And I knew I had to do it
+  my way following the documentation.
+&lt;/p&gt;
 
+&lt;h3&gt;The way I did it&lt;/h3&gt;
+&lt;p&gt;
+  On high level, my search is simple, I need a list of web pages to crawl, need to save the content of those pages in
+  db, query the db and share the page link which matches my search query using FTS.
 &lt;/p&gt;
 		</content>
     
