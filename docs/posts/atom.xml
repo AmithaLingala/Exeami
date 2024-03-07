@@ -5,7 +5,7 @@
 <title>Exeami posts</title>
 <subtitle type="html">My recent works can be found here. To know me more, go to &lt;a href="https://exeami.com"&gt;exeami.com&lt;/a&gt;</subtitle>
 <link rel="self" href="https://exeami.com/posts/feed/" />
-<updated>2023-10-09T00:00:00Z</updated>
+<updated>2024-03-07T00:00:00Z</updated>
 <author>
   <name>Exeami</name>
   <email>contact@exeami.com</email>
@@ -14,6 +14,44 @@
 <icon>https://exeami.com/images/logos/exeami-with-bg.webp</icon>
 <id>https://exeami.com/</id>
 
+  <entry>
+    <title>NextCloud Cookbook</title>
+    <link rel="alternate" type="text/html" href="https://exeami.com/posts/nextcloud-cookbook"/>
+    <id>https://exeami.com/posts/nextcloud-cookbook</id>
+    <updated>2024-03-07T00:00:00Z</updated>
+    <summary>📄 Note</summary>
+    <content type="html">
+      &lt;p&gt;
+    I found &lt;a href=&quot;https://github.com/nextcloud/cookbook&quot;&gt;NextCloud Cookbook&lt;/a&gt;, and it&#x27;s so easy to organize my
+    recipes now.
+
+&lt;/p&gt;
+&lt;p&gt;
+    I used to bookmark my recipes. Recently, I am trying so many new recipes from online and didn&#x27;t like the way I am
+    organizing my bookmarks. Then I found nextcloud cookbook. To add a recipe to
+    the collection, all you have to do is paste in the URL of the recipe, it parses and downloads the recipe to your
+    specified nextcloud folder as JSON.
+&lt;/p&gt;
+&lt;p&gt;
+    For the cookbook to parse your recipe, it should follow a schema.org recipe format. In my experience, most of the
+    recipe sites are using this schema.
+&lt;/p&gt;
+&lt;p&gt;
+    I used &lt;a href=&quot;https://codeberg.org/codingotaku/recipe-crawler&quot;&gt;Recipe
+        Crawler&lt;/a&gt; to parse all my current bookmarks at once and copied to my nextcloud recipe folder. Now, I can
+    filter by tags, categories, they even have &lt;a
+        href=&quot;https://github.com/nextcloud/cookbook/blob/master/docs/user/clients/Index.md&quot;&gt;Mobile app&lt;/a&gt; which made my life easier.
+&lt;/p&gt;
+&lt;p&gt;
+    Thank you, Nextcloud Cookbook!
+&lt;/p&gt;
+		</content>
+    
+    <author>
+			<name>Exeami</name>
+			<email>contact@exeami.com</email>
+		</author>
+  </entry>
   <entry>
     <title>Import Outlook mails to thunderbird without Account</title>
     <link rel="alternate" type="text/html" href="https://exeami.com/posts/outlook-mails-to-thunderbird"/>

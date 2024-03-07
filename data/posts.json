@@ -1,5 +1,18 @@
 [
   {
+    "url": "nextcloud-cookbook",
+    "cat": "posts",
+    "title": "NextCloud Cookbook",
+    "subtitle": "",
+    "keywords": "organize, recepies",
+    "description": "📄 Note",
+    "author": "Amitha Lingala",
+    "link": "",
+    "image": "",
+    "last_modified": "2024-03-07",
+    "category": "📄 Note"
+  },
+  {
     "url": "outlook-mails-to-thunderbird",
     "cat": "posts",
     "title": "Import Outlook mails to thunderbird without Account",
