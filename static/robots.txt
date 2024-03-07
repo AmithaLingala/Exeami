@@ -1,5 +1,13 @@
 User-agent: GPTBot
 Disallow:/
 
+User-agent: *
+Disallow: /*.webp$
+Disallow: /*.png$
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /posts/
+Disallow: /posts/*
+
 Sitemap: https://exeami.com/sitemap.xml
 Sitemap: https://www.exeami.com/sitemap.xml
