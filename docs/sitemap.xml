@@ -3,32 +3,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
       <loc>https://exeami.com/</loc>
-      <lastmod>2024-01-08</lastmod>
+      <lastmod>2024-03-07</lastmod>
       <priority>1.00</priority>
   </url>
   <url>
       <loc>https://exeami.com/blogs/</loc>
-      <lastmod>2024-01-08</lastmod>
+      <lastmod>2024-03-07</lastmod>
       <priority>0.80</priority>
   </url>
   <url>
       <loc>https://exeami.com/projects/</loc>
-      <lastmod>2024-01-08</lastmod>
-      <priority>0.80</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/</loc>
-      <lastmod>2024-01-08</lastmod>
+      <lastmod>2024-03-07</lastmod>
       <priority>0.80</priority>
   </url>
   <url>
       <loc>https://exeami.com/contact/</loc>
-      <lastmod>2024-01-08</lastmod>
+      <lastmod>2024-03-07</lastmod>
       <priority>0.80</priority>
   </url>
   <url>
       <loc>https://exeami.com/search/</loc>
-      <lastmod>2024-01-08</lastmod>
+      <lastmod>2024-03-07</lastmod>
       <priority>0.80</priority>
   </url>
   <url>
@@ -54,51 +49,6 @@
   <url>
       <loc>https://exeami.com/blogs/why-should-i-switch-to-signal/</loc>
       <lastmod>2020-02-28</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/outlook-mails-to-thunderbird/</loc>
-      <lastmod>2023-10-09</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/best-practices-for-better-websites/</loc>
-      <lastmod>2023-09-02</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/mobile-view/</loc>
-      <lastmod>2023-08-31</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/organ-donation/</loc>
-      <lastmod>2023-08-31</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/exeami-logo/</loc>
-      <lastmod>2023-08-18</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/low-carb-diet/</loc>
-      <lastmod>2023-08-10</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/printer/</loc>
-      <lastmod>2023-08-10</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/money/</loc>
-      <lastmod>2020-07-22</lastmod>
-      <priority>0.60</priority>
-  </url>
-  <url>
-      <loc>https://exeami.com/posts/spying-device/</loc>
-      <lastmod>2020-07-22</lastmod>
       <priority>0.60</priority>
   </url>
   <url>
