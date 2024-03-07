@@ -10,9 +10,9 @@
   <meta name="yandex-verification" content="8f16bbfd12051695">
 
   <meta name="author" content="Amitha Lingala">
-  <meta name="description" content="Reasons to switch to Signl messaging app and it's features">
-  <meta name="keywords" content="signal, whatsapp, messenger, security, signal prtocol, privacy">
-  <title>Why should I switch to Signal?</title>
+  <meta name="description" content="The way I implemented in-house search for my website">
+  <meta name="keywords" content="">
+  <title>Exeami have search now!</title>
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
   <link rel="alternate" type="application/atom+xml" href="https://exeami.com/blogs/atom.xml" title="All blogs - Atom">
@@ -62,76 +62,74 @@
     <article class="card" id="content">
       <span class="h-entry">
         <header class="card-header">
-          <h1 class="p-name">Why should I switch to Signal?</h1>
-          <h2 class="subtitle">A privacy respecting secure messenger.</h2>
+          <h1 class="p-name">Exeami have search now!</h1>
+          <h2 class="subtitle"></h2>
 
           <p>
-            <time class="subtitle dt-published" datetime="2020-02-28">Created on
-              2020-02-28</time> by <a href="https://exeami.com">Exeami</a>
+            <time class="subtitle dt-published" datetime="2024-01-08">Created on
+              2024-01-08</time> by <a href="https://exeami.com">Exeami</a>
           </p>
 
           <span> <div class="tags">
-  <span class="p-category tag">Data Privacy</span>
-  <span class="p-category tag">Signal</span>
+  <span class="p-category tag">Search</span>
 </div> </span>
         </header>
         <div class="card-body e-content">
           <div class="card-item">
-            <p>
-    <a href="https://www.signal.org/" target="_blank">Signal</a> is a messaging app by Open Whisperer Systems,
-    just like WhatsApp or iMessage or Facebook Messenger, but one that's geared towards privacy and security. It's
-    encrypted, simple, and free.
-</p>
-
-<h3>Signal Vs WhatsApp</h3>
-
-
+            <h3>Background</h3>
 <p>
-    They both use the same underlying encryption "the Signal Protocol" but drastically differ
-    in terms of underlying philosophy.
-</p>
-
-<p>
-    WhatsApp can't see what's inside the messages, but they can see who is sending a message to whom and
-    when - which is a large risk.
-    And according to the WhatsApp privacy policy, <strong>the company reserves the right to record this
-        information, known as message metadata</strong>, and give it to governments.
+  I always felt having a search in any website is useful, and I wanted to have one in mine. Even though I know how to
+  exactly navigate to the content I want in my website, I sometimes feel lazy and wish I had a quick way to ask and get
+  what I want.
 </p>
 <p>
-    <strong>The only data Signal retains is the phone number you register with and when you last logged
-        into their server.</strong>
-    That's it. It doesn't even record the hour, minute, or second - only the day.
+  The reasons why I want search are maybe obvious, but for some reason I had a feeling that it will be tough to
+  implement and needs a lot of work till I actually did it. I had a fully functioning search which fits my requirements
+  in less than a day of effort. That is the reason I wanted to write this blog to tell how easy it can be to have your
+  own search in your website.
 </p>
-
 <p>
-    Signal is open-source and funded by donors, on the other hand WhatsApp is owned by Facebook, leaves users
-    to being nothing more than another data collection point for Facebook for ad-targeting.
-    WhatsApp was a messaging app first and added the security features later. Signal was all about security
-    first. Because of this, WhatsApp has more now-traditional chat features. Both Signal and WhatsApp also include
-    voice calling and video calling to round out the messaging apps.
+  When I searched how to add to search to my website in a search engine, the most popular option is
+  implementing search boxes from leading search engine providers. Most of the articles pointed out how to add these
+  search boxes to my site. I leaned towards adding DuckDuckGo search box as I do not need to register to the service
+  like google and as always I prefer DuckDuckGo. It took few minutes to add DuckDuckGo search box to my site, it works
+  well, but I did not like the fact I will be redirected to DuckDuckGo. Pardon me with the metaphor, but it felt like I
+  am leaving my home to search something from my home, and did it feel right. Then I realized that I need to implement
+  custom search.
 </p>
-
-<figure class="image media-figure is-1-by-2">
-    <img src="/images/blogs/why-should-i-switch-to-signal/signal_app.webp" alt="Signal app image" loading="lazy"
-        width="400" height="342">
-</figure>
-
-
 <p>
-    Signal has plenty of features too including GIFs, can send your location, and Signal even has disappearing
-    messages.Even voice calls on Signal are encrypted and screenshots can be disabled.
+  The next step in my search of adding search was to go and check in <a
+    href="https://indieweb.org/search#IndieWeb_Examples">IndieWeb</a>, where I found that <a
+    href="/User:Petermolnar.eu">Peter Molnar</a> uses <a class="external text"
+    href="https://www.sqlite.org/fts3.html#fts4">SQLite3 FTS4</a> engine for full text searching his site. That felt
+  like a good way for me, but I did not get to see how he did it or any reference to his code. And I knew I had to do it
+  my way, following the documentation.
 </p>
-<h3>Conclusion</h3>
+
+<h3>The way I did it</h3>
 <p>
-    Signal, the non-profit organization, points out that "there are no ads, no affiliate marketers, no
-    creepy tracking", and it's hard to ask for much more than that in terms of privacy. And It's recommended by
-    Edward Snowden.
-    When you have an alternative which doesn't need you to compromise on privacy, why not to switch to
-    Signal.
+  On high level, my search is simple, I need a list of web pages to crawl, need to save the content of those pages in
+  db, query the db and share the page link which matches my search query using FTS (Full Text Search).
 </p>
+<p>
+  Exeami was already structured with <a href="http://microformats.org/wiki/microformats2">microformats</a> as part of
+  supporting
+  <a href="https://indieweb.org/">Indie Web</a> when I planned to implement search.
+  So, I utilized this structure to crawl and store.
+</p>
+<p>
+  You can find the source code on <a href="https://codeberg.org/IndieWemblates/micro_search">Codeberg</a> for micro search, named it "micro search" as its a search engine for sites supporting microformats2.
+</p>
+<p>micro search exposes two api endpoints
+ <ul>
+  <li>a PUT request that crawls the webiste, find h-entry and stores p-name, p-category, p-summery, e-content as a row item.</li>
+  <li>a GET request that takes query parameter and returns the list of h-entry urls that matches the query text.</li>
+ </ul>
+</p>
+<p> That's it, now Exeami have search functionality.</p>
           </div>
           <span class="reply-box"><a class="link-button"
-              href="mailto:contact@exeami.com?subject=Comment on 'Why should I switch to Signal?'&amp;body=Link: https://exeami.com/blogs/why-should-i-switch-to-signal">Comment
+              href="mailto:contact@exeami.com?subject=Comment on 'Exeami have search now!'&amp;body=Link: https://exeami.com/blogs/add-search-for-website">Comment
               via email</a></span><br>
 
         </div>
@@ -139,20 +137,7 @@
       </span>
       <div>
         <h2 class="is-text-center">Recent Blogs</h2>
-        <a class="media-box" href="/blogs/add-search-for-website">
-  <figure class="media-figure is-1-by-2">
-    <img class="image" src="/images/blogs//add-search-for-website/banner2.png" alt="Banner image for Exeami have search now! blog" width="400"
-      height="200">
-  </figure>
-  <div class="media-content">
-    <h2 class="title">Exeami have search now!</h2>
-    <h3 class="subtitle"></h3>
-    <h3 class="subtitle">Created on 2024-01-08</h3>
-    <div class="tags">
-  <span class="p-category tag">Search</span>
-</div>
-  </div>
-</a><a class="media-box" href="/blogs/instagram-for-kids">
+        <a class="media-box" href="/blogs/instagram-for-kids">
   <figure class="media-figure is-1-by-2">
     <img class="image" src="/images/blogs//instagram-for-kids/banner.png" alt="Banner image for Instagram for kids blog" width="400"
       height="200">
