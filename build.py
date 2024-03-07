@@ -141,11 +141,25 @@ def generate_atom_feed(cat):
 
     utils.write_file(output_path, rendered_template)
 
-def main():
-    if os.path.isdir(output_dir):
-        rmtree(output_dir)
+DO_NOT_DELETE_LIST = ['CNAME']
 
-    copytree('static', output_dir)
+def cleanup_generated_files():
+    if not os.path.exists(output_dir):
+        return
+
+    dirs = os.listdir(output_dir)
+    for dir in dirs:
+        path_to_remove = os.path.join(output_dir, dir)
+        if os.path.exists(path_to_remove) and dir not in DO_NOT_DELETE_LIST:
+            if os.path.isdir(path_to_remove):
+                rmtree(path_to_remove)
+            else:
+                os.remove(path_to_remove)
+    
+
+def main():
+    cleanup_generated_files()
+    copytree('static', output_dir, dirs_exist_ok=True)
     generate_website()
     generate_sitemap()
     generate_atom_feed("blogs")
