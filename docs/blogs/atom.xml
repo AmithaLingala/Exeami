@@ -15,13 +15,13 @@
 <id>https://exeami.com/</id>
 
   <entry>
-    <title>Implementing search for a website</title>
+    <title>Exeami have search now!</title>
     <link rel="alternate" type="text/html" href="https://exeami.com/blogs/add-search-for-website"/>
     <id>https://exeami.com/blogs/add-search-for-website</id>
     <updated>2024-01-08T00:00:00Z</updated>
     <summary>The way I implemented in-house search for my website</summary>
     <content type="html">
-      &lt;h3&gt;Backgroud&lt;/h3&gt;
+      &lt;h3&gt;Background&lt;/h3&gt;
 &lt;p&gt;
   I always felt having a search in any website is useful, and I wanted to have one in mine. Even though I know how to
   exactly navigate to the content I want in my website, I sometimes feel lazy and wish I had a quick way to ask and get
@@ -38,24 +38,40 @@
   implementing search boxes from leading search engine providers. Most of the articles pointed out how to add these
   search boxes to my site. I leaned towards adding DuckDuckGo search box as I do not need to register to the service
   like google and as always I prefer DuckDuckGo. It took few minutes to add DuckDuckGo search box to my site, it works
-  well, but I did not like the fact I will be redirected to DuckDuckGo. Pardon me with the metaphore, but it felt like I
+  well, but I did not like the fact I will be redirected to DuckDuckGo. Pardon me with the metaphor, but it felt like I
   am leaving my home to search something from my home, and did it feel right. Then I realized that I need to implement
   custom search.
 &lt;/p&gt;
 &lt;p&gt;
-  Next step in my search of adding search was to go and check in &lt;a
-    href=&quot;https://indieweb.org/search#IndieWeb_Examples&quot;&gt;IndieWeb&lt;/a&gt; where I found that &lt;a
+  The next step in my search of adding search was to go and check in &lt;a
+    href=&quot;https://indieweb.org/search#IndieWeb_Examples&quot;&gt;IndieWeb&lt;/a&gt;, where I found that &lt;a
     href=&quot;/User:Petermolnar.eu&quot;&gt;Peter Molnar&lt;/a&gt; uses &lt;a class=&quot;external text&quot;
     href=&quot;https://www.sqlite.org/fts3.html#fts4&quot;&gt;SQLite3 FTS4&lt;/a&gt; engine for full text searching his site. That felt
-  like a good way for me but I did not get to see how he did it or any reference to his code. And I knew I had to do it
-  my way following the documentation.
+  like a good way for me, but I did not get to see how he did it or any reference to his code. And I knew I had to do it
+  my way, following the documentation.
 &lt;/p&gt;
 
 &lt;h3&gt;The way I did it&lt;/h3&gt;
 &lt;p&gt;
   On high level, my search is simple, I need a list of web pages to crawl, need to save the content of those pages in
-  db, query the db and share the page link which matches my search query using FTS.
+  db, query the db and share the page link which matches my search query using FTS (Full Text Search).
 &lt;/p&gt;
+&lt;p&gt;
+  Exeami was already structured with &lt;a href=&quot;http://microformats.org/wiki/microformats2&quot;&gt;microformats&lt;/a&gt; as part of
+  supporting
+  &lt;a href=&quot;https://indieweb.org/&quot;&gt;Indie Web&lt;/a&gt; when I planned to implement search.
+  So, I utilized this structure to crawl and store.
+&lt;/p&gt;
+&lt;p&gt;
+  You can find the source code on &lt;a href=&quot;https://codeberg.org/IndieWemblates/micro_search&quot;&gt;Codeberg&lt;/a&gt; for micro search, named it &quot;micro search&quot; as its a search engine for sites supporting microformats2.
+&lt;/p&gt;
+&lt;p&gt;micro search exposes two api endpoints
+ &lt;ul&gt;
+  &lt;li&gt;a PUT request that crawls the webiste, find h-entry and stores p-name, p-category, p-summery, e-content as a row item.&lt;/li&gt;
+  &lt;li&gt;a GET request that takes query parameter and returns the list of h-entry urls that matches the query text.&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/p&gt;
+&lt;p&gt; That&#x27;s it, now Exeami have search functionality.&lt;/p&gt;
 		</content>
     
     <author>
@@ -70,7 +86,10 @@
     <updated>2023-09-15T00:00:00Z</updated>
     <summary>Reasons to avoid creating instagram for kids</summary>
     <content type="html">
-      &lt;p&gt;
+      &lt;q class=&quot;quote&quot;&gt;
+  This is a draft post — please adjust your expectations accordingly.
+&lt;/q&gt;
+&lt;p&gt;
   If you have an Instagram account for your babies or plan to have one, I want you to think twice before doing it.
   Most of us are immature and innocent and follow the trend without being fully aware that some things we share on the
   internet might be bad for us and our loved ones in many ways.

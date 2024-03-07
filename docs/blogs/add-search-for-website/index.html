@@ -12,7 +12,7 @@
   <meta name="author" content="Amitha Lingala">
   <meta name="description" content="The way I implemented in-house search for my website">
   <meta name="keywords" content="">
-  <title>Implementing search for a website</title>
+  <title>Exeami have search now!</title>
   <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
   <link rel="alternate" type="application/atom+xml" href="https://exeami.com/blogs/atom.xml" title="All blogs - Atom">
@@ -62,8 +62,8 @@
     <article class="card" id="content">
       <span class="h-entry">
         <header class="card-header">
-          <h1 class="p-name">Implementing search for a website</h1>
-          <h2 class="subtitle">The way I did it.</h2>
+          <h1 class="p-name">Exeami have search now!</h1>
+          <h2 class="subtitle"></h2>
 
           <p>
             <time class="subtitle dt-published" datetime="2024-01-08">Created on
@@ -76,7 +76,7 @@
         </header>
         <div class="card-body e-content">
           <div class="card-item">
-            <h3>Backgroud</h3>
+            <h3>Background</h3>
 <p>
   I always felt having a search in any website is useful, and I wanted to have one in mine. Even though I know how to
   exactly navigate to the content I want in my website, I sometimes feel lazy and wish I had a quick way to ask and get
@@ -93,27 +93,43 @@
   implementing search boxes from leading search engine providers. Most of the articles pointed out how to add these
   search boxes to my site. I leaned towards adding DuckDuckGo search box as I do not need to register to the service
   like google and as always I prefer DuckDuckGo. It took few minutes to add DuckDuckGo search box to my site, it works
-  well, but I did not like the fact I will be redirected to DuckDuckGo. Pardon me with the metaphore, but it felt like I
+  well, but I did not like the fact I will be redirected to DuckDuckGo. Pardon me with the metaphor, but it felt like I
   am leaving my home to search something from my home, and did it feel right. Then I realized that I need to implement
   custom search.
 </p>
 <p>
-  Next step in my search of adding search was to go and check in <a
-    href="https://indieweb.org/search#IndieWeb_Examples">IndieWeb</a> where I found that <a
+  The next step in my search of adding search was to go and check in <a
+    href="https://indieweb.org/search#IndieWeb_Examples">IndieWeb</a>, where I found that <a
     href="/User:Petermolnar.eu">Peter Molnar</a> uses <a class="external text"
     href="https://www.sqlite.org/fts3.html#fts4">SQLite3 FTS4</a> engine for full text searching his site. That felt
-  like a good way for me but I did not get to see how he did it or any reference to his code. And I knew I had to do it
-  my way following the documentation.
+  like a good way for me, but I did not get to see how he did it or any reference to his code. And I knew I had to do it
+  my way, following the documentation.
 </p>
 
 <h3>The way I did it</h3>
 <p>
   On high level, my search is simple, I need a list of web pages to crawl, need to save the content of those pages in
-  db, query the db and share the page link which matches my search query using FTS.
+  db, query the db and share the page link which matches my search query using FTS (Full Text Search).
 </p>
+<p>
+  Exeami was already structured with <a href="http://microformats.org/wiki/microformats2">microformats</a> as part of
+  supporting
+  <a href="https://indieweb.org/">Indie Web</a> when I planned to implement search.
+  So, I utilized this structure to crawl and store.
+</p>
+<p>
+  You can find the source code on <a href="https://codeberg.org/IndieWemblates/micro_search">Codeberg</a> for micro search, named it "micro search" as its a search engine for sites supporting microformats2.
+</p>
+<p>micro search exposes two api endpoints
+ <ul>
+  <li>a PUT request that crawls the webiste, find h-entry and stores p-name, p-category, p-summery, e-content as a row item.</li>
+  <li>a GET request that takes query parameter and returns the list of h-entry urls that matches the query text.</li>
+ </ul>
+</p>
+<p> That's it, now Exeami have search functionality.</p>
           </div>
           <span class="reply-box"><a class="link-button"
-              href="mailto:contact@exeami.com?subject=Comment on 'Implementing search for a website'&amp;body=Link: https://exeami.com/blogs/add-search-for-website">Comment
+              href="mailto:contact@exeami.com?subject=Comment on 'Exeami have search now!'&amp;body=Link: https://exeami.com/blogs/add-search-for-website">Comment
               via email</a></span><br>
 
         </div>
@@ -128,7 +144,7 @@
   </figure>
   <div class="media-content">
     <h2 class="title">Instagram for kids</h2>
-    <h3 class="subtitle">Please don't do it.</h3>
+    <h3 class="subtitle">Reasons why it might not be a good idea.</h3>
     <h3 class="subtitle">Created on 2023-09-15</h3>
     <div class="tags">
   <span class="p-category tag">Data Privacy</span>
