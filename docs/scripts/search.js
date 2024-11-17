@@ -2,7 +2,7 @@ const host = 'https://search.exeami.com/api/v1/search'
 const site = 'exeami.com'
 async function search(query) {
   if (query.length > 0) {
-    const response = await fetch(`${host}/?query=${query}&site=${site}`)
+    const response = await fetch(`${host}?query=${query}&site=${site}`)
     const result_div = document.getElementById('search-results')
     const results = await response.json()
     if (results.length == 0) {
