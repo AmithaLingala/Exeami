@@ -1,4 +1,4 @@
-const host = 'https://search.exeami.com'
+const host = 'https://search.exeami.com/api/v1/search/'
 const site = 'exeami.com'
 async function search(query) {
   if (query.length > 0) {
