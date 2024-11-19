@@ -2,10 +2,10 @@ const host = 'https://search.exeami.com/api/v1/search'
 const site = 'exeami.com'
 async function search(query) {
   if (query.length > 0) {
-    const response = await fetch(`${host}?query=${query}&site=${site}`)
+    let response = await fetch(`${host}?query=${query}&site=${site}&lmark=<mark>&rmark=</mark>`)
     const result_div = document.getElementById('search-results')
-    const results = await response.json()
-    if (results.length == 0) {
+    response = await response.json()
+    if (response["results"].length == 0) {
       const div = document.createElement('div')
       div.classList.add('is-text-center', 'title', 'is-padding-1')
       div.innerText = `No search results found for "${query}"`
@@ -17,7 +17,7 @@ async function search(query) {
     title.innerText = `Search results for "${query}"`
     result_div.appendChild(title)
 
-    for (let result of results) {
+    for (let result of response["results"]) {
       const a = document.createElement('a')
       a.classList.add('search-box')
       a.href = result.url
@@ -42,7 +42,7 @@ async function search(query) {
       div.appendChild(h3)
 
       const p = document.createElement('p')
-      p.innerHTML = highlight(result.content, query)
+      p.innerHTML = result.content
       div.appendChild(p)
 
       result_div.appendChild(a)
