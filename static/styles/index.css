@@ -386,6 +386,7 @@ article.card {
 
 .media-figure {
   margin: auto;
+  padding: 2em;
 }
 .search-box {
   display: flex;
