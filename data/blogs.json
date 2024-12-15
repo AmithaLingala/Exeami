@@ -1,5 +1,17 @@
 [
   {
+    "url": "unveiling-the-illusion",
+    "cat": "blogs",
+    "title": " Unveiling the Illusion",
+    "subtitle": "Rethinking Marriage and Its Hidden Inequalities",
+    "keywords": "",
+    "description": "Rethinking Marriage and Its Hidden Inequalities",
+    "tags": [
+      "Thoughts", "Marriage", "Inequality"
+    ],
+    "last_modified": "2024-12-15"
+  },
+  {
     "url": "add-search-for-website",
     "cat": "blogs",
     "title": "Exeami have search now!",
@@ -7,7 +19,7 @@
     "keywords": "",
     "description": "The way I implemented in-house search for my website",
     "tags": [
-      "Search"
+      "Search", "Micro Formats", "IndieWeb"
     ],
     "image": "/add-search-for-website/banner2.png",
     "last_modified": "2024-01-08"

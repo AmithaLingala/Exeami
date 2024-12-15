@@ -1,13 +1,10 @@
+
 {{#each data}}
 <a class="media-box" href="/blogs/{{this.url}}">
-  <figure class="media-figure is-1-by-2">
-    <img class="image" src="/images/blogs/{{this.image}}" alt="Banner image for {{this.title}} blog" width="400"
-      height="200">
-  </figure>
   <div class="media-content">
-    <h2 class="title">{{this.title}}</h2>
+    <h2 class="title spread-contents">{{this.title}}<span>{{this.last_modified}}</span>
+    </h2>
     <h3 class="subtitle">{{this.subtitle}}</h3>
-    <h3 class="subtitle">Created on {{this.last_modified}}</h3>
     {{>tags tags=this.tags}}
   </div>
 </a>
