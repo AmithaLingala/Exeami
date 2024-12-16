@@ -102,5 +102,57 @@
     "image": "exeami.webp",
     "last_modified": "2023-08-18",
     "category": "📄 Note"
+  },
+  {
+    "url": "low-carb-diet",
+    "cat": "posts",
+    "title": "Comic by Idan Schneider",
+    "subtitle": "",
+    "keywords": "comic",
+    "description": "🔁 Re-Post",
+    "author": "Idan Schneider",
+    "link": "https://www.csectioncomics.com/comics/low-carb-diet",
+    "image": "low-carb-diet.webp",
+    "last_modified": "2023-08-10",
+    "category": "🔁 Re-Post"
+  },
+  {
+    "url": "printer",
+    "cat": "posts",
+    "title": "Comic by Andrew",
+    "subtitle": "",
+    "keywords": "comic",
+    "description": "🔁 Re-Post",
+    "author": "Andrew",
+    "link": "https://www.webtoons.com/en/canvas/system32comics/printers/viewer?title_no=235074&amp;episode_no=42",
+    "image": "printer.webp",
+    "last_modified": "2023-08-10",
+    "category": "🔁 Re-Post"
+  },
+  {
+    "url": "money",
+    "cat": "posts",
+    "title": "Comic by Jeff Lofvers",
+    "subtitle": "",
+    "keywords": "comic",
+    "description": "🔁 Re-Post",
+    "author": "Jeff Lofvers",
+    "link": "https://donthitsave.com/comic/2015/11/06/software-innovation",
+    "image": "money.webp",
+    "last_modified": "2020-07-22",
+    "category": "🔁 Re-Post"
+  },
+  {
+    "url": "spying-device",
+    "cat": "posts",
+    "title": "Comic by Zach Weinersmith",
+    "subtitle": "",
+    "keywords": "comic",
+    "description": "🔁 Re-Post",
+    "author": "Zach Weinersmith",
+    "link": "https://www.smbc-comics.com/comic/listening",
+    "image": "spyingdevice.webp",
+    "last_modified": "2020-07-22",
+    "category": "🔁 Re-Post"
   }
 ]

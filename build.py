@@ -7,7 +7,7 @@ import os
 import copy
 from os.path import join
 from datetime import date
-import re
+
 from fileinput import FileInput
 from pybars import Compiler
 
@@ -17,27 +17,14 @@ compiler = Compiler()
 output_dir = "docs"
 default_template = "page"
 
-
 def get_content_page(this, option):
     return "posts/{0}".format(option["url"])
 
 def is_defined(this, option, attribute):
     return option[attribute] != ""
-
-
-def get_page_text(this, page):
-    template = compiler.compile(utils.read_file("content/blogs/{0}.html".format(page["url"])))
-    content = template({}, helpers=helpers)
-    text_content = re.sub(r"<[^>]+>", "", content)
-    text_content = text_content[:350]
-    return f'<p>{text_content}… </p>'
-
-
-
 helpers={
     'is_defined': is_defined,
-    'get_content_page': get_content_page,
-    'get_page_text': get_page_text
+    'get_content_page': get_content_page
 }
 
 def render_template(template, data, partial=None):
