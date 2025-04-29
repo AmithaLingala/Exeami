@@ -1,0 +1,24 @@
+[
+  {
+    "url": "carrot-salad",
+    "cat": "recipes",
+    "title": "Carrot Salad",
+    "subtitle": "Simple refreshing side salad that’s packed with flavor!",
+    "keywords": "recipes, carrots, salad",
+    "description": "Simple carrot salad recipe",
+    "image": "/carrot-salad/final.webp",
+    "last_modified": "2023-10-08",
+    "prep_time": "5 minutes"
+  },
+  {
+    "url": "tomato-chutney",
+    "cat": "recipes",
+    "title": "Tomato Chutney",
+    "subtitle": "This recipe is ideal for those who enjoy a combination of spicy and tangy flavors in their food.",
+    "keywords": "recipes, tomato, chutney",
+    "description": "Simple tomato chutney recipe",
+    "image": "/tomato-chutney/final.webp",
+    "last_modified": "2020-04-15",
+    "prep_time": "30 minutes"
+  }
+]

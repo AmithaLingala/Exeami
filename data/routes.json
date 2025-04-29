@@ -32,6 +32,14 @@
         "sub_page_path": "posts"
     },
     {
+        "url": "/recipes",
+        "title": "Recipes",
+        "subtitle": "Some simple recipes",
+        "keywords": "exeami, privacy blog, html, css, javascript, java, web development, recipes",
+        "description": "Personal website of Amitha Lingala and blogs about data privacy",
+        "sub_page_path": "recipes"
+    },
+    {
         "url": "/contact",
         "title": "Contact",
         "subtitle": "Feel free to get in touch!",
